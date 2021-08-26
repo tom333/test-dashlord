@@ -81,7 +81,7 @@ ZAP Scanning Report
         <p>
 </p>
         <h3 class="left-header">Summary of Alerts</h3>
-        <h3 class="time-stamp">Generated on Thu, 26 Aug 2021 02:29:54</h3>
+        <h3 class="time-stamp">Generated on Thu, 26 Aug 2021 02:29:42</h3>
         <table width="45%" class="summary">
             <tr bgcolor="#666666">
                 <th width="45%" height="24">Risk 
@@ -89,16 +89,16 @@ ZAP Scanning Report
       of Alerts</th>
             </tr>
             <tr bgcolor="#e8e8e8">
-                <td><a href="#high">High</a></td><td align="center">1</td>
+                <td><a href="#high">High</a></td><td align="center">0</td>
             </tr>
             <tr bgcolor="#e8e8e8">
-                <td><a href="#medium">Medium</a></td><td align="center">7</td>
+                <td><a href="#medium">Medium</a></td><td align="center">3</td>
             </tr>
             <tr bgcolor="#e8e8e8">
-                <td><a href="#low">Low</a></td><td align="center">8</td>
+                <td><a href="#low">Low</a></td><td align="center">9</td>
             </tr>
             <tr bgcolor="#e8e8e8">
-                <td><a href="#info">Informational</a></td><td align="center">6</td>
+                <td><a href="#info">Informational</a></td><td align="center">8</td>
             </tr>
         </table>
         <div class="spacer-lg"></div>
@@ -108,46 +108,34 @@ ZAP Scanning Report
                 <th width="60%" height="24">Name</th><th width="20%" align="center">Risk Level</th><th width="20%" align="center">Number of Instances</th>
             </tr>
             <tr bgcolor="#e8e8e8">
-                <td>PII Disclosure</td><td align="center">High</td><td align="center">1</td>
-            </tr>
-            <tr bgcolor="#e8e8e8">
                 <td>Content Security Policy (CSP) Header Not Set</td><td align="center">Medium</td><td align="center">11</td>
             </tr>
             <tr bgcolor="#e8e8e8">
                 <td>Reverse Tabnabbing</td><td align="center">Medium</td><td align="center">11</td>
             </tr>
             <tr bgcolor="#e8e8e8">
-                <td>Source Code Disclosure - Perl</td><td align="center">Medium</td><td align="center">1</td>
+                <td>Sub Resource Integrity Attribute Missing</td><td align="center">Medium</td><td align="center">10</td>
             </tr>
             <tr bgcolor="#e8e8e8">
-                <td>Source Code Disclosure - SQL</td><td align="center">Medium</td><td align="center">1</td>
+                <td>Absence of Anti-CSRF Tokens</td><td align="center">Low</td><td align="center">10</td>
             </tr>
             <tr bgcolor="#e8e8e8">
-                <td>Sub Resource Integrity Attribute Missing</td><td align="center">Medium</td><td align="center">11</td>
+                <td>Big Redirect Detected (Potential Sensitive Information Leak)</td><td align="center">Low</td><td align="center">2</td>
             </tr>
             <tr bgcolor="#e8e8e8">
-                <td>Vulnerable JS Library</td><td align="center">Medium</td><td align="center">1</td>
+                <td>Cookie without SameSite Attribute</td><td align="center">Low</td><td align="center">12</td>
             </tr>
             <tr bgcolor="#e8e8e8">
-                <td>X-Frame-Options Header Not Set</td><td align="center">Medium</td><td align="center">2</td>
+                <td>Cross-Domain JavaScript Source File Inclusion</td><td align="center">Low</td><td align="center">9</td>
             </tr>
             <tr bgcolor="#e8e8e8">
-                <td>Absence of Anti-CSRF Tokens</td><td align="center">Low</td><td align="center">11</td>
-            </tr>
-            <tr bgcolor="#e8e8e8">
-                <td>Cross-Domain JavaScript Source File Inclusion</td><td align="center">Low</td><td align="center">2</td>
-            </tr>
-            <tr bgcolor="#e8e8e8">
-                <td>Dangerous JS Functions</td><td align="center">Low</td><td align="center">3</td>
+                <td>Dangerous JS Functions</td><td align="center">Low</td><td align="center">1</td>
             </tr>
             <tr bgcolor="#e8e8e8">
                 <td>Incomplete or No Cache-control Header Set</td><td align="center">Low</td><td align="center">11</td>
             </tr>
             <tr bgcolor="#e8e8e8">
-                <td>Information Disclosure - Debug Error Messages</td><td align="center">Low</td><td align="center">1</td>
-            </tr>
-            <tr bgcolor="#e8e8e8">
-                <td>Permissions Policy Header Not Set</td><td align="center">Low</td><td align="center">12</td>
+                <td>Permissions Policy Header Not Set</td><td align="center">Low</td><td align="center">11</td>
             </tr>
             <tr bgcolor="#e8e8e8">
                 <td>Strict-Transport-Security Header Not Set</td><td align="center">Low</td><td align="center">11</td>
@@ -159,91 +147,26 @@ ZAP Scanning Report
                 <td>Base64 Disclosure</td><td align="center">Informational</td><td align="center">11</td>
             </tr>
             <tr bgcolor="#e8e8e8">
-                <td>Information Disclosure - Suspicious Comments</td><td align="center">Informational</td><td align="center">13</td>
+                <td>Information Disclosure - Suspicious Comments</td><td align="center">Informational</td><td align="center">10</td>
             </tr>
             <tr bgcolor="#e8e8e8">
                 <td>Modern Web Application</td><td align="center">Informational</td><td align="center">11</td>
             </tr>
             <tr bgcolor="#e8e8e8">
+                <td>Non-Storable Content</td><td align="center">Informational</td><td align="center">10</td>
+            </tr>
+            <tr bgcolor="#e8e8e8">
                 <td>Storable and Cacheable Content</td><td align="center">Informational</td><td align="center">1</td>
             </tr>
             <tr bgcolor="#e8e8e8">
-                <td>Storable but Non-Cacheable Content</td><td align="center">Informational</td><td align="center">10</td>
+                <td>Timestamp Disclosure - Unix</td><td align="center">Informational</td><td align="center">2</td>
             </tr>
             <tr bgcolor="#e8e8e8">
-                <td>Timestamp Disclosure - Unix</td><td align="center">Informational</td><td align="center">6</td>
+                <td>User Controllable HTML Element Attribute (Potential XSS)</td><td align="center">Informational</td><td align="center">5</td>
             </tr>
         </table>
         <div class="spacer-lg"></div>
         <h3>Alert Detail</h3>
-        <div class="spacer"></div>
-        <table width="100%" class="results">
-              
-  
-  
-  
-            <tr height="24" class="risk-high">
-                <th width="20%"><a name="high"></a>High (High)</th><th width="80%">PII Disclosure</th>
-            </tr>
-              
-  
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Description</td><td width="80%"><p>The response contains Personally Identifiable Information, such as CC number, SSN and similar sensitive data.</p></td>
-            </tr>
-            <TR vAlign="top">
-                <TD colspan="2"></TD>
-            </TR>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/sites/default/files/atoms/files/50x70-affiche_julia_perrier-web.pdf</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">571547431575504</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Instances</td><td width="80%">1</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Solution</td><td width="80%"><p></p></td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Other information</td><td width="80%"><p>Credit Card Type detected: Maestro</p><p>Bank Identification Number: 571547</p><p>Brand: MAESTRO</p><p>Category: STANDARD</p><p>Issuer: </p></td>
-            </tr>
-            <TR vAlign="top">
-                <TD colspan="2"></TD>
-            </TR>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Reference</td><td width="80%"><p></p></td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">CWE Id</td><td width="80%">359</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">WASC Id</td><td width="80%">13</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Source ID</td><td width="80%">3</td>
-            </tr>
-            
-        </table>
         <div class="spacer"></div>
         <table width="100%" class="results">
               
@@ -267,7 +190,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/*.jpeg</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -277,7 +200,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/misc/*.gif</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/*.css</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -287,7 +210,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/misc/*.jpeg</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/*.js$</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -297,7 +220,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/misc/*.js$</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/*.js</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -307,7 +230,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/misc/*.js</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/*.jpg</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -317,7 +240,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/misc/*.css</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/*.png</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -327,7 +250,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/misc/*.jpg</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -337,7 +260,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/misc/*.css$</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/sitemap.xml</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -347,7 +270,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/misc/*.png</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/*.css$</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -357,7 +280,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -367,7 +290,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/modules/*.css</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/*.gif</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -424,7 +347,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/misc/</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/sitemap.xml</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -432,13 +355,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;a href="http://facebook.com/GouvNC" class="facebook" target="_blank"&gt;Facebook&lt;/a&gt;</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;a alt="Facebook" href="https://www.facebook.com/cesamnc" target="_blank" title="Facebook" class="fb"&gt;&lt;i class="fa fa-facebook"&gt;&lt;/i&gt;&lt;/a&gt;</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/misc/*.css$</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/*.css$</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -446,13 +369,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;a href="http://facebook.com/GouvNC" class="facebook" target="_blank"&gt;Facebook&lt;/a&gt;</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;a alt="Facebook" href="https://www.facebook.com/cesamnc" target="_blank" title="Facebook" class="fb"&gt;&lt;i class="fa fa-facebook"&gt;&lt;/i&gt;&lt;/a&gt;</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/profiles/*.js$</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/profiles/</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -460,13 +383,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;a href="http://facebook.com/GouvNC" class="facebook" target="_blank"&gt;Facebook&lt;/a&gt;</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;a alt="Facebook" href="https://www.facebook.com/cesamnc" target="_blank" title="Facebook" class="fb"&gt;&lt;i class="fa fa-facebook"&gt;&lt;/i&gt;&lt;/a&gt;</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/themes/*.css$</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/*.svg</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -474,13 +397,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;a href="http://facebook.com/GouvNC" class="facebook" target="_blank"&gt;Facebook&lt;/a&gt;</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;a alt="Facebook" href="https://www.facebook.com/cesamnc" target="_blank" title="Facebook" class="fb"&gt;&lt;i class="fa fa-facebook"&gt;&lt;/i&gt;&lt;/a&gt;</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/profiles/*.css$</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/profiles/*.js$</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -488,13 +411,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;a href="http://facebook.com/GouvNC" class="facebook" target="_blank"&gt;Facebook&lt;/a&gt;</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;a alt="Facebook" href="https://www.facebook.com/cesamnc" target="_blank" title="Facebook" class="fb"&gt;&lt;i class="fa fa-facebook"&gt;&lt;/i&gt;&lt;/a&gt;</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/themes/*.js$</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -502,13 +425,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;a href="http://facebook.com/GouvNC" class="facebook" target="_blank"&gt;Facebook&lt;/a&gt;</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;a href="https://gouv.nc/info-coronavirus-covid-19/infos-economie" target="_blank"&gt;gouv.nc&lt;/a&gt;</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/modules/*.js$</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -516,13 +439,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;a href="http://facebook.com/GouvNC" class="facebook" target="_blank"&gt;Facebook&lt;/a&gt;</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;a alt="Facebook" href="https://www.facebook.com/cesamnc" target="_blank" title="Facebook" class="fb"&gt;&lt;i class="fa fa-facebook"&gt;&lt;/i&gt;&lt;/a&gt;</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/modules/*.css$</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/*.js$</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -530,13 +453,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;a href="http://facebook.com/GouvNC" class="facebook" target="_blank"&gt;Facebook&lt;/a&gt;</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;a alt="Facebook" href="https://www.facebook.com/cesamnc" target="_blank" title="Facebook" class="fb"&gt;&lt;i class="fa fa-facebook"&gt;&lt;/i&gt;&lt;/a&gt;</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -544,13 +467,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;a href="http://facebook.com/GouvNC" class="facebook" target="_blank"&gt;Facebook&lt;/a&gt;</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;a href="https://gouv.nc/info-coronavirus-covid-19/infos-economie" target="_blank"&gt;gouv.nc&lt;/a&gt;</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/profiles/*.css$</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -558,13 +481,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;a href="http://facebook.com/GouvNC" class="facebook" target="_blank"&gt;Facebook&lt;/a&gt;</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;a alt="Facebook" href="https://www.facebook.com/cesamnc" target="_blank" title="Facebook" class="fb"&gt;&lt;i class="fa fa-facebook"&gt;&lt;/i&gt;&lt;/a&gt;</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/misc/*.js$</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/profiles/*.svg</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -572,7 +495,7 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;a href="http://facebook.com/GouvNC" class="facebook" target="_blank"&gt;Facebook&lt;/a&gt;</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;a alt="Facebook" href="https://www.facebook.com/cesamnc" target="_blank" title="Facebook" class="fb"&gt;&lt;i class="fa fa-facebook"&gt;&lt;/i&gt;&lt;/a&gt;</td>
             </tr>
               
   
@@ -587,142 +510,6 @@ ZAP Scanning Report
               
             <tr bgcolor="#e8e8e8">
                 <td width="20%">Reference</td><td width="80%"><p>https://owasp.org/www-community/attacks/Reverse_Tabnabbing</p><p>https://dev.to/ben/the-targetblank-vulnerability-by-example</p><p>https://mathiasbynens.github.io/rel-noopener/</p><p>https://medium.com/@jitbit/target-blank-the-most-underestimated-vulnerability-ever-96e328301f4c</p></td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Source ID</td><td width="80%">3</td>
-            </tr>
-            
-        </table>
-        <div class="spacer"></div>
-        <table width="100%" class="results">
-              
-  
-  
-  
-            <tr height="24" class="risk-medium">
-                <th width="20%"><a name="medium"></a>Medium (Medium)</th><th width="80%">Source Code Disclosure - Perl</th>
-            </tr>
-              
-  
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Description</td><td width="80%"><p>Application Source Code was disclosed by the web server - Perl</p></td>
-            </tr>
-            <TR vAlign="top">
-                <TD colspan="2"></TD>
-            </TR>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/sites/default/files/atoms/files/50x70-affiche_julia_perrier-web.pdf</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">$#hEvw</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Instances</td><td width="80%">1</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Solution</td><td width="80%"><p>Ensure that application Source Code is not available with alternative extensions, and ensure that source code is not present within other files or data deployed to the web server, or served by the web server. </p></td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Other information</td><td width="80%"><p>$#hEvw</p></td>
-            </tr>
-            <TR vAlign="top">
-                <TD colspan="2"></TD>
-            </TR>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Reference</td><td width="80%"><p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p></td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">CWE Id</td><td width="80%">540</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">WASC Id</td><td width="80%">13</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Source ID</td><td width="80%">3</td>
-            </tr>
-            
-        </table>
-        <div class="spacer"></div>
-        <table width="100%" class="results">
-              
-  
-  
-  
-            <tr height="24" class="risk-medium">
-                <th width="20%"><a name="medium"></a>Medium (Medium)</th><th width="80%">Source Code Disclosure - SQL</th>
-            </tr>
-              
-  
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Description</td><td width="80%"><p>Application Source Code was disclosed by the web server - SQL</p></td>
-            </tr>
-            <TR vAlign="top">
-                <TD colspan="2"></TD>
-            </TR>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/INSTALL.pgsql.txt</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">CREATE DATABASE USER</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Instances</td><td width="80%">1</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Solution</td><td width="80%"><p>Ensure that application Source Code is not available with alternative extensions, and ensure that source code is not present within other files or data deployed to the web server, or served by the web server. </p></td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Other information</td><td width="80%"><p>CREATE DATABASE USER</p></td>
-            </tr>
-            <TR vAlign="top">
-                <TD colspan="2"></TD>
-            </TR>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Reference</td><td width="80%"><p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p></td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">CWE Id</td><td width="80%">540</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">WASC Id</td><td width="80%">13</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -753,7 +540,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/modules/*.js$</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/*.css$</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -761,13 +548,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;link rel="profile" href="http://www.w3.org/1999/xhtml/vocab" /&gt;</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;script async src="https://www.googletagmanager.com/gtag/js?id=G-1X2XK0SSR5"&gt;&lt;/script&gt;</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/modules/*.css$</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -775,13 +562,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;link rel="profile" href="http://www.w3.org/1999/xhtml/vocab" /&gt;</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;script async src="https://www.googletagmanager.com/gtag/js?id=G-1X2XK0SSR5"&gt;&lt;/script&gt;</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -789,13 +576,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;link rel="profile" href="http://www.w3.org/1999/xhtml/vocab" /&gt;</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;script src="https://www.google.com/recaptcha/api.js?hl=fr"&gt;&lt;/script&gt;</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/profiles/*.css$</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -803,13 +590,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;link rel="profile" href="http://www.w3.org/1999/xhtml/vocab" /&gt;</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;script src="https://www.google.com/recaptcha/api.js?hl=fr"&gt;&lt;/script&gt;</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/misc/*.js$</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -817,13 +604,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;link rel="profile" href="http://www.w3.org/1999/xhtml/vocab" /&gt;</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;script async src="https://www.googletagmanager.com/gtag/js?id=G-1X2XK0SSR5"&gt;&lt;/script&gt;</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/profiles/*.js$</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -831,13 +618,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;link rel="profile" href="http://www.w3.org/1999/xhtml/vocab" /&gt;</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;script src="https://sibforms.com/forms/end-form/build/main.js"&gt;&lt;/script&gt;</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/themes/*.css$</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -845,13 +632,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;link rel="profile" href="http://www.w3.org/1999/xhtml/vocab" /&gt;</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;script src="https://sibforms.com/forms/end-form/build/main.js"&gt;&lt;/script&gt;</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/misc/</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/sitemap.xml</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -859,13 +646,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;link rel="profile" href="http://www.w3.org/1999/xhtml/vocab" /&gt;</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;script async src="https://www.googletagmanager.com/gtag/js?id=G-1X2XK0SSR5"&gt;&lt;/script&gt;</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -873,13 +660,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;link rel="profile" href="http://www.w3.org/1999/xhtml/vocab" /&gt;</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css"&gt;</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/themes/*.js$</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -887,27 +674,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;link rel="profile" href="http://www.w3.org/1999/xhtml/vocab" /&gt;</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css"&gt;</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/misc/*.css$</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;link rel="profile" href="http://www.w3.org/1999/xhtml/vocab" /&gt;</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Instances</td><td width="80%">11</td>
+                <td width="20%">Instances</td><td width="80%">10</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -920,145 +693,6 @@ ZAP Scanning Report
               
             <tr bgcolor="#e8e8e8">
                 <td width="20%">CWE Id</td><td width="80%">345</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">WASC Id</td><td width="80%">15</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Source ID</td><td width="80%">3</td>
-            </tr>
-            
-        </table>
-        <div class="spacer"></div>
-        <table width="100%" class="results">
-              
-  
-  
-  
-            <tr height="24" class="risk-medium">
-                <th width="20%"><a name="medium"></a>Medium (Medium)</th><th width="80%">Vulnerable JS Library</th>
-            </tr>
-              
-  
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Description</td><td width="80%"><p>The identified library jquery, version 1.10.2 is vulnerable.</p></td>
-            </tr>
-            <TR vAlign="top">
-                <TD colspan="2"></TD>
-            </TR>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/sites/default/files/js/js_ypadrG4kz9-JBpNOXmgjyVozLCJG_1RP3Ig-iqWR8n0.js</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">/*! jQuery v1.10.2</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Instances</td><td width="80%">1</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Solution</td><td width="80%"><p>Please upgrade to the latest version of jquery.</p></td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Other information</td><td width="80%"><p>CVE-2020-11023</p><p>CVE-2020-11022</p><p>CVE-2015-9251</p><p>CVE-2019-11358</p><p></p></td>
-            </tr>
-            <TR vAlign="top">
-                <TD colspan="2"></TD>
-            </TR>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Reference</td><td width="80%"><p>https://github.com/jquery/jquery/issues/2432</p><p>http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/</p><p>http://research.insecurelabs.org/jquery/test/</p><p>https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/</p><p>https://nvd.nist.gov/vuln/detail/CVE-2019-11358</p><p>https://nvd.nist.gov/vuln/detail/CVE-2015-9251</p><p>https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b</p><p>https://bugs.jquery.com/ticket/11974</p><p>https://blog.jquery.com/2020/04/10/jquery-3-5-0-released/</p><p></p></td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">CWE Id</td><td width="80%">829</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Source ID</td><td width="80%">3</td>
-            </tr>
-            
-        </table>
-        <div class="spacer"></div>
-        <table width="100%" class="results">
-              
-  
-  
-  
-            <tr height="24" class="risk-medium">
-                <th width="20%"><a name="medium"></a>Medium (Medium)</th><th width="80%">X-Frame-Options Header Not Set</th>
-            </tr>
-              
-  
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Description</td><td width="80%"><p>X-Frame-Options header is not included in the HTTP response to protect against 'ClickJacking' attacks.</p></td>
-            </tr>
-            <TR vAlign="top">
-                <TD colspan="2"></TD>
-            </TR>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/install.php</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Parameter</td><td width="80%">X-Frame-Options</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/xmlrpc.php</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Parameter</td><td width="80%">X-Frame-Options</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Instances</td><td width="80%">2</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Solution</td><td width="80%"><p>Most modern Web browsers support the X-Frame-Options HTTP header. Ensure it's set on all web pages returned by your site (if you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy's "frame-ancestors" directive. </p></td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Reference</td><td width="80%"><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p></td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">CWE Id</td><td width="80%">1021</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1093,7 +727,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/misc/*.js$</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1101,13 +735,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;form class="form-search content-search" action="/misc/*.js$" method="post" id="search-block-form" accept-charset="UTF-8"&gt;</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;form class="views-exposed-form" method="get" data-drupal-selector="views-exposed-form-dispositif-default" action="/dispositif" id="views-exposed-form-dispositif-default" accept-charset="UTF-8"&gt;</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/misc/*.css$</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/dispositif/1</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1115,13 +749,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;form class="form-search content-search" action="/misc/*.css$" method="post" id="search-block-form" accept-charset="UTF-8"&gt;</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;form class="views-exposed-form" method="get" data-drupal-selector="views-exposed-form-dispositif-dispositif-view" action="/dispositif/1" id="views-exposed-form-dispositif-dispositif-view" accept-charset="UTF-8"&gt;</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/node/20</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1129,13 +763,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;form class="form-search content-search" action="/" method="post" id="search-block-form" accept-charset="UTF-8"&gt;</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;form class="views-exposed-form" method="get" data-drupal-selector="views-exposed-form-dispositif-default" action="/dispositif" id="views-exposed-form-dispositif-default" accept-charset="UTF-8"&gt;</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/node/20</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1143,13 +777,14 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;form class="form-search content-search" action="/" method="post" id="search-block-form" accept-charset="UTF-8"&gt;</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;form id="sib-form" method="POST" action="https://981c5932.sibforms.com/serve/MUIEAC58k3Ko8vSuER3gO1bXxLAmqr9xKBZdACW7Ro-mrsr-GTQqjzT5RLYvCqqZf3iKZrhG3fhyFRdJx5HoXj2sVtQBmdCktH4YOep3P76pu41qIRkgCZvRWrjejY8xugUKyH6jQd3scFmxDaubHy2l0XviB38n3X9kzWgpst9WzcDZsZaDXhKerhqDhwPNPEw8KPy-HaahKL4A"
+        data-type="subscription"&gt;</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/modules/*.css$</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/dispositif?type=demarche</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1157,13 +792,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;form class="form-search content-search" action="/modules/*.css$" method="post" id="search-block-form" accept-charset="UTF-8"&gt;</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;form class="views-exposed-form" method="get" data-drupal-selector="views-exposed-form-dispositif-dispositif-view" action="/dispositif" id="views-exposed-form-dispositif-dispositif-view" accept-charset="UTF-8"&gt;</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/modules/*.js$</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/dispositif?type=aide_financiere</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1171,13 +806,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;form class="form-search content-search" action="/modules/*.js$" method="post" id="search-block-form" accept-charset="UTF-8"&gt;</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;form class="views-exposed-form" method="get" data-drupal-selector="views-exposed-form-dispositif-dispositif-view" action="/dispositif" id="views-exposed-form-dispositif-dispositif-view" accept-charset="UTF-8"&gt;</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/misc/</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1185,13 +820,14 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;form class="form-search content-search" action="/misc/" method="post" id="search-block-form" accept-charset="UTF-8"&gt;</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;form id="sib-form" method="POST" action="https://981c5932.sibforms.com/serve/MUIEAC58k3Ko8vSuER3gO1bXxLAmqr9xKBZdACW7Ro-mrsr-GTQqjzT5RLYvCqqZf3iKZrhG3fhyFRdJx5HoXj2sVtQBmdCktH4YOep3P76pu41qIRkgCZvRWrjejY8xugUKyH6jQd3scFmxDaubHy2l0XviB38n3X9kzWgpst9WzcDZsZaDXhKerhqDhwPNPEw8KPy-HaahKL4A"
+        data-type="subscription"&gt;</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/profiles/*.css$</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1199,13 +835,14 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;form class="form-search content-search" action="/profiles/*.css$" method="post" id="search-block-form" accept-charset="UTF-8"&gt;</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;form id="sib-form" method="POST" action="https://981c5932.sibforms.com/serve/MUIEAC58k3Ko8vSuER3gO1bXxLAmqr9xKBZdACW7Ro-mrsr-GTQqjzT5RLYvCqqZf3iKZrhG3fhyFRdJx5HoXj2sVtQBmdCktH4YOep3P76pu41qIRkgCZvRWrjejY8xugUKyH6jQd3scFmxDaubHy2l0XviB38n3X9kzWgpst9WzcDZsZaDXhKerhqDhwPNPEw8KPy-HaahKL4A"
+        data-type="subscription"&gt;</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/profiles/*.js$</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1213,13 +850,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;form class="form-search content-search" action="/profiles/*.js$" method="post" id="search-block-form" accept-charset="UTF-8"&gt;</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;form class="views-exposed-form" method="get" data-drupal-selector="views-exposed-form-dispositif-default" action="/dispositif" id="views-exposed-form-dispositif-default" accept-charset="UTF-8"&gt;</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/themes/*.css$</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/dispositif?type=accompagnement</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1227,27 +864,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;form class="form-search content-search" action="/themes/*.css$" method="post" id="search-block-form" accept-charset="UTF-8"&gt;</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;form class="views-exposed-form" method="get" data-drupal-selector="views-exposed-form-dispositif-dispositif-view" action="/dispositif" id="views-exposed-form-dispositif-dispositif-view" accept-charset="UTF-8"&gt;</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/themes/*.js$</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;form class="form-search content-search" action="/themes/*.js$" method="post" id="search-block-form" accept-charset="UTF-8"&gt;</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Instances</td><td width="80%">11</td>
+                <td width="20%">Instances</td><td width="80%">10</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1255,7 +878,7 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%">Other information</td><td width="80%"><p>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF] was found in the following HTML form: [Form 1: "edit-search-block-form--2" "form_build_id" "form_id" ].</p></td>
+                <td width="20%">Other information</td><td width="80%"><p>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF] was found in the following HTML form: [Form 1: "edit-localite-5" "edit-localite-6" "edit-localite-7" "edit-profil-entreprise-10" "edit-profil-entreprise-11" "edit-profil-entreprise-12" "edit-profil-entreprise-40" "edit-profil-entreprise-41" "edit-profil-entreprise-42" "edit-profil-entreprise-43" "edit-profil-entreprise-44" "edit-profil-entreprise-45" "edit-profil-entreprise-46" "edit-profil-entreprise-9" "edit-secteur-activite-13" "edit-secteur-activite-14" "edit-secteur-activite-15" "edit-secteur-activite-16" "edit-secteur-activite-17" "edit-secteur-activite-20" "edit-secteur-activite-21" "edit-secteur-activite-22" "edit-secteur-activite-23" "edit-secteur-activite-24" "edit-secteur-activite-25" "edit-secteur-activite-26" "edit-secteur-activite-27" "edit-secteur-activite-28" "edit-secteur-activite-29" "edit-secteur-activite-30" "edit-secteur-activite-31" "edit-secteur-activite-32" "edit-secteur-activite-33" "edit-secteur-activite-34" "edit-secteur-activite-35" "edit-secteur-activite-36" "edit-secteur-activite-37" "edit-secteur-activite-38" "edit-secteur-activite-39" ].</p></td>
             </tr>
             <TR vAlign="top">
                 <TD colspan="2"></TD>
@@ -1271,6 +894,343 @@ ZAP Scanning Report
               
             <tr bgcolor="#e8e8e8">
                 <td width="20%">WASC Id</td><td width="80%">9</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%">Source ID</td><td width="80%">3</td>
+            </tr>
+            
+        </table>
+        <div class="spacer"></div>
+        <table width="100%" class="results">
+              
+  
+  
+  
+            <tr height="24" class="risk-low">
+                <a name="low"></a><th width="20%">Low (Medium)</th><th width="80%">Big Redirect Detected (Potential Sensitive Information Leak)</th>
+            </tr>
+              
+  
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%">Description</td><td width="80%"><p>The server has responded with a redirect that seems to provide a large response. This may indicate that although the server sent a redirect it also responded with body content (which may include sensitive details, PII, etc.).</p></td>
+            </tr>
+            <TR vAlign="top">
+                <TD colspan="2"></TD>
+            </TR>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/index.php/search/</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/search/</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%">Instances</td><td width="80%">2</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%">Solution</td><td width="80%"><p>Ensure that no sensitive information is leaked via redirect responses. Redirect responses should have almost no content.</p></td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%">Other information</td><td width="80%"><p>Location header URI length: 38 [https://cesam.nc/index.php/search/node].</p><p>Predicted response size: 338.</p><p>Response Body Length: 398.</p></td>
+            </tr>
+            <TR vAlign="top">
+                <TD colspan="2"></TD>
+            </TR>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%">Reference</td><td width="80%"><p></p></td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%">CWE Id</td><td width="80%">201</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%">WASC Id</td><td width="80%">13</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%">Source ID</td><td width="80%">3</td>
+            </tr>
+            
+        </table>
+        <div class="spacer"></div>
+        <table width="100%" class="results">
+              
+  
+  
+  
+            <tr height="24" class="risk-low">
+                <a name="low"></a><th width="20%">Low (Medium)</th><th width="80%">Cookie without SameSite Attribute</th>
+            </tr>
+              
+  
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%">Description</td><td width="80%"><p>A cookie has been set without the SameSite attribute, which means that the cookie can be sent as a result of a 'cross-site' request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</p></td>
+            </tr>
+            <TR vAlign="top">
+                <TD colspan="2"></TD>
+            </TR>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/dispositif/1?localite%5B5%5D=5&amp;localite%5B6%5D=6&amp;localite%5B7%5D=7&amp;profil_entreprise%5B10%5D=10&amp;profil_entreprise%5B11%5D=11&amp;profil_entreprise%5B12%5D=12&amp;profil_entreprise%5B40%5D=40&amp;profil_entreprise%5B41%5D=41&amp;profil_entreprise%5B42%5D=42&amp;profil_entreprise%5B43%5D=43&amp;profil_entreprise%5B44%5D=44&amp;profil_entreprise%5B45%5D=45&amp;profil_entreprise%5B46%5D=46&amp;profil_entreprise%5B9%5D=9&amp;secteur_activite%5B13%5D=13&amp;secteur_activite%5B14%5D=14&amp;secteur_activite%5B15%5D=15&amp;secteur_activite%5B16%5D=16&amp;secteur_activite%5B17%5D=17&amp;secteur_activite%5B20%5D=20&amp;secteur_activite%5B21%5D=21&amp;secteur_activite%5B22%5D=22&amp;secteur_activite%5B23%5D=23&amp;secteur_activite%5B24%5D=24&amp;secteur_activite%5B25%5D=25&amp;secteur_activite%5B26%5D=26&amp;secteur_activite%5B27%5D=27&amp;secteur_activite%5B28%5D=28&amp;secteur_activite%5B29%5D=29&amp;secteur_activite%5B30%5D=30&amp;secteur_activite%5B31%5D=31&amp;secteur_activite%5B32%5D=32&amp;secteur_activite%5B33%5D=33&amp;secteur_activite%5B34%5D=34&amp;secteur_activite%5B35%5D=35&amp;secteur_activite%5B36%5D=36&amp;secteur_activite%5B37%5D=37&amp;secteur_activite%5B38%5D=38&amp;secteur_activite%5B39%5D=39&amp;type=All</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Parameter</td><td width="80%">SSESSa8025fa4ac436431082fccd3afcf1a1e</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">Set-Cookie: SSESSa8025fa4ac436431082fccd3afcf1a1e</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/accompagnement-et-conseil/mediation-de-credit-en-cas-de-refus-de-credit</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Parameter</td><td width="80%">SSESSa8025fa4ac436431082fccd3afcf1a1e</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">Set-Cookie: SSESSa8025fa4ac436431082fccd3afcf1a1e</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/formalite-en-ligne/demander-une-admission-au-benefice-du-chomage-partiel-en-ligne</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Parameter</td><td width="80%">SSESSa8025fa4ac436431082fccd3afcf1a1e</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">Set-Cookie: SSESSa8025fa4ac436431082fccd3afcf1a1e</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/aide-financiere/report-du-paiement-de-lirpp-pour-les-travailleurs-independants</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Parameter</td><td width="80%">SSESSa8025fa4ac436431082fccd3afcf1a1e</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">Set-Cookie: SSESSa8025fa4ac436431082fccd3afcf1a1e</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/formalite-en-ligne/demande-dautorisation-de-tournages-relative-aux-especes-et-aires-protegees-en</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Parameter</td><td width="80%">SSESSa8025fa4ac436431082fccd3afcf1a1e</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">Set-Cookie: SSESSa8025fa4ac436431082fccd3afcf1a1e</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/aide-financiere/aide-la-tresorerie-des-entreprises</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Parameter</td><td width="80%">SSESSa8025fa4ac436431082fccd3afcf1a1e</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">Set-Cookie: SSESSa8025fa4ac436431082fccd3afcf1a1e</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/aide-financiere/report-des-charges-fiscales</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Parameter</td><td width="80%">SSESSa8025fa4ac436431082fccd3afcf1a1e</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">Set-Cookie: SSESSa8025fa4ac436431082fccd3afcf1a1e</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/index.php/search/node</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Parameter</td><td width="80%">SSESSa8025fa4ac436431082fccd3afcf1a1e</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">Set-Cookie: SSESSa8025fa4ac436431082fccd3afcf1a1e</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/dispositif?localite%5B5%5D=5&amp;localite%5B6%5D=6&amp;localite%5B7%5D=7&amp;profil_entreprise%5B10%5D=10&amp;profil_entreprise%5B11%5D=11&amp;profil_entreprise%5B12%5D=12&amp;profil_entreprise%5B40%5D=40&amp;profil_entreprise%5B41%5D=41&amp;profil_entreprise%5B42%5D=42&amp;profil_entreprise%5B43%5D=43&amp;profil_entreprise%5B44%5D=44&amp;profil_entreprise%5B45%5D=45&amp;profil_entreprise%5B46%5D=46&amp;profil_entreprise%5B9%5D=9&amp;secteur_activite%5B13%5D=13&amp;secteur_activite%5B14%5D=14&amp;secteur_activite%5B15%5D=15&amp;secteur_activite%5B16%5D=16&amp;secteur_activite%5B17%5D=17&amp;secteur_activite%5B20%5D=20&amp;secteur_activite%5B21%5D=21&amp;secteur_activite%5B22%5D=22&amp;secteur_activite%5B23%5D=23&amp;secteur_activite%5B24%5D=24&amp;secteur_activite%5B25%5D=25&amp;secteur_activite%5B26%5D=26&amp;secteur_activite%5B27%5D=27&amp;secteur_activite%5B28%5D=28&amp;secteur_activite%5B29%5D=29&amp;secteur_activite%5B30%5D=30&amp;secteur_activite%5B31%5D=31&amp;secteur_activite%5B32%5D=32&amp;secteur_activite%5B33%5D=33&amp;secteur_activite%5B34%5D=34&amp;secteur_activite%5B35%5D=35&amp;secteur_activite%5B36%5D=36&amp;secteur_activite%5B37%5D=37&amp;secteur_activite%5B38%5D=38&amp;secteur_activite%5B39%5D=39&amp;type=All</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Parameter</td><td width="80%">SSESSa8025fa4ac436431082fccd3afcf1a1e</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">Set-Cookie: SSESSa8025fa4ac436431082fccd3afcf1a1e</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/aide-financiere/fonds-de-solidarite-aux-entreprises</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Parameter</td><td width="80%">SSESSa8025fa4ac436431082fccd3afcf1a1e</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">Set-Cookie: SSESSa8025fa4ac436431082fccd3afcf1a1e</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/accompagnement-et-conseil/sinformer-des-mesures-prises-dans-le-cadre-de-la-crise-covid</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Parameter</td><td width="80%">SSESSa8025fa4ac436431082fccd3afcf1a1e</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">Set-Cookie: SSESSa8025fa4ac436431082fccd3afcf1a1e</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/aide-financiere/pret-garantie-par-letat-soutien-conjoncturel</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Parameter</td><td width="80%">SSESSa8025fa4ac436431082fccd3afcf1a1e</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">Set-Cookie: SSESSa8025fa4ac436431082fccd3afcf1a1e</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%">Instances</td><td width="80%">12</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%">Solution</td><td width="80%"><p>Ensure that the SameSite attribute is set to either 'lax' or ideally 'strict' for all cookies.</p></td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%">Reference</td><td width="80%"><p>https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</p></td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%">CWE Id</td><td width="80%">1275</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%">WASC Id</td><td width="80%">13</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1301,7 +1261,61 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/webform/contactez-nous</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/sitemap.xml</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Parameter</td><td width="80%">https://www.googletagmanager.com/gtag/js?id=G-1X2XK0SSR5</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;script async src="https://www.googletagmanager.com/gtag/js?id=G-1X2XK0SSR5"&gt;&lt;/script&gt;</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Parameter</td><td width="80%">https://www.googletagmanager.com/gtag/js?id=G-1X2XK0SSR5</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;script async src="https://www.googletagmanager.com/gtag/js?id=G-1X2XK0SSR5"&gt;&lt;/script&gt;</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/*.css$</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Parameter</td><td width="80%">https://www.googletagmanager.com/gtag/js?id=G-1X2XK0SSR5</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;script async src="https://www.googletagmanager.com/gtag/js?id=G-1X2XK0SSR5"&gt;&lt;/script&gt;</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1313,13 +1327,31 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;script src="https://www.google.com/recaptcha/api.js?hl=fr" async="async" defer="defer"&gt;&lt;/script&gt;</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;script src="https://www.google.com/recaptcha/api.js?hl=fr"&gt;&lt;/script&gt;</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/?q=user/password/</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Parameter</td><td width="80%">https://sibforms.com/forms/end-form/build/main.js</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;script src="https://sibforms.com/forms/end-form/build/main.js"&gt;&lt;/script&gt;</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1331,13 +1363,67 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;script src="https://www.google.com/recaptcha/api.js?hl=fr" async="async" defer="defer"&gt;&lt;/script&gt;</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;script src="https://www.google.com/recaptcha/api.js?hl=fr"&gt;&lt;/script&gt;</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%">Instances</td><td width="80%">2</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Parameter</td><td width="80%">https://www.googletagmanager.com/gtag/js?id=G-1X2XK0SSR5</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;script async src="https://www.googletagmanager.com/gtag/js?id=G-1X2XK0SSR5"&gt;&lt;/script&gt;</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Parameter</td><td width="80%">https://sibforms.com/forms/end-form/build/main.js</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;script src="https://sibforms.com/forms/end-form/build/main.js"&gt;&lt;/script&gt;</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/*.js$</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Parameter</td><td width="80%">https://www.googletagmanager.com/gtag/js?id=G-1X2XK0SSR5</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;script async src="https://www.googletagmanager.com/gtag/js?id=G-1X2XK0SSR5"&gt;&lt;/script&gt;</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%">Instances</td><td width="80%">9</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1384,7 +1470,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/sites/default/files/js/js_zoRDRx25frgltcy-tR1gHUy3o4f6RkrUeszh37xw36E.js</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/assets/vendor/jquery/jquery.min.js?v=3.5.1</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1392,41 +1478,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">eval</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">Eval</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/sites/default/files/js/js_yo9QJ55hHiYOUgCDdekfA51z0MNyY09hHAlJw4Uz1s8.js</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">eval</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/sites/default/files/js/js_ypadrG4kz9-JBpNOXmgjyVozLCJG_1RP3Ig-iqWR8n0.js</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">eval</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Instances</td><td width="80%">3</td>
+                <td width="20%">Instances</td><td width="80%">1</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1469,7 +1527,61 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/INSTALL.sqlite.txt</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/node/164</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Parameter</td><td width="80%">Cache-Control</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">must-revalidate, no-cache, private</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Parameter</td><td width="80%">Cache-Control</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">must-revalidate, no-cache, private</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/dispositif/1</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Parameter</td><td width="80%">Cache-Control</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">must-revalidate, no-cache, private</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/robots.txt</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1483,7 +1595,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/INSTALL.mysql.txt</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/README.txt</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1497,21 +1609,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/robots.txt</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Parameter</td><td width="80%">Cache-Control</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/sitemap.xml</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/dispositif?type=demarche</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1523,13 +1621,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">must-revalidate</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">must-revalidate, no-cache, private</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/install.php</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/node/165</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1541,27 +1639,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">no-cache, must-revalidate</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">must-revalidate, no-cache, private</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/CHANGELOG.txt</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Parameter</td><td width="80%">Cache-Control</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1573,27 +1657,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">no-cache, must-revalidate</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">must-revalidate, no-cache, private</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/INSTALL.pgsql.txt</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Parameter</td><td width="80%">Cache-Control</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/index.php/filter/tips</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1605,13 +1675,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">no-cache, must-revalidate</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">must-revalidate, no-cache, private</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/LICENSE.txt</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/filter/tips</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1622,10 +1692,14 @@ ZAP Scanning Report
                 <td width="20%" class="indent2">Parameter</td><td width="80%">Cache-Control</td>
             </tr>
               
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">must-revalidate, no-cache, private</td>
+            </tr>
+              
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/INSTALL.txt</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/dispositif?type=aide_financiere</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1634,6 +1708,10 @@ ZAP Scanning Report
               
             <tr bgcolor="#e8e8e8">
                 <td width="20%" class="indent2">Parameter</td><td width="80%">Cache-Control</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">must-revalidate, no-cache, private</td>
             </tr>
               
   
@@ -1670,67 +1748,6 @@ ZAP Scanning Report
   
   
             <tr height="24" class="risk-low">
-                <a name="low"></a><th width="20%">Low (Medium)</th><th width="80%">Information Disclosure - Debug Error Messages</th>
-            </tr>
-              
-  
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Description</td><td width="80%"><p>The response appeared to contain common error messages returned by platforms such as ASP.NET, and Web-servers such as IIS and Apache. You can configure the list of common debug messages.</p></td>
-            </tr>
-            <TR vAlign="top">
-                <TD colspan="2"></TD>
-            </TR>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/CHANGELOG.txt</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">internal server error</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Instances</td><td width="80%">1</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Solution</td><td width="80%"><p>Disable debugging messages before pushing to production.</p></td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Reference</td><td width="80%"><p></p></td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">CWE Id</td><td width="80%">200</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">WASC Id</td><td width="80%">13</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Source ID</td><td width="80%">3</td>
-            </tr>
-            
-        </table>
-        <div class="spacer"></div>
-        <table width="100%" class="results">
-              
-  
-  
-  
-            <tr height="24" class="risk-low">
                 <a name="low"></a><th width="20%">Low (Medium)</th><th width="80%">Permissions Policy Header Not Set</th>
             </tr>
               
@@ -1747,7 +1764,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/sites/default/files/js/js_ypadrG4kz9-JBpNOXmgjyVozLCJG_1RP3Ig-iqWR8n0.js</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/sitemap.xml</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1757,7 +1774,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/user/register/</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/*.gif</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1767,7 +1784,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/sites/default/files/js/js_zoRDRx25frgltcy-tR1gHUy3o4f6RkrUeszh37xw36E.js</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1777,7 +1794,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/user/logout/</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/*.css$</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1787,7 +1804,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/update.php</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/*.png</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1797,7 +1814,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/sites/default/files/js/js_p8E8mZGnVDI6QIhky4eUcpYxDkIXb4TxMAeGq4bSV_I.js</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1807,7 +1824,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/sites/all/libraries/respondjs/html5shiv.min.js</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/*.jpg</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1817,7 +1834,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/user/password/</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/*.js</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1827,7 +1844,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/xmlrpc.php</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/*.jpeg</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1837,7 +1854,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/user/login/</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/*.js$</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1847,7 +1864,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/sites/all/libraries/respondjs/respond.min.js</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/*.css</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1857,17 +1874,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/install.php</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Instances</td><td width="80%">12</td>
+                <td width="20%">Instances</td><td width="80%">11</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1914,7 +1921,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/sitemap.xml</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/robots.txt</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1924,7 +1931,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/misc/*.jpg</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/*.css$</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1934,7 +1941,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/misc/*.css$</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/sitemap.xml</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1944,7 +1951,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/misc/*.css</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/*.gif</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1954,7 +1961,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1964,7 +1971,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/misc/*.js</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1974,7 +1981,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/misc/*.js$</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/*.js</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1984,7 +1991,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/*.jpeg</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1994,7 +2001,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/misc/*.gif</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/*.css</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -2004,7 +2011,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/robots.txt</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/*.jpg</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -2014,7 +2021,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/misc/*.jpeg</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/*.js$</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -2071,7 +2078,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/robots.txt</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/assets/vendor/jquery-once/jquery.once.min.js?v=2.2.3</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -2085,7 +2092,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/INSTALL.mysql.txt</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/assets/vendor/jquery/jquery.min.js?v=3.5.1</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -2099,7 +2106,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/UPGRADE.txt</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/modules/contrib/google_analytics/js/google_analytics_ecc.js</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -2113,7 +2120,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/CHANGELOG.txt</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/robots.txt</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -2127,7 +2134,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/INSTALL.pgsql.txt</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/sites/default/files/css/css_aNKhz3-rCorOBXpSJGKUOAMfekCJHZDWz4AQzZAW3iM.css</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -2141,7 +2148,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/sites/default/files/atoms/files/affiche_dellerba-60x80-v2.pdf</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/themes/custom/cesam/images/logo_cesam.svg</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -2155,7 +2162,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/sites/default/files/atoms/files/50x70-affiche_julia_perrier-web.pdf</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/sites/default/files/css/css_Y4H_4BqmgyCtG7E7YdseTs2qvy9C34c51kBamDdgark.css</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -2169,7 +2176,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/sites/all/themes/gouv/favicon.ico</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/README.txt</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -2183,7 +2190,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/MAINTAINERS.txt</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/sites/default/files/css/css_yzJ35ia9tlYsg9_kEyW9TtVozwdBnP8auChonXhkyi8.css</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -2197,7 +2204,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/INSTALL.txt</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/misc/polyfills/object.assign.js?v=8.9.17</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -2211,7 +2218,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/INSTALL.sqlite.txt</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/assets/vendor/html5shiv/html5shiv.min.js?v=3.7.3</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -2225,7 +2232,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/LICENSE.txt</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/themes/custom/cesam/images/favicon-32x32.png</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -2293,7 +2300,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/modules/*.js$</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/*.css$</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -2301,13 +2308,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">nc/sites/default/files/css/css_lQaZfjVpwP_oGNqdtWCSpJT1EMqXdMiU84ekLLxQnc4</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">/sites/default/files/css/css_87GMcmxT1ib8ziQiU2KUAnTDFtZQV6iP-KGslA9LigM</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/themes/*.css$</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -2315,13 +2322,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">nc/sites/default/files/css/css_lQaZfjVpwP_oGNqdtWCSpJT1EMqXdMiU84ekLLxQnc4</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">/sites/default/files/css/css_aNKhz3-rCorOBXpSJGKUOAMfekCJHZDWz4AQzZAW3iM</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -2329,13 +2336,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">nc/sites/default/files/css/css_lQaZfjVpwP_oGNqdtWCSpJT1EMqXdMiU84ekLLxQnc4</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">/sites/default/files/css/css_87GMcmxT1ib8ziQiU2KUAnTDFtZQV6iP-KGslA9LigM</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/misc/</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/*.svg</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -2343,13 +2350,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">nc/sites/default/files/css/css_lQaZfjVpwP_oGNqdtWCSpJT1EMqXdMiU84ekLLxQnc4</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">/sites/default/files/css/css_87GMcmxT1ib8ziQiU2KUAnTDFtZQV6iP-KGslA9LigM</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/misc/*.js$</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/profiles/</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -2357,13 +2364,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">nc/sites/default/files/css/css_lQaZfjVpwP_oGNqdtWCSpJT1EMqXdMiU84ekLLxQnc4</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">/sites/default/files/css/css_87GMcmxT1ib8ziQiU2KUAnTDFtZQV6iP-KGslA9LigM</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/modules/*.css$</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -2371,13 +2378,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">nc/sites/default/files/css/css_lQaZfjVpwP_oGNqdtWCSpJT1EMqXdMiU84ekLLxQnc4</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">/sites/default/files/css/css_aNKhz3-rCorOBXpSJGKUOAMfekCJHZDWz4AQzZAW3iM</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/profiles/*.css$</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/sitemap.xml</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -2385,13 +2392,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">nc/sites/default/files/css/css_lQaZfjVpwP_oGNqdtWCSpJT1EMqXdMiU84ekLLxQnc4</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">/sites/default/files/css/css_87GMcmxT1ib8ziQiU2KUAnTDFtZQV6iP-KGslA9LigM</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/profiles/*.js$</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/profiles/*.js$</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -2399,13 +2406,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">nc/sites/default/files/css/css_lQaZfjVpwP_oGNqdtWCSpJT1EMqXdMiU84ekLLxQnc4</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">/sites/default/files/css/css_87GMcmxT1ib8ziQiU2KUAnTDFtZQV6iP-KGslA9LigM</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/misc/*.css$</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/*.js$</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -2413,13 +2420,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">nc/sites/default/files/css/css_lQaZfjVpwP_oGNqdtWCSpJT1EMqXdMiU84ekLLxQnc4</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">/sites/default/files/css/css_87GMcmxT1ib8ziQiU2KUAnTDFtZQV6iP-KGslA9LigM</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/profiles/*.svg</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -2427,13 +2434,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">nc/sites/default/files/css/css_lQaZfjVpwP_oGNqdtWCSpJT1EMqXdMiU84ekLLxQnc4</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">/sites/default/files/css/css_87GMcmxT1ib8ziQiU2KUAnTDFtZQV6iP-KGslA9LigM</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/themes/*.js$</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/profiles/*.css$</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -2441,7 +2448,7 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">nc/sites/default/files/css/css_lQaZfjVpwP_oGNqdtWCSpJT1EMqXdMiU84ekLLxQnc4</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">/sites/default/files/css/css_87GMcmxT1ib8ziQiU2KUAnTDFtZQV6iP-KGslA9LigM</td>
             </tr>
               
   
@@ -2455,7 +2462,7 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%">Other information</td><td width="80%"><p>���׬�ןj�m���z�ܲ�ܲ��A�_�Zp?�\x00066�mX$�%=D2��2%&lt;��\x000b/\x0014's</p></td>
+                <td width="20%">Other information</td><td width="80%"><p>�ȭz��y����ߊW���,��,���1ɱOX��8��M�P	�\x000c[YA^�?↲P=.(\x000c</p></td>
             </tr>
             <TR vAlign="top">
                 <TD colspan="2"></TD>
@@ -2463,6 +2470,88 @@ ZAP Scanning Report
               
             <tr bgcolor="#e8e8e8">
                 <td width="20%">Reference</td><td width="80%"><p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p></td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%">CWE Id</td><td width="80%">200</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%">WASC Id</td><td width="80%">13</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%">Source ID</td><td width="80%">3</td>
+            </tr>
+            
+        </table>
+        <div class="spacer"></div>
+        <table width="100%" class="results">
+              
+  
+  
+  
+            <tr height="24" class="risk-info">
+                <th width="20%"><a name="info"></a>Informational (Medium)</th><th width="80%">Information Disclosure - Suspicious Comments</th>
+            </tr>
+              
+  
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%">Description</td><td width="80%"><p>The response appears to contain suspicious comments which may help an attacker. Note: Matches made within script blocks or files are against the entire content not only comments.</p></td>
+            </tr>
+            <TR vAlign="top">
+                <TD colspan="2"></TD>
+            </TR>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">where</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">where</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%">Instances</td><td width="80%">2</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%">Solution</td><td width="80%"><p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p></td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%">Other information</td><td width="80%"><p>The following pattern was used: \bWHERE\b and was detected 2 times, the first in the element starting with: "&lt;!-- START - We recommend to place the below code where you want the form in your website html  --&gt;", see evidence field for the suspicious comment/snippet.</p></td>
+            </tr>
+            <TR vAlign="top">
+                <TD colspan="2"></TD>
+            </TR>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%">Reference</td><td width="80%"><p></p></td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -2501,7 +2590,21 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/misc/*.js$</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/*.js$</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">user</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/*.js$</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -2515,49 +2618,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/misc/*.js$</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">admin</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">admin</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">admin</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/profiles/*.css$</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/sitemap.xml</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -2571,7 +2632,63 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/misc/*.css$</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/*.css$</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">user</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">user</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">user</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/sitemap.xml</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">user</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/*.css$</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -2585,105 +2702,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/misc/*.css$</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">admin</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/modules/*.js$</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">from</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/modules/*.js$</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">admin</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">admin</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/profiles/*.css$</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">admin</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/modules/*.css$</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">from</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/modules/*.css$</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">admin</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Instances</td><td width="80%">13</td>
+                <td width="20%">Instances</td><td width="80%">8</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -2691,7 +2710,7 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%">Other information</td><td width="80%"><p>The following pattern was used: \bFROM\b and was detected in the element starting with: "&lt;script&gt;(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=", see evidence field for the suspicious comment/snippet.</p></td>
+                <td width="20%">Other information</td><td width="80%"><p>The following pattern was used: \bUSER\b and was detected in the element starting with: "&lt;script type="application/json" data-drupal-selector="drupal-settings-json"&gt;{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefi", see evidence field for the suspicious comment/snippet.</p></td>
             </tr>
             <TR vAlign="top">
                 <TD colspan="2"></TD>
@@ -2737,7 +2756,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/misc/*.css$</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/*.js$</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -2745,13 +2764,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;a href="#" class="nolink" tabindex="0"&gt;&lt;span class="menu-title-top"&gt;Gouvernement&lt;/span&gt; &lt;span class="menu-title-bottom"&gt;et institutions&lt;/span&gt;&lt;/a&gt;</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;a id="main-content" tabindex="-1"&gt;&lt;/a&gt;</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/misc/</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/profiles/*.css$</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -2759,13 +2778,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;a href="#" class="nolink" tabindex="0"&gt;&lt;span class="menu-title-top"&gt;Gouvernement&lt;/span&gt; &lt;span class="menu-title-bottom"&gt;et institutions&lt;/span&gt;&lt;/a&gt;</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;a id="main-content" tabindex="-1"&gt;&lt;/a&gt;</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/profiles/*.css$</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/profiles/*.js$</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -2773,13 +2792,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;a href="#" class="nolink" tabindex="0"&gt;&lt;span class="menu-title-top"&gt;Gouvernement&lt;/span&gt; &lt;span class="menu-title-bottom"&gt;et institutions&lt;/span&gt;&lt;/a&gt;</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;a id="main-content" tabindex="-1"&gt;&lt;/a&gt;</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/themes/*.css$</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -2787,13 +2806,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;a href="#" class="nolink" tabindex="0"&gt;&lt;span class="menu-title-top"&gt;Gouvernement&lt;/span&gt; &lt;span class="menu-title-bottom"&gt;et institutions&lt;/span&gt;&lt;/a&gt;</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;a id="main-content" tabindex="-1"&gt;&lt;/a&gt;</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/profiles/*.js$</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/profiles/</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -2801,13 +2820,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;a href="#" class="nolink" tabindex="0"&gt;&lt;span class="menu-title-top"&gt;Gouvernement&lt;/span&gt; &lt;span class="menu-title-bottom"&gt;et institutions&lt;/span&gt;&lt;/a&gt;</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;a id="main-content" tabindex="-1"&gt;&lt;/a&gt;</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/modules/*.js$</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/*.svg</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -2815,13 +2834,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;a href="#" class="nolink" tabindex="0"&gt;&lt;span class="menu-title-top"&gt;Gouvernement&lt;/span&gt; &lt;span class="menu-title-bottom"&gt;et institutions&lt;/span&gt;&lt;/a&gt;</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;a id="main-content" tabindex="-1"&gt;&lt;/a&gt;</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/*.css$</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -2829,13 +2848,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;a href="#" class="nolink" tabindex="0"&gt;&lt;span class="menu-title-top"&gt;Gouvernement&lt;/span&gt; &lt;span class="menu-title-bottom"&gt;et institutions&lt;/span&gt;&lt;/a&gt;</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;a id="main-content" tabindex="-1"&gt;&lt;/a&gt;</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/sitemap.xml</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -2843,13 +2862,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;a href="#" class="nolink" tabindex="0"&gt;&lt;span class="menu-title-top"&gt;Gouvernement&lt;/span&gt; &lt;span class="menu-title-bottom"&gt;et institutions&lt;/span&gt;&lt;/a&gt;</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;a id="main-content" tabindex="-1"&gt;&lt;/a&gt;</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/modules/*.css$</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -2857,13 +2876,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;a href="#" class="nolink" tabindex="0"&gt;&lt;span class="menu-title-top"&gt;Gouvernement&lt;/span&gt; &lt;span class="menu-title-bottom"&gt;et institutions&lt;/span&gt;&lt;/a&gt;</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;a id="main-content" tabindex="-1"&gt;&lt;/a&gt;</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/themes/*.js$</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/profiles/*.svg</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -2871,13 +2890,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;a href="#" class="nolink" tabindex="0"&gt;&lt;span class="menu-title-top"&gt;Gouvernement&lt;/span&gt; &lt;span class="menu-title-bottom"&gt;et institutions&lt;/span&gt;&lt;/a&gt;</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;a id="main-content" tabindex="-1"&gt;&lt;/a&gt;</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/misc/*.js$</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -2885,7 +2904,7 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;a href="#" class="nolink" tabindex="0"&gt;&lt;span class="menu-title-top"&gt;Gouvernement&lt;/span&gt; &lt;span class="menu-title-bottom"&gt;et institutions&lt;/span&gt;&lt;/a&gt;</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">&lt;a id="main-content" tabindex="-1"&gt;&lt;/a&gt;</td>
             </tr>
               
   
@@ -2921,6 +2940,193 @@ ZAP Scanning Report
   
   
             <tr height="24" class="risk-info">
+                <th width="20%"><a name="info"></a>Informational (Medium)</th><th width="80%">Non-Storable Content</th>
+            </tr>
+              
+  
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%">Description</td><td width="80%"><p>The response contents are not storable by caching components such as proxy servers. If the response does not contain sensitive, personal or user-specific information, it may benefit from being stored and cached, to improve performance.</p></td>
+            </tr>
+            <TR vAlign="top">
+                <TD colspan="2"></TD>
+            </TR>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/*.gif</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">private</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">private</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/sitemap.xml</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">private</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/*.css$</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">private</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/*.jpg</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">private</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/*.js</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">private</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">private</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/*.jpeg</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">private</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/*.css</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">private</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/core/*.js$</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">private</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%">Instances</td><td width="80%">10</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%">Solution</td><td width="80%"><p>The content may be marked as storable by ensuring that the following conditions are satisfied:</p><p>The request method must be understood by the cache and defined as being cacheable ("GET", "HEAD", and "POST" are currently defined as cacheable)</p><p>The response status code must be understood by the cache (one of the 1XX, 2XX, 3XX, 4XX, or 5XX response classes are generally understood)</p><p>The "no-store" cache directive must not appear in the request or response header fields</p><p>For caching by "shared" caches such as "proxy" caches, the "private" response directive must not appear in the response</p><p>For caching by "shared" caches such as "proxy" caches, the "Authorization" header field must not appear in the request, unless the response explicitly allows it (using one of the "must-revalidate", "public", or "s-maxage" Cache-Control response directives)</p><p>In addition to the conditions above, at least one of the following conditions must also be satisfied by the response:</p><p>It must contain an "Expires" header field</p><p>It must contain a "max-age" response directive</p><p>For "shared" caches such as "proxy" caches, it must contain a "s-maxage" response directive</p><p>It must contain a "Cache Control Extension" that allows it to be cached</p><p>It must have a status code that is defined as cacheable by default (200, 203, 204, 206, 300, 301, 404, 405, 410, 414, 501).   </p></td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%">Reference</td><td width="80%"><p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p></td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%">CWE Id</td><td width="80%">524</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%">WASC Id</td><td width="80%">13</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%">Source ID</td><td width="80%">3</td>
+            </tr>
+            
+        </table>
+        <div class="spacer"></div>
+        <table width="100%" class="results">
+              
+  
+  
+  
+            <tr height="24" class="risk-info">
                 <th width="20%"><a name="info"></a>Informational (Medium)</th><th width="80%">Storable and Cacheable Content</th>
             </tr>
               
@@ -2937,7 +3143,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/robots.txt</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/robots.txt</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -2985,14 +3191,14 @@ ZAP Scanning Report
   
   
             <tr height="24" class="risk-info">
-                <th width="20%"><a name="info"></a>Informational (Medium)</th><th width="80%">Storable but Non-Cacheable Content</th>
+                <th width="20%"><a name="info"></a>Informational (Low)</th><th width="80%">Timestamp Disclosure - Unix</th>
             </tr>
               
   
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%">Description</td><td width="80%"><p>The response contents are storable by caching components such as proxy servers, but will not be retrieved directly from the cache, without validating the request upstream, in response to similar requests from other users. </p></td>
+                <td width="20%">Description</td><td width="80%"><p>A timestamp was disclosed by the application/web server - Unix</p></td>
             </tr>
             <TR vAlign="top">
                 <TD colspan="2"></TD>
@@ -3001,7 +3207,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/sitemap.xml</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/aide-financiere/report-des-charges-fiscales</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -3009,13 +3215,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">must-revalidate</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">439782037</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/misc/*.css$</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/themes/custom/cesam/images/404.svg</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -3023,137 +3229,32 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">no-cache</td>
+                <td width="20%" class="indent2">Evidence</td><td width="80%">20010904</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/misc/*.jpg</td>
+                <td width="20%">Instances</td><td width="80%">2</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+                <td width="20%">Solution</td><td width="80%"><p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p></td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">no-cache</td>
+                <td width="20%">Other information</td><td width="80%"><p>439782037, which evaluates to: 1983-12-09 01:40:37</p></td>
             </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/misc/*.js$</td>
-            </tr>
+            <TR vAlign="top">
+                <TD colspan="2"></TD>
+            </TR>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+                <td width="20%">Reference</td><td width="80%"><p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p></td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">no-cache</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">no-cache</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/misc/*.css</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">no-cache</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/misc/*.js</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">no-cache</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">no-cache</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/misc/*.gif</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">no-cache</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/misc/*.jpeg</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">no-cache</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Instances</td><td width="80%">10</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Solution</td><td width="80%"><p></p></td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Reference</td><td width="80%"><p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p></td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">CWE Id</td><td width="80%">524</td>
+                <td width="20%">CWE Id</td><td width="80%">200</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -3172,14 +3273,14 @@ ZAP Scanning Report
   
   
             <tr height="24" class="risk-info">
-                <th width="20%"><a name="info"></a>Informational (Low)</th><th width="80%">Timestamp Disclosure - Unix</th>
+                <th width="20%"><a name="info"></a>Informational (Low)</th><th width="80%">User Controllable HTML Element Attribute (Potential XSS)</th>
             </tr>
               
   
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%">Description</td><td width="80%"><p>A timestamp was disclosed by the application/web server - Unix</p></td>
+                <td width="20%">Description</td><td width="80%"><p>This check looks at user-supplied input in query string parameters and POST data to identify where certain HTML attribute values might be controlled. This provides hot-spot detection for XSS (cross-site scripting) that will require further review by a security analyst to determine exploitability.</p></td>
             </tr>
             <TR vAlign="top">
                 <TD colspan="2"></TD>
@@ -3188,7 +3289,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/niveau-alerte/infos-sante-prevention-et-depistage</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/dispositif?type=aide_financiere</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -3196,13 +3297,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">20200421</td>
+                <td width="20%" class="indent2">Parameter</td><td width="80%">type</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/sitemap.xml</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/dispositif?type=demarche</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -3210,13 +3311,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">13042015</td>
+                <td width="20%" class="indent2">Parameter</td><td width="80%">type</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/sitemap.xml</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/dispositif?type=accompagnement</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -3224,13 +3325,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">31082009</td>
+                <td width="20%" class="indent2">Parameter</td><td width="80%">type</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/niveau-alerte/foire-aux-questions</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/dispositif?type=accompagnement</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -3238,13 +3339,13 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">20200421</td>
+                <td width="20%" class="indent2">Parameter</td><td width="80%">type</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/actualites/thematique/economie</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://cesam.nc/dispositif?type=accompagnement</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -3252,50 +3353,36 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">26052021</td>
+                <td width="20%" class="indent2">Parameter</td><td width="80%">type</td>
             </tr>
               
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://gouv.nc/dossiers</td>
+                <td width="20%">Instances</td><td width="80%">5</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+                <td width="20%">Solution</td><td width="80%"><p>Validate all input and sanitize output it before writing to any HTML attributes.</p></td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">155323757</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Instances</td><td width="80%">6</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Solution</td><td width="80%"><p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p></td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%">Other information</td><td width="80%"><p>20200421, which evaluates to: 1970-08-22 19:13:41</p></td>
+                <td width="20%">Other information</td><td width="80%"><p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://cesam.nc/dispositif?type=aide_financiere</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [option] tag [value] attribute </p><p></p><p>The user input found was:</p><p>type=aide_financiere</p><p></p><p>The user-controlled value was:</p><p>aide_financiere</p></td>
             </tr>
             <TR vAlign="top">
                 <TD colspan="2"></TD>
             </TR>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%">Reference</td><td width="80%"><p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p></td>
+                <td width="20%">Reference</td><td width="80%"><p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p></td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%">CWE Id</td><td width="80%">200</td>
+                <td width="20%">CWE Id</td><td width="80%">20</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%">WASC Id</td><td width="80%">13</td>
+                <td width="20%">WASC Id</td><td width="80%">20</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">

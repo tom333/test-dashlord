@@ -1,0 +1,272 @@
+{
+  "trackers": [
+    {
+      "type": "google tag manager",
+      "url": "https://www.googletagmanager.com/gtag/js?id=UA-127581475-1",
+      "details": {
+        "id": "google tag manager",
+        "message": "Use hosted Matomo instance"
+      }
+    },
+    {
+      "type": "google analytics",
+      "url": "https://www.google-analytics.com/analytics.js",
+      "details": {
+        "id": "google analytics",
+        "message": "Use hosted Matomo instance"
+      }
+    },
+    {
+      "type": "google analytics",
+      "url": "https://www.google-analytics.com/j/collect?v=1&_v=j93&a=1445501640&t=pageview&_s=1&dl=https%3A%2F%2Fconnect.gouv.nc%2F&ul=en-us&de=UTF-8&dt=NC%20Connect&sd=24-bit&sr=800x600&vp=800x600&je=0&_u=YEBAAUABAAAAAC~&jid=1179714188&gjid=186870327&cid=1781114452.1629943435&tid=UA-127581475-1&_gid=1479129008.1629943435&_r=1&gtm=2ou8n0&z=1981725492",
+      "details": {
+        "id": "google analytics",
+        "message": "Use hosted Matomo instance"
+      }
+    }
+  ],
+  "cookies": [
+    {
+      "name": "_gat_gtag_UA_127581475_1",
+      "value": "1",
+      "domain": ".gouv.nc",
+      "path": "/",
+      "expires": 1629943495,
+      "size": 25,
+      "httpOnly": false,
+      "secure": false,
+      "session": false,
+      "sameParty": false,
+      "sourceScheme": "Secure",
+      "sourcePort": 443
+    },
+    {
+      "name": "_gid",
+      "value": "GA1.2.1479129008.1629943435",
+      "domain": ".gouv.nc",
+      "path": "/",
+      "expires": 1630029835,
+      "size": 31,
+      "httpOnly": false,
+      "secure": false,
+      "session": false,
+      "sameParty": false,
+      "sourceScheme": "Secure",
+      "sourcePort": 443
+    },
+    {
+      "name": "_ga",
+      "value": "GA1.2.1781114452.1629943435",
+      "domain": ".gouv.nc",
+      "path": "/",
+      "expires": 1693015435,
+      "size": 30,
+      "httpOnly": false,
+      "secure": false,
+      "session": false,
+      "sameParty": false,
+      "sourceScheme": "Secure",
+      "sourcePort": 443
+    }
+  ],
+  "headers": {
+    "server": "nginx",
+    "date": "Thu, 26 Aug 2021 02:03:53 GMT",
+    "content-type": "text/html",
+    "content-length": "1307",
+    "connection": "keep-alive",
+    "last-modified": "Wed, 18 Aug 2021 03:30:58 GMT",
+    "etag": "\"611c7ef2-51b\"",
+    "accept-ranges": "bytes"
+  },
+  "endpoints": [
+    {
+      "hostname": "connect.gouv.nc",
+      "ip": "61.5.212.17",
+      "geoip": {
+        "city": {
+          "geoname_id": 2139521,
+          "names": {
+            "de": "Noumea",
+            "en": "Noumea",
+            "es": "Numea",
+            "fr": "Nouméa",
+            "ja": "ヌメア",
+            "pt-BR": "Nouméa",
+            "ru": "Нумеа",
+            "zh-CN": "努美阿"
+          }
+        },
+        "continent": {
+          "code": "OC",
+          "geoname_id": 6255151,
+          "names": {
+            "de": "Ozeanien",
+            "en": "Oceania",
+            "es": "Oceanía",
+            "fr": "Océanie",
+            "ja": "オセアニア",
+            "pt-BR": "Oceania",
+            "ru": "Океания",
+            "zh-CN": "大洋洲"
+          }
+        },
+        "country": {
+          "geoname_id": 2139685,
+          "iso_code": "NC",
+          "names": {
+            "de": "Neukaledonien",
+            "en": "New Caledonia",
+            "es": "Nueva Caledonia",
+            "fr": "Nouvelle-Calédonie",
+            "ja": "ニューカレドニア",
+            "pt-BR": "Nova Caledônia",
+            "ru": "Новая Каледония",
+            "zh-CN": "新喀里多尼亚"
+          }
+        },
+        "location": {
+          "accuracy_radius": 1000,
+          "latitude": -22.2743,
+          "longitude": 166.4468,
+          "time_zone": "Pacific/Noumea"
+        },
+        "postal": {
+          "code": "98800"
+        },
+        "registered_country": {
+          "geoname_id": 2139685,
+          "iso_code": "NC",
+          "names": {
+            "de": "Neukaledonien",
+            "en": "New Caledonia",
+            "es": "Nueva Caledonia",
+            "fr": "Nouvelle-Calédonie",
+            "ja": "ニューカレドニア",
+            "pt-BR": "Nova Caledônia",
+            "ru": "Новая Каледония",
+            "zh-CN": "新喀里多尼亚"
+          }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 2140464,
+            "iso_code": "S",
+            "names": {
+              "en": "South Province",
+              "fr": "Province Sud"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "hostname": "www.googletagmanager.com",
+      "ip": "142.251.45.8",
+      "geoip": {
+        "continent": {
+          "code": "NA",
+          "geoname_id": 6255149,
+          "names": {
+            "de": "Nordamerika",
+            "en": "North America",
+            "es": "Norteamérica",
+            "fr": "Amérique du Nord",
+            "ja": "北アメリカ",
+            "pt-BR": "América do Norte",
+            "ru": "Северная Америка",
+            "zh-CN": "北美洲"
+          }
+        },
+        "country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "USA",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États-Unis",
+            "ja": "アメリカ合衆国",
+            "pt-BR": "Estados Unidos",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        },
+        "location": {
+          "accuracy_radius": 1000,
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
+        },
+        "registered_country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "USA",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États-Unis",
+            "ja": "アメリカ合衆国",
+            "pt-BR": "Estados Unidos",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        }
+      }
+    },
+    {
+      "hostname": "www.google-analytics.com",
+      "ip": "172.217.164.174",
+      "geoip": {
+        "continent": {
+          "code": "NA",
+          "geoname_id": 6255149,
+          "names": {
+            "de": "Nordamerika",
+            "en": "North America",
+            "es": "Norteamérica",
+            "fr": "Amérique du Nord",
+            "ja": "北アメリカ",
+            "pt-BR": "América do Norte",
+            "ru": "Северная Америка",
+            "zh-CN": "北美洲"
+          }
+        },
+        "country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "USA",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États-Unis",
+            "ja": "アメリカ合衆国",
+            "pt-BR": "Estados Unidos",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        },
+        "location": {
+          "accuracy_radius": 1000,
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
+        },
+        "registered_country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "USA",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États-Unis",
+            "ja": "アメリカ合衆国",
+            "pt-BR": "Estados Unidos",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        }
+      }
+    }
+  ]
+}

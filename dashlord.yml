@@ -1,4 +1,4 @@
-title: DashLord example
+title: DashLord des applications du GNC
 tools:
   screenshot: true
   nmap: true
@@ -15,3 +15,10 @@ tools:
   stats: true
 urls:
   - url: https://gouv.nc
+  - url: https://cesam.nc
+  - url: https://monportailrh.nc/
+  - url: https://service-public.nc/
+  - url: https://guichet-entreprises.nc/
+  - url: https://connect.gouv.nc
+  - url: https://impots.nc
+  

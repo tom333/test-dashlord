@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/test-dashlord/static/css/main.41ab3369.chunk.css",
+    "main.js": "/test-dashlord/static/js/main.125d1ce2.chunk.js",
+    "main.js.map": "/test-dashlord/static/js/main.125d1ce2.chunk.js.map",
+    "runtime-main.js": "/test-dashlord/static/js/runtime-main.075ac1f0.js",
+    "runtime-main.js.map": "/test-dashlord/static/js/runtime-main.075ac1f0.js.map",
+    "static/css/2.8343bc8a.chunk.css": "/test-dashlord/static/css/2.8343bc8a.chunk.css",
+    "static/js/2.a33b6004.chunk.js": "/test-dashlord/static/js/2.a33b6004.chunk.js",
+    "static/js/2.a33b6004.chunk.js.map": "/test-dashlord/static/js/2.a33b6004.chunk.js.map",
+    "index.html": "/test-dashlord/index.html",
+    "static/css/2.8343bc8a.chunk.css.map": "/test-dashlord/static/css/2.8343bc8a.chunk.css.map",
+    "static/css/main.41ab3369.chunk.css.map": "/test-dashlord/static/css/main.41ab3369.chunk.css.map",
+    "static/js/2.a33b6004.chunk.js.LICENSE.txt": "/test-dashlord/static/js/2.a33b6004.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.075ac1f0.js",
+    "static/css/2.8343bc8a.chunk.css",
+    "static/js/2.a33b6004.chunk.js",
+    "static/css/main.41ab3369.chunk.css",
+    "static/js/main.125d1ce2.chunk.js"
+  ]
+}

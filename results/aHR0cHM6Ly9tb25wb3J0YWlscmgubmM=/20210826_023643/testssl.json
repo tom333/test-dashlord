@@ -1,0 +1,1096 @@
+[
+         {
+              "id"           : "service",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "HTTP"
+          }
+,         {
+              "id"           : "pre_128cipher",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "No 128 cipher limit bug"
+          }
+,         {
+              "id"           : "SSLv2",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "SSLv3",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "TLS1",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "TLS1_1",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "TLS1_2",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "offered"
+          }
+,         {
+              "id"           : "TLS1_3",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "offered with final"
+          }
+,         {
+              "id"           : "ALPN",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "http/1.1"
+          }
+,         {
+              "id"           : "cipherlist_NULL",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "OK",
+              "cwe"          : "CWE-327",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "cipherlist_aNULL",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "OK",
+              "cwe"          : "CWE-327",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "cipherlist_EXPORT",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "OK",
+              "cwe"          : "CWE-327",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "cipherlist_LOW",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "OK",
+              "cwe"          : "CWE-327",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "cipherlist_3DES_IDEA",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "MEDIUM",
+              "cwe"          : "CWE-310",
+              "finding"      : "offered"
+          }
+,         {
+              "id"           : "cipherlist_AVERAGE",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "LOW",
+              "cwe"          : "CWE-310",
+              "finding"      : "offered"
+          }
+,         {
+              "id"           : "cipherlist_GOOD",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "offered"
+          }
+,         {
+              "id"           : "cipherlist_STRONG",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "offered"
+          }
+,         {
+              "id"           : "cipher_order",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "server"
+          }
+,         {
+              "id"           : "protocol_negotiated",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "Default protocol TLS1.3"
+          }
+,         {
+              "id"           : "cipher_negotiated",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "TLS_AES_256_GCM_SHA384, 253 bit ECDH (X25519)"
+          }
+,         {
+              "id"           : "cipherorder_TLSv1_2",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "FS",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "offered"
+          }
+,         {
+              "id"           : "FS_ciphers",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "ECDHE-RSA-AES128-GCM-SHA256 ECDHE-RSA-AES128-SHA256 ECDHE-RSA-AES128-SHA ECDHE-RSA-AES256-GCM-SHA384 ECDHE-RSA-AES256-SHA384 ECDHE-RSA-AES256-SHA ECDHE-RSA-CAMELLIA128-SHA256 ECDHE-RSA-CAMELLIA256-SHA384"
+          }
+,         {
+              "id"           : "FS_ECDHE_curves",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "prime256v1 secp384r1 secp521r1"
+          }
+,         {
+              "id"           : "TLS_extensions",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "'renegotiation info/#65281' 'server name/#0' 'EC point formats/#11' 'session ticket/#35' 'next protocol/#13172' 'supported versions/#43' 'key share/#51' 'supported_groups/#10' 'max fragment length/#1' 'application layer protocol negotiation/#16' 'encrypt-then-mac/#22' 'extended master secret/#23'"
+          }
+,         {
+              "id"           : "TLS_session_ticket",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "valid for 300 seconds only (<daily)"
+          }
+,         {
+              "id"           : "SSL_sessionID_support",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "yes"
+          }
+,         {
+              "id"           : "sessionresumption_ticket",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "supported"
+          }
+,         {
+              "id"           : "sessionresumption_ID",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "supported"
+          }
+,         {
+              "id"           : "TLS_timestamp",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "random"
+          }
+,         {
+              "id"           : "clientAuth",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "none"
+          }
+,         {
+              "id"           : "cert_numbers",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "1"
+          }
+,         {
+              "id"           : "cert_signatureAlgorithm",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "SHA256 with RSA"
+          }
+,         {
+              "id"           : "cert_keySize",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "RSA 2048 bits (exponent is 65537)"
+          }
+,         {
+              "id"           : "cert_keyUsage",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "Digital Signature, Key Encipherment"
+          }
+,         {
+              "id"           : "cert_extKeyUsage",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLS Web Server Authentication, TLS Web Client Authentication"
+          }
+,         {
+              "id"           : "cert_serialNumber",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "BE22C3B713FEE0CE623B7D51CB5F0A43"
+          }
+,         {
+              "id"           : "cert_fingerprintSHA1",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "0DBD8623B605FF31C360D52DE618FF908244A393"
+          }
+,         {
+              "id"           : "cert_fingerprintSHA256",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "FEBD1697745BF83907A766F61D77119E098D31DD57A4ED47B31330541FD47CBA"
+          }
+,         {
+              "id"           : "cert",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "-----BEGIN CERTIFICATE----- MIIHDzCCBfegAwIBAgIRAL4iw7cT/uDOYjt9UctfCkMwDQYJKoZIhvcNAQELBQAw gYExCzAJBgNVBAYTAkZSMREwDwYDVQQIEwhDYWx2YWRvczENMAsGA1UEBxMEQ2Fl bjEVMBMGA1UEChMMVEJTIElOVEVSTkVUMRgwFgYDVQQLEw9UQlMgSU5URVJORVQg Q0ExHzAdBgNVBAMTFlRCUyBYNTA5IENBIGJ1c2luZXNzIDIwHhcNMTkwODA1MDAw MDAwWhcNMjEwOTAzMjM1OTU5WjCByjELMAkGA1UEBhMCTkMxDjAMBgNVBBETBTk4 ODAwMQ8wDQYDVQQIEwZOb3VtZWExDzANBgNVBAcTBk5vdW1lYTEVMBMGA1UECRMM Q2VudHJlIFZpbGxlMR0wGwYDVQQJExQxIEF2ZW51ZSBkdSBNYWwgRm9jaDE5MDcG A1UEChMwQ0FCSU5FVCBEVSBHT1VWRVJORU1FTlQgREUgTEEgTk9VVkVMTEUtQ0FM RURPTklFMRgwFgYDVQQDEw9tb25wb3J0YWlscmgubmMwggEiMA0GCSqGSIb3DQEB AQUAA4IBDwAwggEKAoIBAQCioXlgIOBFCMMK0aSzq1mimoWGNQVQBrWbvyo5/53+ nse+JCAWDj1H3p9cmyk33rC4AlzcQC8wBHt1CXavWqP1ab5cxbmDsWbCYon6nW4c ms+vtf9361eodStpxHZfiOsEZ34+CSyMA64lPP6s0Dhj2Mrmnj56V900i4YRcy3b t72WWfziR7IgGTVWaKTgtOdOEOiQR0ombkl5E6buddxSl/i4qptjOsJzrLsbJmvU rTd+kVtBddzG3qHmlxtGJV/F1CXiT2jPSbkzpEMfbdwXnBf+nAebrM/BWc2YtiNS Yr9OFmgwxV2ZdbdEs8qdPkpEPG+/AB404puDV4ALKHjjAgMBAAGjggM1MIIDMTAf BgNVHSMEGDAWgBRx8gupo+3LA0oMPAE7vkxEbesq+DAdBgNVHQ4EFgQUK92g8Uj5 KXuVVZiYVDVfzSxhktgwDgYDVR0PAQH/BAQDAgWgMAwGA1UdEwEB/wQCMAAwHQYD VR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMEoGA1UdIARDMEEwNQYKKwYBBAHl NwIBATAnMCUGCCsGAQUFBwIBFhlodHRwczovL2Nwcy51c2VydHJ1c3QuY29tMAgG BmeBDAECAjBABgNVHR8EOTA3MDWgM6Axhi9odHRwOi8vY3JsLnVzZXJ0cnVzdC5j b20vVEJTWDUwOUNBYnVzaW5lc3MyLmNybDByBggrBgEFBQcBAQRmMGQwOwYIKwYB BQUHMAKGL2h0dHA6Ly9jcnQudXNlcnRydXN0LmNvbS9UQlNYNTA5Q0FidXNpbmVz czIuY3J0MCUGCCsGAQUFBzABhhlodHRwOi8vb2NzcC51c2VydHJ1c3QuY29tMC8G A1UdEQQoMCaCD21vbnBvcnRhaWxyaC5uY4ITd3d3Lm1vbnBvcnRhaWxyaC5uYzCC AX0GCisGAQQB1nkCBAIEggFtBIIBaQFnAHUA9lyUL9F3MCIUVBgIMJRWjuNNExkz v98MLyALzE7xZOMAAAFsY5+vIwAABAMARjBEAiAerjvE/gbD4BnOsJpX3IkNEAT1 pEqOIryVo7Euef2TnAIgafs45deu6sHGL/pnFK09Jb9F5zo32VKNdSysVT4ntRMA dgBElGUusO7Or8RAB9io/ijA2uaCvtjLMbU/0zOWtbaBqAAAAWxjn69BAAAEAwBH MEUCIQCwW5VlqKEVrDltsPTYXdor5g7yPa/mPJHOS1KIgu2cSAIgMh5dgaOH/u4T tW+DYnQHqcse1hAq5B2eixI1V307EDQAdgBVgdTCFpA2AUrqC5tXPFPwwOQ4eHAl CBcvo6odBxPTDAAAAWxjn69iAAAEAwBHMEUCIQCv6MT67+YkJzGE2KF/KfrrJ19l YjqibNozgMjKsz5evQIgdLyfoi7QT2JaGRzrJsUltYoJXdaUbCz2UewVbmwOM9ww DQYJKoZIhvcNAQELBQADggEBALkkJNLOYpscYYXucVqPG/f+5yifWP/HevB4VOG5 g/AwNBYVX9JPIwQ46jwjQ6pDB51xfRhT95KJYqTfrwjO880djZFXJsJnkxYS4+9L KgAuFW30WTMmlvhB5bJJhUnZ1WB7wxtIDV8923c9rs0ll8ruc9BBeoLlCrmr/B5Q y3wyoL+vsUyCINXQCEo25F4JeUQjuhK/xh6l8BSmaIwTjlLuf06X4mtpwrTV1RSv 7PLERSgzxI2Dqtr5YT3Ojukrn+DyNknAIdm5bH0xwbyNm0ZwMGoPd6EhoYeCv+rk kF2kdnX86q+SSgLsHpJWBl7oDi6yx8k0TslWIfmDBbePask= -----END CERTIFICATE-----"
+          }
+,         {
+              "id"           : "cert_commonName",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "monportailrh.nc"
+          }
+,         {
+              "id"           : "cert_commonName_wo_SNI",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "*.gouv.nc"
+          }
+,         {
+              "id"           : "cert_subjectAltName",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "monportailrh.nc www.monportailrh.nc"
+          }
+,         {
+              "id"           : "cert_trust",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "Ok via SAN and CN (SNI mandatory)"
+          }
+,         {
+              "id"           : "cert_chain_of_trust",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "passed."
+          }
+,         {
+              "id"           : "cert_certificatePolicies_EV",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "no"
+          }
+,         {
+              "id"           : "cert_expirationStatus",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "HIGH",
+              "finding"      : "expires < 30 days (8)"
+          }
+,         {
+              "id"           : "cert_notBefore",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "2019-08-05 00:00"
+          }
+,         {
+              "id"           : "cert_notAfter",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "HIGH",
+              "finding"      : "2021-09-03 23:59"
+          }
+,         {
+              "id"           : "cert_extlifeSpan",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "760 =< 398 days"
+          }
+,         {
+              "id"           : "cert_eTLS",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "not present"
+          }
+,         {
+              "id"           : "cert_crlDistributionPoints",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "http://crl.usertrust.com/TBSX509CAbusiness2.crl"
+          }
+,         {
+              "id"           : "cert_ocspURL",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "http://ocsp.usertrust.com"
+          }
+,         {
+              "id"           : "OCSP_stapling",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "LOW",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "cert_mustStapleExtension",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "--"
+          }
+,         {
+              "id"           : "DNS_CAArecord",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "LOW",
+              "finding"      : "--"
+          }
+,         {
+              "id"           : "certificate_transparency",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "yes (certificate extension)"
+          }
+,         {
+              "id"           : "certs_countServer",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "3"
+          }
+,         {
+              "id"           : "certs_list_ordering_problem",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "no"
+          }
+,         {
+              "id"           : "cert_caIssuers",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TBS X509 CA business 2 (TBS INTERNET from FR)"
+          }
+,         {
+              "id"           : "intermediate_cert <#1>",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "-----BEGIN CERTIFICATE----- MIIGCzCCA/OgAwIBAgIQNAQ5ZD0uy7305qlXXebHpjANBgkqhkiG9w0BAQwFADCB iDELMAkGA1UEBhMCVVMxEzARBgNVBAgTCk5ldyBKZXJzZXkxFDASBgNVBAcTC0pl cnNleSBDaXR5MR4wHAYDVQQKExVUaGUgVVNFUlRSVVNUIE5ldHdvcmsxLjAsBgNV BAMTJVVTRVJUcnVzdCBSU0EgQ2VydGlmaWNhdGlvbiBBdXRob3JpdHkwHhcNMTQw OTIzMDAwMDAwWhcNMjQwOTIyMjM1OTU5WjCBgTELMAkGA1UEBhMCRlIxETAPBgNV BAgTCENhbHZhZG9zMQ0wCwYDVQQHEwRDYWVuMRUwEwYDVQQKEwxUQlMgSU5URVJO RVQxGDAWBgNVBAsTD1RCUyBJTlRFUk5FVCBDQTEfMB0GA1UEAxMWVEJTIFg1MDkg Q0EgYnVzaW5lc3MgMjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANh9 P++rsG4jHQsHeVvdavLrTcppoh2YUKP7aZX0yW97qmN2At3FvWopmNgAMJ3e/c6q SsE21M5FemzCMVm94/pT6hzy37ZLhTOGuw0CMfxXdnjk1clNuuu3GBFknPt8BwfC ptaQvTx5h9wFISqhgb8dvroToRaNSXtXTGK1shedyU33GjuFYYkxapzRxxSCSgck c4X+RQHPwZio7HrDfGg/txhDUZO+36OvIZy3NlLmWF6l1orrLt5v7lo+rUGm4sO4 0GUCRUjzFjno7SQTD9sT78JPvZK5bGtTEwcmKiLgyhF7PGwU/Dco1v1yTmdLHpXG eT7Ek3hkbTqil4DXP98CAwEAAaOCAXQwggFwMB8GA1UdIwQYMBaAFFN5v1qqK0rP VIDh2JvAnfKyA2bLMB0GA1UdDgQWBBRx8gupo+3LA0oMPAE7vkxEbesq+DAOBgNV HQ8BAf8EBAMCAYYwEgYDVR0TAQH/BAgwBgEB/wIBADAdBgNVHSUEFjAUBggrBgEF BQcDAQYIKwYBBQUHAwIwIQYDVR0gBBowGDAMBgorBgEEAeU3AgEBMAgGBmeBDAEC AjBQBgNVHR8ESTBHMEWgQ6BBhj9odHRwOi8vY3JsLnVzZXJ0cnVzdC5jb20vVVNF UlRydXN0UlNBQ2VydGlmaWNhdGlvbkF1dGhvcml0eS5jcmwwdgYIKwYBBQUHAQEE ajBoMD8GCCsGAQUFBzAChjNodHRwOi8vY3J0LnVzZXJ0cnVzdC5jb20vVVNFUlRy dXN0UlNBQWRkVHJ1c3RDQS5jcnQwJQYIKwYBBQUHMAGGGWh0dHA6Ly9vY3NwLnVz ZXJ0cnVzdC5jb20wDQYJKoZIhvcNAQEMBQADggIBACtBsWITnH+onImsd6+gaSV1 LMRiMTwBs4mBcI3nhrCRAUqDX1BwxyaUQhaxbCkC3rfk+GnP6LQPprM1FCxXOBFd xeNraQS9DQr1w7A6ypv4smdH+mRTRWh30+OXmhwlK5nM8dntTgjFn5he0/kXi4bW +4IORYgqzuwVcealp504UWegsvF7CNhoQboOs3Har5M1OPuGqPtkHJ40GeWW9Wn4 KYOuJz4s+d1XZaxXOMTP3/6Gw1hSILN5MReWKGhIZVJBIJ6Mhj1Hev/0ofaO6M1X HT/mLaIT3DvjWEPOCLCARaS7oqgZsjvb9f+FYdCEMWxEnpYiDZwIgkwB+w98NGTZ 7WGb5ctFmnUcKpls/orozduVnJM1yFNojZyUCyYdA/8sXYin4umzJMyqhjAPB5ax a0SjWnn1337aWtiofu0anT26LgmjvalDoalN66heEVaaDfWuKBODlzw0LlINceIZ ZEjTCCcwkujFam/e8Lx3cpaw7qLja57VsrONHYwQxVZyUFVycmkoOj4d0SncGXbg 1vv6jbFxDIRMGkr42btUnJOoJBT1jxxUUcl/p1VFP7aYV8Z8XB/SJsZgEH5bI8yL RY8JffFaGQwVNru/XsFI+xJ2hS8FjYajtIjKxGF3XYrVmmNOm7meWZDfyWj/AAGj S7ZS53apMKKU5mJiQZdc -----END CERTIFICATE-----"
+          }
+,         {
+              "id"           : "intermediate_cert_fingerprintSHA256 <#1>",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "436FED30895D6C7F0D6DC09DB621AB3B88EC6321C56CA6FD49D79811E2A598CA"
+          }
+,         {
+              "id"           : "intermediate_cert_notBefore <#1>",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "2014-09-23 00:00"
+          }
+,         {
+              "id"           : "intermediate_cert_notAfter <#1>",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "2024-09-22 23:59"
+          }
+,         {
+              "id"           : "intermediate_cert_expiration <#1>",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "ok > 40 days"
+          }
+,         {
+              "id"           : "intermediate_cert_chain <#1>",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TBS X509 CA business 2 <-- USERTrust RSA Certification Authority"
+          }
+,         {
+              "id"           : "intermediate_cert <#2>",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "-----BEGIN CERTIFICATE----- MIIF3jCCA8agAwIBAgIQAf1tMPyjylGoG7xkDjUDLTANBgkqhkiG9w0BAQwFADCB iDELMAkGA1UEBhMCVVMxEzARBgNVBAgTCk5ldyBKZXJzZXkxFDASBgNVBAcTC0pl cnNleSBDaXR5MR4wHAYDVQQKExVUaGUgVVNFUlRSVVNUIE5ldHdvcmsxLjAsBgNV BAMTJVVTRVJUcnVzdCBSU0EgQ2VydGlmaWNhdGlvbiBBdXRob3JpdHkwHhcNMTAw MjAxMDAwMDAwWhcNMzgwMTE4MjM1OTU5WjCBiDELMAkGA1UEBhMCVVMxEzARBgNV BAgTCk5ldyBKZXJzZXkxFDASBgNVBAcTC0plcnNleSBDaXR5MR4wHAYDVQQKExVU aGUgVVNFUlRSVVNUIE5ldHdvcmsxLjAsBgNVBAMTJVVTRVJUcnVzdCBSU0EgQ2Vy dGlmaWNhdGlvbiBBdXRob3JpdHkwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIK AoICAQCAEmUXNg7D2wiz0KxXDXbtzSfTTK1Qg2HiqiBNCS1kCdzOiZ/MPans9s/B 3PHTsdZ7NygRK0faOca8Ohm0X6a9fZ2jY0K2dvKpOyuR+OJv0OwWIJAJPuLodMkY tJHUYmTbf6MG8YgYapAiPLz+E/CHFHv25B+O1ORRxhFnRghRy4YUVD+8M/5+bJz/ Fp0YvVGONaanZshyZ9shZrHUm3gDwFA66Mzw3LyeTP6vBZY1H1dat//O+T23LLb2 VN3I5xI6Ta5MirdcmrS3ID3KfyI0rn47aGYBROcBTkZTmzNg95S+UzeQc0PzMsNT 79uq/nROacdrjGCT3sTHDN/hMq7MkztReJVni+49Vv4M0GkPGw/zJSZrM233bkf6 c0Plfg6lZrEpfDKEY1WJxA3Bk1QwGROs0303p+tdOmw1XNtB1xLaqUkL39iAigmT Yo61Zs8liM2EuLE/pDkP2QKe6xJMlXzzawWpXhaDzLhn4ugTncxbgtNMs+1b/97l c6wjOy0AvzVVdAlJ2ElYGn+SNuZRkg7zJn0cTRe8yexDJtC/QV9AqURE9JnnV4ee UB9XVKg+/XRjL7FQZQnmWEIuQxpMtPAlR1n6BB6T1CZGSlCBst6+eLf8ZxXhyVeE Hg9j1uliutZfVS7qXMYoCAQlObgOK6nyTJccBz8NUvXt7y+CDwIDAQABo0IwQDAd BgNVHQ4EFgQUU3m/WqorSs9UgOHYm8Cd8rIDZsswDgYDVR0PAQH/BAQDAgEGMA8G A1UdEwEB/wQFMAMBAf8wDQYJKoZIhvcNAQEMBQADggIBAFzUfA3P9wF9QZllDHPF Up/L+M+ZBn8b2kMVn54CVVeWFPFSPCeHlCjtHzoBN6J2/FNQwISbxmtOuowhT6KO VWKR82kV2LyI48SqC/3vqOlLVSoGIG1VeCkZ7l8wXEskEVX/JJpuXior7gtNn3/3 ATiUFJVDBwn7YKnuHKsSjKCaXqeYalltiz8I+8jRRa8YFWSQEg9zKC7F4iRO/Fjs 8PRF/iKz6y+O0tlFYQXBl2+odnKPi4w2r78NBc5xjeambx9spnFixdjQg3IM8WcR iQycE0xyNN+81XHfqnHd4blsjDwSXWXavVcStkNr/+XeTWYRUc+ZruwXtuhxkYze Sf7dNXGiFSeUHM9h4ya7b6NnJSFd5t0dCy5oGzuCr+yDZ4XUmFF0sbmZgIn/f3gZ XHlKYC6SQK5MNyosycdiyA5d9zZbyuAlJQG03RoHnHcAP9Dc1ew91Pq7P8yF1m9/ qS3fuQL39ZeatTXaw2ewh0qpKJ4jjv9cJ2vhsE/zB+4ALtRZh8tSQZXq9EfX7mRB VXyNWQKV3WKdwrnuWih0hKWbt5DHDAff9Yk2dDLWKMGwsAvgnEzDHNb842m1R0aB L6KCq9NjRHDEjf8tM7qtj3u1cIiuPhnPQCjY/MiQu12ZIvVS5ljFH4gxQ+6IHdfG jjxDah2nGN59PRbxYvnKkKj9 -----END CERTIFICATE-----"
+          }
+,         {
+              "id"           : "intermediate_cert_fingerprintSHA256 <#2>",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "E793C9B02FD8AA13E21C31228ACCB08119643B749C898964B1746D46C3D4CBD2"
+          }
+,         {
+              "id"           : "intermediate_cert_notBefore <#2>",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "2010-02-01 00:00"
+          }
+,         {
+              "id"           : "intermediate_cert_notAfter <#2>",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "2038-01-18 23:59"
+          }
+,         {
+              "id"           : "intermediate_cert_expiration <#2>",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "ok > 40 days"
+          }
+,         {
+              "id"           : "intermediate_cert_chain <#2>",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "USERTrust RSA Certification Authority <-- USERTrust RSA Certification Authority"
+          }
+,         {
+              "id"           : "intermediate_cert_badOCSP",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "intermediate certificate(s) is/are ok"
+          }
+,         {
+              "id"           : "HTTP_status_code",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "301 Moved Permanently ('/')"
+          }
+,         {
+              "id"           : "HTTP_clock_skew",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "-1 seconds from localtime"
+          }
+,         {
+              "id"           : "HSTS",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "LOW",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "HPKP",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "No support for HTTP Public Key Pinning"
+          }
+,         {
+              "id"           : "banner_server",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "nginx"
+          }
+,         {
+              "id"           : "banner_application",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "No application banner found"
+          }
+,         {
+              "id"           : "cookie_count",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "0 at '/' (30x detected, better try target URL of 30x)"
+          }
+,         {
+              "id"           : "security_headers",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "MEDIUM",
+              "finding"      : "--"
+          }
+,         {
+              "id"           : "banner_reverseproxy",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "cwe"          : "CWE-200",
+              "finding"      : "--"
+          }
+,         {
+              "id"           : "heartbleed",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "OK",
+              "cve"          : "CVE-2014-0160",
+              "cwe"          : "CWE-119",
+              "finding"      : "not vulnerable, no heartbeat extension"
+          }
+,         {
+              "id"           : "CCS",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "OK",
+              "cve"          : "CVE-2014-0224",
+              "cwe"          : "CWE-310",
+              "finding"      : "not vulnerable"
+          }
+,         {
+              "id"           : "ticketbleed",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "OK",
+              "cve"          : "CVE-2016-9244",
+              "cwe"          : "CWE-200",
+              "finding"      : "not vulnerable"
+          }
+,         {
+              "id"           : "ROBOT",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "OK",
+              "cve"          : "CVE-2017-17382 CVE-2017-17427 CVE-2017-17428 CVE-2017-13098 CVE-2017-1000385 CVE-2017-13099 CVE-2016-6883 CVE-2012-5081 CVE-2017-6168",
+              "cwe"          : "CWE-203",
+              "finding"      : "not vulnerable"
+          }
+,         {
+              "id"           : "secure_renego",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "OK",
+              "cwe"          : "CWE-310",
+              "finding"      : "supported"
+          }
+,         {
+              "id"           : "secure_client_renego",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "OK",
+              "cve"          : "CVE-2011-1473",
+              "cwe"          : "CWE-310",
+              "finding"      : "not vulnerable"
+          }
+,         {
+              "id"           : "CRIME_TLS",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "OK",
+              "cve"          : "CVE-2012-4929",
+              "cwe"          : "CWE-310",
+              "finding"      : "not vulnerable"
+          }
+,         {
+              "id"           : "BREACH",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "OK",
+              "cve"          : "CVE-2013-3587",
+              "cwe"          : "CWE-310",
+              "finding"      : "not vulnerable, no gzip/deflate/compress/br HTTP compression  - only supplied '/' tested"
+          }
+,         {
+              "id"           : "POODLE_SSL",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "OK",
+              "cve"          : "CVE-2014-3566",
+              "cwe"          : "CWE-310",
+              "finding"      : "not vulnerable, no SSLv3"
+          }
+,         {
+              "id"           : "fallback_SCSV",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "no protocol below TLS 1.2 offered"
+          }
+,         {
+              "id"           : "SWEET32",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "LOW",
+              "cve"          : "CVE-2016-2183 CVE-2016-6329",
+              "cwe"          : "CWE-327",
+              "finding"      : "uses 64 bit block ciphers"
+          }
+,         {
+              "id"           : "FREAK",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "OK",
+              "cve"          : "CVE-2015-0204",
+              "cwe"          : "CWE-310",
+              "finding"      : "not vulnerable"
+          }
+,         {
+              "id"           : "DROWN",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "OK",
+              "cve"          : "CVE-2016-0800 CVE-2016-0703",
+              "cwe"          : "CWE-310",
+              "finding"      : "not vulnerable on this host and port"
+          }
+,         {
+              "id"           : "DROWN_hint",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "cve"          : "CVE-2016-0800 CVE-2016-0703",
+              "cwe"          : "CWE-310",
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://censys.io/ipv4?q=FEBD1697745BF83907A766F61D77119E098D31DD57A4ED47B31330541FD47CBA"
+          }
+,         {
+              "id"           : "LOGJAM",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "OK",
+              "cve"          : "CVE-2015-4000",
+              "cwe"          : "CWE-310",
+              "finding"      : "not vulnerable, no DH EXPORT ciphers,"
+          }
+,         {
+              "id"           : "LOGJAM-common_primes",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "OK",
+              "cve"          : "CVE-2015-4000",
+              "cwe"          : "CWE-310",
+              "finding"      : "no DH key with <= TLS 1.2"
+          }
+,         {
+              "id"           : "BEAST",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "OK",
+              "cve"          : "CVE-2011-3389",
+              "cwe"          : "CWE-20",
+              "finding"      : "not vulnerable, no SSL3 or TLS1"
+          }
+,         {
+              "id"           : "LUCKY13",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "LOW",
+              "cve"          : "CVE-2013-0169",
+              "cwe"          : "CWE-310",
+              "finding"      : "potentially vulnerable, uses TLS CBC ciphers"
+          }
+,         {
+              "id"           : "winshock",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "OK",
+              "cve"          : "CVE-2014-6321",
+              "cwe"          : "CWE-94",
+              "finding"      : "not vulnerable"
+          }
+,         {
+              "id"           : "RC4",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "OK",
+              "cve"          : "CVE-2013-2566 CVE-2015-2808",
+              "cwe"          : "CWE-310",
+              "finding"      : "not vulnerable"
+          }
+,         {
+              "id"           : "clientsimulation-android_442",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-android_500",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-android_60",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-android_70",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-android_81",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-android_90",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
+          }
+,         {
+              "id"           : "clientsimulation-android_X",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
+          }
+,         {
+              "id"           : "clientsimulation-chrome_74_win10",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
+          }
+,         {
+              "id"           : "clientsimulation-chrome_79_win10",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
+          }
+,         {
+              "id"           : "clientsimulation-firefox_66_win81",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
+          }
+,         {
+              "id"           : "clientsimulation-firefox_71_win10",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
+          }
+,         {
+              "id"           : "clientsimulation-ie_6_xp",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "No connection"
+          }
+,         {
+              "id"           : "clientsimulation-ie_8_win7",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "No connection"
+          }
+,         {
+              "id"           : "clientsimulation-ie_8_xp",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "No connection"
+          }
+,         {
+              "id"           : "clientsimulation-ie_11_win7",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-ie_11_win81",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-ie_11_winphone81",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-ie_11_win10",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-edge_15_win10",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-edge_17_win10",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-opera_66_win10",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
+          }
+,         {
+              "id"           : "clientsimulation-safari_9_ios9",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-safari_9_osx1011",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-safari_10_osx1012",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-safari_121_ios_122",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
+          }
+,         {
+              "id"           : "clientsimulation-safari_130_osx_10146",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
+          }
+,         {
+              "id"           : "clientsimulation-apple_ats_9_ios9",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-java_6u45",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "No connection"
+          }
+,         {
+              "id"           : "clientsimulation-java_7u25",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "No connection"
+          }
+,         {
+              "id"           : "clientsimulation-java_8u161",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-java1102",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
+          }
+,         {
+              "id"           : "clientsimulation-java1201",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
+          }
+,         {
+              "id"           : "clientsimulation-openssl_102e",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-openssl_110l",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "No connection"
+          }
+,         {
+              "id"           : "clientsimulation-openssl_111d",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
+          }
+,         {
+              "id"           : "clientsimulation-thunderbird_68_3_1",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
+          }
+,         {
+              "id"           : "rating_spec",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "SSL Labs's 'SSL Server Rating Guide' (version 2009q from 2020-01-30)"
+          }
+,         {
+              "id"           : "rating_doc",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "https://github.com/ssllabs/research/wiki/SSL-Server-Rating-Guide"
+          }
+,         {
+              "id"           : "protocol_support_score",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "100"
+          }
+,         {
+              "id"           : "protocol_support_score_weighted",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "30"
+          }
+,         {
+              "id"           : "key_exchange_score",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "90"
+          }
+,         {
+              "id"           : "key_exchange_score_weighted",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "27"
+          }
+,         {
+              "id"           : "cipher_strength_score",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "60"
+          }
+,         {
+              "id"           : "cipher_strength_score_weighted",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "24"
+          }
+,         {
+              "id"           : "final_score",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "81"
+          }
+,         {
+              "id"           : "overall_grade",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "A"
+          }
+,         {
+              "id"           : "grade_cap_reason_1",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "Grade capped to A. HSTS is not offered"
+          }
+,         {
+              "id"           : "scanTime",
+              "ip"           : "monportailrh.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "223"
+          }
+]

@@ -1,0 +1,504 @@
+{
+  "trackers": [
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/faces/common/pages/UIShell.jspx"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/faces/security/pages/Login.jspx;jsessionid=oi-ASTSXs3_WN4awD5hBSrsPnwET25xvSPL_gT8avbyvsnyTq2nT!-1991599769"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/faces/security/pages/Login.jspx?_afrLoop=67722224191215210&_afrWindowMode=0&_afrWindowId=null"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/faces/security/pages/Login.jspx?_afrLoop=67722224445559418&_afrWindowMode=0&_adf.ctrl-state=osvq34w4r_4"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/adf/styles/cache/aviva-desktop-kihtt5-ltr-webkit-cmp.css"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/afr/ss.gif"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/adf/jsLibs/Locale1_2_12_3_3.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/afr/partition/webkit/n/default/opt/boot-11.1.1.6.0-1318.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/afr/partition/webkit/n/default/opt/core-11.1.1.6.0-1318.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/afr/AdfTranslations-11.1.1.6.0-1318fr.js?loc=fr&skinId=aviva.desktop"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/common/js/jhs11.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/common/js/axifwk.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/common/images/MonPortailRHLogo_2.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/common/images/logo_MonPortailRH.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/adf/jsLibs/resources/LocaleElements_fr1_2_12_3_3.js?loc=fr"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/afr/partition/webkit/n/default/opt/dnd-11.1.1.6.0-1318.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/afr/partition/webkit/n/default/opt/input-11.1.1.6.0-1318.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/afr/partition/webkit/n/default/opt/message-11.1.1.6.0-1318.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/afr/partition/webkit/n/default/opt/detail-11.1.1.6.0-1318.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/afr/partition/webkit/n/default/opt/header-11.1.1.6.0-1318.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/afr/partition/webkit/n/default/opt/box-11.1.1.6.0-1318.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/afr/partition/webkit/n/default/opt/stretch-11.1.1.6.0-1318.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/afr/partition/webkit/n/default/opt/imagelink-11.1.1.6.0-1318.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/afr/partition/webkit/n/default/opt/status-11.1.1.6.0-1318.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/common/images/logo_MonPortailRH_vert.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/common/images/logo_MonPortailRH_mauve.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/common/images/logo_MonPortailRH_bleu.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/common/images/logo_MonPortailRH_recrutement.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/common/images/logo_MonPortailRH_documents.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/adf/images/t.gif"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/afr/fusion/connected.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/afr/fusion/splitterhc.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/common/images/info_vert.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/common/images/question_vert.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/afr/fusion/splitterhr.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/afr/fusion/splittervr.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/afr/error.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/afr/warning.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/afr/confirmation.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/afr/fusion/disconnected.gif"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/afr/fusion/connecting.gif"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/afr/info.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/afr/fusion/busy.gif"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/afr/fusion/splittervc.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/afr/fusion/reconnecting.gif"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/afr/fusion/page_background_white.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/afr/blank.html"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/afr/fusion-11.1.1.3.0/dblts.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/afr/fusion-11.1.1.3.0/dblt.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/afr/fusion-11.1.1.3.0/dblte.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/common/images/av_dbls.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/afr/fusion-11.1.1.3.0/dblc.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/common/images/av_dbcts.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/common/images/av_dbct.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/common/images/av_dbcte.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/common/images/av_dbcs.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/common/images/aviva_bg_interne.jpg"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/afr/fusion/inputText_bg.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/common/images/av_button_bg_ena.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/common/images/av_dbce.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/common/images/av_dbcbs.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/common/images/av_dbcb.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/common/images/av_dbcbe.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/common/images/av_dble.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/common/images/av_dblbs.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/common/images/av_dblb.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/common/images/av_dblbe.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/afr/fusion/ccont-ts.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/afr/fusion/ccont-t.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/afr/fusion/ccont-te.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/afr/fusion/ccont-e.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/afr/fusion/ccont-bs.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/afr/fusion/ccont-b.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/afr/fusion/ccont-be.png"
+    }
+  ],
+  "cookies": [
+    {
+      "name": "JSESSIONID",
+      "value": "oi-ASTSXs3_WN4awD5hBSrsPnwET25xvSPL_gT8avbyvsnyTq2nT!-1991599769",
+      "domain": "www.monportailrh.nc",
+      "path": "/",
+      "expires": -1,
+      "size": 74,
+      "httpOnly": true,
+      "secure": false,
+      "session": true,
+      "sameParty": false,
+      "sourceScheme": "Secure",
+      "sourcePort": 443
+    },
+    {
+      "name": "SERVERID",
+      "value": "monportailrh_t1",
+      "domain": "www.monportailrh.nc",
+      "path": "/",
+      "expires": -1,
+      "size": 23,
+      "httpOnly": false,
+      "secure": false,
+      "session": true,
+      "sameParty": false,
+      "sourceScheme": "Secure",
+      "sourcePort": 443
+    }
+  ],
+  "headers": {
+    "server": "nginx",
+    "date": "Thu, 26 Aug 2021 02:28:07 GMT",
+    "content-type": "text/html;charset=UTF-8",
+    "transfer-encoding": "chunked",
+    "connection": "keep-alive",
+    "x-frame-options": "sameorigin"
+  },
+  "endpoints": [
+    {
+      "hostname": "monportailrh.nc",
+      "ip": "61.5.212.17",
+      "geoip": {
+        "city": {
+          "geoname_id": 2139521,
+          "names": {
+            "de": "Noumea",
+            "en": "Noumea",
+            "es": "Numea",
+            "fr": "Nouméa",
+            "ja": "ヌメア",
+            "pt-BR": "Nouméa",
+            "ru": "Нумеа",
+            "zh-CN": "努美阿"
+          }
+        },
+        "continent": {
+          "code": "OC",
+          "geoname_id": 6255151,
+          "names": {
+            "de": "Ozeanien",
+            "en": "Oceania",
+            "es": "Oceanía",
+            "fr": "Océanie",
+            "ja": "オセアニア",
+            "pt-BR": "Oceania",
+            "ru": "Океания",
+            "zh-CN": "大洋洲"
+          }
+        },
+        "country": {
+          "geoname_id": 2139685,
+          "iso_code": "NC",
+          "names": {
+            "de": "Neukaledonien",
+            "en": "New Caledonia",
+            "es": "Nueva Caledonia",
+            "fr": "Nouvelle-Calédonie",
+            "ja": "ニューカレドニア",
+            "pt-BR": "Nova Caledônia",
+            "ru": "Новая Каледония",
+            "zh-CN": "新喀里多尼亚"
+          }
+        },
+        "location": {
+          "accuracy_radius": 1000,
+          "latitude": -22.2743,
+          "longitude": 166.4468,
+          "time_zone": "Pacific/Noumea"
+        },
+        "postal": {
+          "code": "98800"
+        },
+        "registered_country": {
+          "geoname_id": 2139685,
+          "iso_code": "NC",
+          "names": {
+            "de": "Neukaledonien",
+            "en": "New Caledonia",
+            "es": "Nueva Caledonia",
+            "fr": "Nouvelle-Calédonie",
+            "ja": "ニューカレドニア",
+            "pt-BR": "Nova Caledônia",
+            "ru": "Новая Каледония",
+            "zh-CN": "新喀里多尼亚"
+          }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 2140464,
+            "iso_code": "S",
+            "names": {
+              "en": "South Province",
+              "fr": "Province Sud"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "hostname": "www.monportailrh.nc",
+      "ip": "61.5.212.17",
+      "geoip": {
+        "city": {
+          "geoname_id": 2139521,
+          "names": {
+            "de": "Noumea",
+            "en": "Noumea",
+            "es": "Numea",
+            "fr": "Nouméa",
+            "ja": "ヌメア",
+            "pt-BR": "Nouméa",
+            "ru": "Нумеа",
+            "zh-CN": "努美阿"
+          }
+        },
+        "continent": {
+          "code": "OC",
+          "geoname_id": 6255151,
+          "names": {
+            "de": "Ozeanien",
+            "en": "Oceania",
+            "es": "Oceanía",
+            "fr": "Océanie",
+            "ja": "オセアニア",
+            "pt-BR": "Oceania",
+            "ru": "Океания",
+            "zh-CN": "大洋洲"
+          }
+        },
+        "country": {
+          "geoname_id": 2139685,
+          "iso_code": "NC",
+          "names": {
+            "de": "Neukaledonien",
+            "en": "New Caledonia",
+            "es": "Nueva Caledonia",
+            "fr": "Nouvelle-Calédonie",
+            "ja": "ニューカレドニア",
+            "pt-BR": "Nova Caledônia",
+            "ru": "Новая Каледония",
+            "zh-CN": "新喀里多尼亚"
+          }
+        },
+        "location": {
+          "accuracy_radius": 1000,
+          "latitude": -22.2743,
+          "longitude": 166.4468,
+          "time_zone": "Pacific/Noumea"
+        },
+        "postal": {
+          "code": "98800"
+        },
+        "registered_country": {
+          "geoname_id": 2139685,
+          "iso_code": "NC",
+          "names": {
+            "de": "Neukaledonien",
+            "en": "New Caledonia",
+            "es": "Nueva Caledonia",
+            "fr": "Nouvelle-Calédonie",
+            "ja": "ニューカレドニア",
+            "pt-BR": "Nova Caledônia",
+            "ru": "Новая Каледония",
+            "zh-CN": "新喀里多尼亚"
+          }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 2140464,
+            "iso_code": "S",
+            "names": {
+              "en": "South Province",
+              "fr": "Province Sud"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

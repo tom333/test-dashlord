@@ -1,0 +1,19 @@
+[
+  {
+    "templateID": "tech-detect",
+    "info": {
+      "author": "hakluke",
+      "severity": "info",
+      "tags": "tech",
+      "name": "Wappalyzer Technology Detection"
+    },
+    "matcher_name": "nginx",
+    "type": "http",
+    "host": "https://monportailrh.nc",
+    "matched": "https://monportailrh.nc",
+    "request": "GET / HTTP/1.1\r\nHost: monportailrh.nc\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 1173\r\nAccept-Ranges: bytes\r\nCache-Control: private\r\nContent-Type: text/html\r\nDate: Thu, 26 Aug 2021 02:34:34 GMT\r\nLast-Modified: Sun, 22 Aug 2021 23:13:22 GMT\r\nServer: nginx\r\nSet-Cookie: SERVERID=monportailrh_t2; path=/\r\n\r\n<!-- meta HTTP-EQUIV=\"REFRESH\" content=\"0; url=faces/index.jspx\" -->\r\n<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\r\n<html>\r\n  <head>\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"/>\r\n    <title>Bienvenue :D</title>\r\n        <script type=\"text/javascript\">\r\n        /*\r\n        if (window.name != \"ApplicationMainWindow\") {\r\n            window.open(\"faces/common/pages/UIShell.jspx\",\"ApplicationMainWindow\",\"location=no,status=yes,menubar=no,toolbar=no,directories=no,scrollbars=yes,resizable=yes,height=715,width=1015\");\r\n            //window.open(\"faces/index.jspx\",\"ApplicationMainWindow\",\"location=no,status=yes,menubar=no,toolbar=no,directories=no,scrollbars=yes,resizable=yes,height=748,width=1280\");\r\n            window.opener=self;\r\n            self.close() ;\r\n        } \r\n        */\r\n        document.location=\"faces/common/pages/UIShell.jspx\"\r\n        </script>\r\n  </head>\r\n  <body>\r\n    <form action=\"\">\r\n        <font size=\"2\">\r\n            Bienvenue sur l'application<br>\r\n            Ouverture de la page principale en cours...\r\n        </font>\r\n    </form>\r\n  </body>\r\n</html>",
+    "ip": "61.5.212.17",
+    "timestamp": "2021-08-26T02:34:34.785873376Z"
+  }
+]

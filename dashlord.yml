@@ -1,0 +1,20 @@
+title: DashLord example
+tools:
+  screenshot: true
+  nmap: true
+  zap: true
+  wappalyzer: true
+  http: true
+  testssl: true
+  lighthouse: true
+  thirdparties: true
+  nuclei: true
+  updownio: true
+  dependabot: true
+  codescan: true
+  stats: true
+urls:
+  - url: https://www.fabrique.social.gouv.fr
+    repositories:
+      - socialgouv/www
+  - url: https://beta.gouv.fr

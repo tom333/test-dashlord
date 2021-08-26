@@ -1,0 +1,662 @@
+{
+  "trackers": [
+    {
+      "type": "google analytics",
+      "url": "https://www.google-analytics.com/analytics.js",
+      "details": {
+        "id": "google analytics",
+        "message": "Use hosted Matomo instance"
+      }
+    },
+    {
+      "type": "google analytics",
+      "url": "https://www.google-analytics.com/j/collect?v=1&_v=j93&aip=1&a=289920086&t=pageview&_s=1&dl=https%3A%2F%2Fgouv.nc%2F&ul=en-us&de=UTF-8&dt=Gouvernement%20de%20la%20Nouvelle-Cal%C3%A9donie%20%7C&sd=24-bit&sr=800x600&vp=800x600&je=0&_u=YEBAAEABAAAAAC~&jid=1843975366&gjid=1509700426&cid=782647099.1629945034&tid=UA-9038606-29&_gid=354136151.1629945034&_r=1&_slc=1&z=933493078",
+      "details": {
+        "id": "google analytics",
+        "message": "Use hosted Matomo instance"
+      }
+    },
+    {
+      "type": "addThis",
+      "url": "https://s7.addthis.com/js/300/addthis_widget.js?_=1629945033148",
+      "details": {
+        "id": "addThis",
+        "message": "Hosts files directly"
+      }
+    },
+    {
+      "type": "addThis",
+      "url": "https://s7.addthis.com/js/300/addthis_widget.js?_=1629945033149",
+      "details": {
+        "id": "addThis",
+        "message": "Hosts files directly"
+      }
+    },
+    {
+      "type": "unknown",
+      "url": "https://z.moatads.com/addthismoatframe568911941483/moatframe.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://v1.addthisedge.com/live/boost/ra-56f4b900c2b144bb/_ate.track.config_resp"
+    },
+    {
+      "type": "addThis",
+      "url": "https://m.addthis.com/live/red_lojson/300lo.json?si=6126fcc957b06dd4&bkl=0&bl=1&pdt=3075&sid=6126fcc957b06dd4&pub=ra-56f4b900c2b144bb&rev=v8.28.8-wp&ln=fr&pc=men&cb=0&ab=-&dp=gouv.nc&fp=&fr=&of=0&pd=0&irt=0&vcl=0&md=0&ct=0&tct=0&abt=0&cdn=0&pi=1&rb=0&gen=100&chr=UTF-8&colc=1629945036555&jsl=1&uvs=6126fcc9f0dc48cc000&skipb=1&callback=addthis.cbs.jsonp__90571101332729450",
+      "details": {
+        "id": "addThis",
+        "message": "Hosts files directly"
+      }
+    },
+    {
+      "type": "addThis",
+      "url": "https://s7.addthis.com/l10n/client.fr.min.json",
+      "details": {
+        "id": "addThis",
+        "message": "Hosts files directly"
+      }
+    },
+    {
+      "type": "addThis",
+      "url": "https://s7.addthis.com/static/sh.f48a1a04fe8dbf021b4cda1d.html",
+      "details": {
+        "id": "addThis",
+        "message": "Hosts files directly"
+      }
+    },
+    {
+      "type": "addThis",
+      "url": "https://s7.addthis.com/static/layers.fa6cd1947ce26e890d3d.js",
+      "details": {
+        "id": "addThis",
+        "message": "Hosts files directly"
+      }
+    }
+  ],
+  "cookies": [
+    {
+      "name": "cookie-agreed-version",
+      "value": "1.0.0",
+      "domain": "gouv.nc",
+      "path": "/",
+      "expires": 1638585033,
+      "size": 26,
+      "httpOnly": false,
+      "secure": false,
+      "session": false,
+      "sameParty": false,
+      "sourceScheme": "Secure",
+      "sourcePort": 443
+    },
+    {
+      "name": "_gid",
+      "value": "GA1.2.354136151.1629945034",
+      "domain": ".gouv.nc",
+      "path": "/",
+      "expires": 1630031433,
+      "size": 30,
+      "httpOnly": false,
+      "secure": false,
+      "session": false,
+      "sameParty": false,
+      "sourceScheme": "Secure",
+      "sourcePort": 443
+    },
+    {
+      "name": "_gat",
+      "value": "1",
+      "domain": ".gouv.nc",
+      "path": "/",
+      "expires": 1629945093,
+      "size": 5,
+      "httpOnly": false,
+      "secure": false,
+      "session": false,
+      "sameParty": false,
+      "sourceScheme": "Secure",
+      "sourcePort": 443
+    },
+    {
+      "name": "_ga",
+      "value": "GA1.2.782647099.1629945034",
+      "domain": ".gouv.nc",
+      "path": "/",
+      "expires": 1693017033,
+      "size": 29,
+      "httpOnly": false,
+      "secure": false,
+      "session": false,
+      "sameParty": false,
+      "sourceScheme": "Secure",
+      "sourcePort": 443
+    },
+    {
+      "name": "__atuvs",
+      "value": "6126fcc9f0dc48cc000",
+      "domain": "gouv.nc",
+      "path": "/",
+      "expires": 1629946836,
+      "size": 26,
+      "httpOnly": false,
+      "secure": false,
+      "session": false,
+      "sameParty": false,
+      "sourceScheme": "Secure",
+      "sourcePort": 443
+    },
+    {
+      "name": "__atuvc",
+      "value": "1%7C34",
+      "domain": "gouv.nc",
+      "path": "/",
+      "expires": 1664159436,
+      "size": 13,
+      "httpOnly": false,
+      "secure": false,
+      "session": false,
+      "sameParty": false,
+      "sourceScheme": "Secure",
+      "sourcePort": 443
+    },
+    {
+      "name": "has_js",
+      "value": "1",
+      "domain": "gouv.nc",
+      "path": "/",
+      "expires": -1,
+      "size": 7,
+      "httpOnly": false,
+      "secure": false,
+      "session": true,
+      "sameParty": false,
+      "sourceScheme": "Secure",
+      "sourcePort": 443
+    }
+  ],
+  "headers": {
+    "server": "nginx",
+    "date": "Thu, 26 Aug 2021 02:30:31 GMT",
+    "content-type": "text/html; charset=utf-8",
+    "transfer-encoding": "chunked",
+    "connection": "keep-alive",
+    "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+    "cache-control": "no-cache, must-revalidate",
+    "x-content-type-options": "nosniff",
+    "content-language": "fr",
+    "x-frame-options": "SAMEORIGIN",
+    "permissions-policy": "interest-cohort=()",
+    "link": "<https://gouv.nc/>; rel=\"canonical\",<https://gouv.nc/>; rel=\"shortlink\""
+  },
+  "endpoints": [
+    {
+      "hostname": "gouv.nc",
+      "ip": "61.5.212.17",
+      "geoip": {
+        "city": {
+          "geoname_id": 2139521,
+          "names": {
+            "de": "Noumea",
+            "en": "Noumea",
+            "es": "Numea",
+            "fr": "Nouméa",
+            "ja": "ヌメア",
+            "pt-BR": "Nouméa",
+            "ru": "Нумеа",
+            "zh-CN": "努美阿"
+          }
+        },
+        "continent": {
+          "code": "OC",
+          "geoname_id": 6255151,
+          "names": {
+            "de": "Ozeanien",
+            "en": "Oceania",
+            "es": "Oceanía",
+            "fr": "Océanie",
+            "ja": "オセアニア",
+            "pt-BR": "Oceania",
+            "ru": "Океания",
+            "zh-CN": "大洋洲"
+          }
+        },
+        "country": {
+          "geoname_id": 2139685,
+          "iso_code": "NC",
+          "names": {
+            "de": "Neukaledonien",
+            "en": "New Caledonia",
+            "es": "Nueva Caledonia",
+            "fr": "Nouvelle-Calédonie",
+            "ja": "ニューカレドニア",
+            "pt-BR": "Nova Caledônia",
+            "ru": "Новая Каледония",
+            "zh-CN": "新喀里多尼亚"
+          }
+        },
+        "location": {
+          "accuracy_radius": 1000,
+          "latitude": -22.2743,
+          "longitude": 166.4468,
+          "time_zone": "Pacific/Noumea"
+        },
+        "postal": {
+          "code": "98800"
+        },
+        "registered_country": {
+          "geoname_id": 2139685,
+          "iso_code": "NC",
+          "names": {
+            "de": "Neukaledonien",
+            "en": "New Caledonia",
+            "es": "Nueva Caledonia",
+            "fr": "Nouvelle-Calédonie",
+            "ja": "ニューカレドニア",
+            "pt-BR": "Nova Caledônia",
+            "ru": "Новая Каледония",
+            "zh-CN": "新喀里多尼亚"
+          }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 2140464,
+            "iso_code": "S",
+            "names": {
+              "en": "South Province",
+              "fr": "Province Sud"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "hostname": "www.google-analytics.com",
+      "ip": "142.250.138.101",
+      "geoip": {
+        "continent": {
+          "code": "NA",
+          "geoname_id": 6255149,
+          "names": {
+            "de": "Nordamerika",
+            "en": "North America",
+            "es": "Norteamérica",
+            "fr": "Amérique du Nord",
+            "ja": "北アメリカ",
+            "pt-BR": "América do Norte",
+            "ru": "Северная Америка",
+            "zh-CN": "北美洲"
+          }
+        },
+        "country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "USA",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États-Unis",
+            "ja": "アメリカ合衆国",
+            "pt-BR": "Estados Unidos",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        },
+        "location": {
+          "accuracy_radius": 1000,
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
+        },
+        "registered_country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "USA",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États-Unis",
+            "ja": "アメリカ合衆国",
+            "pt-BR": "Estados Unidos",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        }
+      }
+    },
+    {
+      "hostname": "s7.addthis.com",
+      "ip": "23.203.28.4",
+      "geoip": {
+        "city": {
+          "geoname_id": 4684888,
+          "names": {
+            "de": "Dallas",
+            "en": "Dallas",
+            "es": "Dallas",
+            "fr": "Dallas",
+            "ja": "ダラス",
+            "pt-BR": "Dallas",
+            "ru": "Даллас"
+          }
+        },
+        "continent": {
+          "code": "NA",
+          "geoname_id": 6255149,
+          "names": {
+            "de": "Nordamerika",
+            "en": "North America",
+            "es": "Norteamérica",
+            "fr": "Amérique du Nord",
+            "ja": "北アメリカ",
+            "pt-BR": "América do Norte",
+            "ru": "Северная Америка",
+            "zh-CN": "北美洲"
+          }
+        },
+        "country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "USA",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États-Unis",
+            "ja": "アメリカ合衆国",
+            "pt-BR": "Estados Unidos",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        },
+        "location": {
+          "accuracy_radius": 1000,
+          "latitude": 32.7797,
+          "longitude": -96.8022,
+          "metro_code": 623,
+          "time_zone": "America/Chicago"
+        },
+        "postal": {
+          "code": "75270"
+        },
+        "registered_country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "USA",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États-Unis",
+            "ja": "アメリカ合衆国",
+            "pt-BR": "Estados Unidos",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 4736286,
+            "iso_code": "TX",
+            "names": {
+              "en": "Texas",
+              "es": "Texas",
+              "fr": "Texas",
+              "ja": "テキサス州",
+              "ru": "Техас",
+              "zh-CN": "德克萨斯州"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "hostname": "z.moatads.com",
+      "ip": "23.203.17.151",
+      "geoip": {
+        "city": {
+          "geoname_id": 4684888,
+          "names": {
+            "de": "Dallas",
+            "en": "Dallas",
+            "es": "Dallas",
+            "fr": "Dallas",
+            "ja": "ダラス",
+            "pt-BR": "Dallas",
+            "ru": "Даллас"
+          }
+        },
+        "continent": {
+          "code": "NA",
+          "geoname_id": 6255149,
+          "names": {
+            "de": "Nordamerika",
+            "en": "North America",
+            "es": "Norteamérica",
+            "fr": "Amérique du Nord",
+            "ja": "北アメリカ",
+            "pt-BR": "América do Norte",
+            "ru": "Северная Америка",
+            "zh-CN": "北美洲"
+          }
+        },
+        "country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "USA",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États-Unis",
+            "ja": "アメリカ合衆国",
+            "pt-BR": "Estados Unidos",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        },
+        "location": {
+          "accuracy_radius": 1000,
+          "latitude": 32.7797,
+          "longitude": -96.8022,
+          "metro_code": 623,
+          "time_zone": "America/Chicago"
+        },
+        "postal": {
+          "code": "75270"
+        },
+        "registered_country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "USA",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États-Unis",
+            "ja": "アメリカ合衆国",
+            "pt-BR": "Estados Unidos",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 4736286,
+            "iso_code": "TX",
+            "names": {
+              "en": "Texas",
+              "es": "Texas",
+              "fr": "Texas",
+              "ja": "テキサス州",
+              "ru": "Техас",
+              "zh-CN": "德克萨斯州"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "hostname": "v1.addthisedge.com",
+      "ip": "23.203.28.4",
+      "geoip": {
+        "city": {
+          "geoname_id": 4684888,
+          "names": {
+            "de": "Dallas",
+            "en": "Dallas",
+            "es": "Dallas",
+            "fr": "Dallas",
+            "ja": "ダラス",
+            "pt-BR": "Dallas",
+            "ru": "Даллас"
+          }
+        },
+        "continent": {
+          "code": "NA",
+          "geoname_id": 6255149,
+          "names": {
+            "de": "Nordamerika",
+            "en": "North America",
+            "es": "Norteamérica",
+            "fr": "Amérique du Nord",
+            "ja": "北アメリカ",
+            "pt-BR": "América do Norte",
+            "ru": "Северная Америка",
+            "zh-CN": "北美洲"
+          }
+        },
+        "country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "USA",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États-Unis",
+            "ja": "アメリカ合衆国",
+            "pt-BR": "Estados Unidos",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        },
+        "location": {
+          "accuracy_radius": 1000,
+          "latitude": 32.7797,
+          "longitude": -96.8022,
+          "metro_code": 623,
+          "time_zone": "America/Chicago"
+        },
+        "postal": {
+          "code": "75270"
+        },
+        "registered_country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "USA",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États-Unis",
+            "ja": "アメリカ合衆国",
+            "pt-BR": "Estados Unidos",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 4736286,
+            "iso_code": "TX",
+            "names": {
+              "en": "Texas",
+              "es": "Texas",
+              "fr": "Texas",
+              "ja": "テキサス州",
+              "ru": "Техас",
+              "zh-CN": "德克萨斯州"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "hostname": "m.addthis.com",
+      "ip": "23.203.28.4",
+      "geoip": {
+        "city": {
+          "geoname_id": 4684888,
+          "names": {
+            "de": "Dallas",
+            "en": "Dallas",
+            "es": "Dallas",
+            "fr": "Dallas",
+            "ja": "ダラス",
+            "pt-BR": "Dallas",
+            "ru": "Даллас"
+          }
+        },
+        "continent": {
+          "code": "NA",
+          "geoname_id": 6255149,
+          "names": {
+            "de": "Nordamerika",
+            "en": "North America",
+            "es": "Norteamérica",
+            "fr": "Amérique du Nord",
+            "ja": "北アメリカ",
+            "pt-BR": "América do Norte",
+            "ru": "Северная Америка",
+            "zh-CN": "北美洲"
+          }
+        },
+        "country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "USA",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États-Unis",
+            "ja": "アメリカ合衆国",
+            "pt-BR": "Estados Unidos",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        },
+        "location": {
+          "accuracy_radius": 1000,
+          "latitude": 32.7797,
+          "longitude": -96.8022,
+          "metro_code": 623,
+          "time_zone": "America/Chicago"
+        },
+        "postal": {
+          "code": "75270"
+        },
+        "registered_country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "USA",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États-Unis",
+            "ja": "アメリカ合衆国",
+            "pt-BR": "Estados Unidos",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 4736286,
+            "iso_code": "TX",
+            "names": {
+              "en": "Texas",
+              "es": "Texas",
+              "fr": "Texas",
+              "ja": "テキサス州",
+              "ru": "Техас",
+              "zh-CN": "德克萨斯州"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

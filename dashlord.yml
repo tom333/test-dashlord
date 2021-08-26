@@ -13,12 +13,21 @@ tools:
   dependabot: true
   codescan: true
   stats: true
+  zaproxy: true
+  httpobs: true
 urls:
   - url: https://gouv.nc
+    category: siteweb
   - url: https://cesam.nc
+    category: siteweb
   - url: https://monportailrh.nc/
+    category: teleservice
   - url: https://service-public.nc/
+    category: siteweb
   - url: https://guichet-entreprises.nc/
+    category: teleservice
   - url: https://connect.gouv.nc
+    category: teleservice
   - url: https://impots.nc
+    category: teleservice
   

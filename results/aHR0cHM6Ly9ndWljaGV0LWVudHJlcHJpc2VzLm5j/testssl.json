@@ -98,59 +98,66 @@
               "id"           : "cipherlist_3DES_IDEA",
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
-              "severity"     : "MEDIUM",
+              "severity"     : "INFO",
               "cwe"          : "CWE-310",
-              "finding"      : "offered"
+              "finding"      : "not offered"
           }
 ,         {
-              "id"           : "cipherlist_AVERAGE",
+              "id"           : "cipherlist_OBSOLETED",
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
-              "severity"     : "LOW",
+              "severity"     : "INFO",
               "cwe"          : "CWE-310",
-              "finding"      : "offered"
+              "finding"      : "not offered"
           }
 ,         {
-              "id"           : "cipherlist_GOOD",
+              "id"           : "cipherlist_STRONG_NOFS",
+              "ip"           : "guichet-entreprises.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "cipherlist_STRONG_FS",
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "offered"
           }
 ,         {
-              "id"           : "cipherlist_STRONG",
+              "id"           : "cipher_order-tls1_2",
+              "ip"           : "guichet-entreprises.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "NOT a cipher order configured"
+          }
+,         {
+              "id"           : "cipher-tls1_2_xc030",
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "offered"
+              "finding"      : "TLSv1.2   xc030   ECDHE-RSA-AES256-GCM-SHA384       ECDH 521   AESGCM      256      TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384"
+          }
+,         {
+              "id"           : "cipher-tls1_2_xc02f",
+              "ip"           : "guichet-entreprises.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "TLSv1.2   xc02f   ECDHE-RSA-AES128-GCM-SHA256       ECDH 521   AESGCM      128      TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256"
+          }
+,         {
+              "id"           : "supportedciphers_TLSv1_2",
+              "ip"           : "guichet-entreprises.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "ECDHE-RSA-AES256-GCM-SHA384 ECDHE-RSA-AES128-GCM-SHA256"
           }
 ,         {
               "id"           : "cipher_order",
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "server"
-          }
-,         {
-              "id"           : "protocol_negotiated",
-              "ip"           : "guichet-entreprises.nc/61.5.212.17",
-              "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "Default protocol TLS1.3"
-          }
-,         {
-              "id"           : "cipher_negotiated",
-              "ip"           : "guichet-entreprises.nc/61.5.212.17",
-              "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "TLS_AES_256_GCM_SHA384, 253 bit ECDH (X25519)"
-          }
-,         {
-              "id"           : "cipherorder_TLSv1_2",
-              "ip"           : "guichet-entreprises.nc/61.5.212.17",
-              "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "ECDHE-RSA-AES128-GCM-SHA256"
+              "finding"      : "NOT a cipher order configured"
           }
 ,         {
               "id"           : "FS",
@@ -164,7 +171,7 @@
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "ECDHE-RSA-AES128-GCM-SHA256 ECDHE-RSA-AES128-SHA256 ECDHE-RSA-AES128-SHA ECDHE-RSA-AES256-GCM-SHA384 ECDHE-RSA-AES256-SHA384 ECDHE-RSA-AES256-SHA ECDHE-RSA-CAMELLIA128-SHA256 ECDHE-RSA-CAMELLIA256-SHA384"
+              "finding"      : "ECDHE-RSA-AES128-GCM-SHA256 ECDHE-RSA-AES256-GCM-SHA384"
           }
 ,         {
               "id"           : "FS_ECDHE_curves",
@@ -178,7 +185,7 @@
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "'renegotiation info/#65281' 'server name/#0' 'EC point formats/#11' 'session ticket/#35' 'next protocol/#13172' 'supported versions/#43' 'key share/#51' 'supported_groups/#10' 'max fragment length/#1' 'application layer protocol negotiation/#16' 'encrypt-then-mac/#22' 'extended master secret/#23'"
+              "finding"      : "'renegotiation info/#65281' 'server name/#0' 'EC point formats/#11' 'session ticket/#35' 'supported versions/#43' 'key share/#51' 'supported_groups/#10' 'max fragment length/#1' 'application layer protocol negotiation/#16' 'extended master secret/#23'"
           }
 ,         {
               "id"           : "TLS_session_ticket",
@@ -214,6 +221,13 @@
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "random"
+          }
+,         {
+              "id"           : "certificate_compression",
+              "ip"           : "guichet-entreprises.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "none"
           }
 ,         {
               "id"           : "clientAuth",
@@ -262,28 +276,35 @@
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "C61652D68FB0AF17499B9F740A99236D"
+              "finding"      : "04827EC985996C9650A482623B866B32DD8C"
+          }
+,         {
+              "id"           : "cert_serialNumberLen",
+              "ip"           : "guichet-entreprises.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "18"
           }
 ,         {
               "id"           : "cert_fingerprintSHA1",
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1950C56E3488B0E79A1208BE7CD61C93370DAA2A"
+              "finding"      : "C28B60CA9E8486C9A40144CA38B784AE43196F49"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "77189E8591E550405E1DEDA466E3A7CD81EAC38AFCCB83B52069A0C4FFB8501F"
+              "finding"      : "AEEACF60DE71E8FFA99A6DD2E910C7B81D74A454B269808C7B37C7EFA89515D1"
           }
 ,         {
               "id"           : "cert",
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE----- MIIGmjCCBYKgAwIBAgIRAMYWUtaPsK8XSZufdAqZI20wDQYJKoZIhvcNAQELBQAw gYExCzAJBgNVBAYTAkZSMREwDwYDVQQIEwhDYWx2YWRvczENMAsGA1UEBxMEQ2Fl bjEVMBMGA1UEChMMVEJTIElOVEVSTkVUMRgwFgYDVQQLEw9UQlMgSU5URVJORVQg Q0ExHzAdBgNVBAMTFlRCUyBYNTA5IENBIGJ1c2luZXNzIDIwHhcNMjAxMTE2MDAw MDAwWhcNMjExMTE2MjM1OTU5WjCBwTELMAkGA1UEBhMCTkMxDjAMBgNVBBETBTk4 ODAwMRAwDgYDVQQHDAdOb3Vtw6lhMRUwEwYDVQQJEwxDZW50cmUgVmlsbGUxHTAb BgNVBAkTFDEgQXZlbnVlIGR1IE1hbCBGb2NoMTkwNwYDVQQKEzBDQUJJTkVUIERV IEdPVVZFUk5FTUVOVCBERSBMQSBOT1VWRUxMRS1DQUxFRE9OSUUxHzAdBgNVBAMT Fmd1aWNoZXQtZW50cmVwcmlzZXMubmMwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw ggEKAoIBAQC73OhkaW6Ge+DzM3xYBm1W5mUqsEfg/rr7iv0orZMI/mKn3OYWxi7o C8Q9J5LqhH3AlGYfsCstBiC2urWHwvq+FnW3xmy53S888ABtDuV3Y2nAKa0kgNvl cHaq0sjJN7wjGF0G9NE8YQ8jwSKGnCivlkU2q//Ayfb6baNcLLMupXJWQiqXTJBQ 4aSL4PgaoB5dIbKaDxE3m12cZ9N86p2DgjvOJ2ojbuioRphw+XTSFUmrUaPvobdi zjf9F4Q34PIjIXPtyUlLkBe3hddxq7rppgEqhEgebrzKpCVn+35lv3piVHyR++RS rNBkWiP++Y0RzN/RhHf+JOqCHQh0KodDAgMBAAGjggLJMIICxTAfBgNVHSMEGDAW gBRx8gupo+3LA0oMPAE7vkxEbesq+DAdBgNVHQ4EFgQUliETyqHRz9DYG/OP5b9S r7uKfZgwDgYDVR0PAQH/BAQDAgWgMAwGA1UdEwEB/wQCMAAwHQYDVR0lBBYwFAYI KwYBBQUHAwEGCCsGAQUFBwMCMEoGA1UdIARDMEEwNQYKKwYBBAHlNwIBATAnMCUG CCsGAQUFBwIBFhlodHRwczovL2Nwcy51c2VydHJ1c3QuY29tMAgGBmeBDAECAjBA BgNVHR8EOTA3MDWgM6Axhi9odHRwOi8vY3JsLnVzZXJ0cnVzdC5jb20vVEJTWDUw OUNBYnVzaW5lc3MyLmNybDByBggrBgEFBQcBAQRmMGQwOwYIKwYBBQUHMAKGL2h0 dHA6Ly9jcnQudXNlcnRydXN0LmNvbS9UQlNYNTA5Q0FidXNpbmVzczIuY3J0MCUG CCsGAQUFBzABhhlodHRwOi8vb2NzcC51c2VydHJ1c3QuY29tMD0GA1UdEQQ2MDSC Fmd1aWNoZXQtZW50cmVwcmlzZXMubmOCGnd3dy5ndWljaGV0LWVudHJlcHJpc2Vz Lm5jMIIBAwYKKwYBBAHWeQIEAgSB9ASB8QDvAHYAfT7y+I//iFVoJMLAyp5SiXkr xQ54CX8uapdomX4i8NcAAAF10vDfsAAABAMARzBFAiEAtHpN5jUeNrek9NEYj8bn bpzOQ1T1h2gs1GiyLqhd7/ACID6jHlt57++cq0shsuidfdlZMONtZs/g5WVRkwlO iovCAHUAlCC8Ho7VjWyIcx+CiyIsDdHaTV5sT5Q9YdtOL1hNosIAAAF10vDgSgAA BAMARjBEAiAFRqxKHXT9RwYeicFoO0MZ4YngRKYSHpSHpH9eUOtbZQIgPKaGa0F5 T6JUO+Ip7CeIZzpTqgNjSTA39fIuwLzXzSkwDQYJKoZIhvcNAQELBQADggEBAKs6 ErS9/eAVLd1Pmhh86NG4luyMxRnBVyEiPK0ERc3PjgVVO0dn6GPZAWpJdmECsnCS Mvs/VxXQ8UrxyBdNvsCjm2PpFdcTcICtSF7g6a6MXT5egoH+3+0X7mHil9Oeey1m c4U3v2gpQFwbuKddFwSOvx+cIlN9etkSehfBLRHV7w7giYzgAQ82X+Cp5MgpgbC8 QPy6wuM32gPaOhgBottvE8uZZFXpvsOOnnlPiisGQIbRzTWcI0jOGbehGoE20jDg k8RYL9voMCy/phQxAWxYw0+B4RbDvWXAeHyfpCBfExXH/8pEFX/Y0Bl4fBT9FaV+ Ew9gig4bQKK3+9UtJJA= -----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIE+TCCA+GgAwIBAgISBIJ+yYWZbJZQpIJiO4ZrMt2MMA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJSMzAeFw0yMzA3MjYxODAwNDBaFw0yMzEwMjQxODAwMzlaMCExHzAdBgNVBAMTFmd1aWNoZXQtZW50cmVwcmlzZXMubmMwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDiUb7+xcALqbwX9LawhVRs+JaZsS5LOVc3G1XnFrsNs0W1j+T1PrjApvaXS/KaTzKVLglEu1I9zkRdBki2pjd02ymn6A0f7+InVE+U4gDW79QAQ+5YK1dbIeJV/LxVnF91Ljh0UFK8qCETOhw7245IigYH063wX/AwR5PqCG7Y3+9w7OmN/7rjILDQbt2W35bE0FqTInxDaboXM2OP1JI/rubFj6oue/jtTKHJqPErtGBjAvIx6+CyZRa2Dt5f7LRnUN5QMVq3pAfWzgRcPFeRryfpYvCx6EJxs3L5nkTu/ND5WYLShqXIUujxqvCrY8NslWk/YGsHeLqf9wmD8n5DAgMBAAGjggIYMIICFDAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFGP4c8KYzL+8eQTHRLO0hG+90T7eMB8GA1UdIwQYMBaAFBQusxe3WFbLrlAJQOYfr52LFMLGMFUGCCsGAQUFBwEBBEkwRzAhBggrBgEFBQcwAYYVaHR0cDovL3IzLm8ubGVuY3Iub3JnMCIGCCsGAQUFBzAChhZodHRwOi8vcjMuaS5sZW5jci5vcmcvMCEGA1UdEQQaMBiCFmd1aWNoZXQtZW50cmVwcmlzZXMubmMwEwYDVR0gBAwwCjAIBgZngQwBAgEwggEEBgorBgEEAdZ5AgQCBIH1BIHyAPAAdwC3Pvsk35xNunXyOcW6WPRsXfxCz3qfNcSeHQmBJe20mQAAAYmTkyQUAAAEAwBIMEYCIQDxOi41wOl4+he6a7hk1NaCDajLJx97mfbB+YfePyBjqQIhAODwI1rJ7I9/CZ3HB9pX+3UHEEdA15yaMacsZ9d61khOAHUAejKMVNi3LbYg6jjgUh7phBZwMhOFTTvSK8E6V6NS61IAAAGJk5MkWQAABAMARjBEAiBtvXaSmbwJB9LkIuanuTcDdcOrNCkN5JkqglNni3MR7wIgB67U+6Avajo+JqFniJvLReYn0kYr3AL6dGq6FJsFPLswDQYJKoZIhvcNAQELBQADggEBAColYZyufMim4TgNc4GiZPnV5QYvKuLkwWTUnvQHZUgC/rtzb3OODrd7ciQzdXjD0SAGiYtdC0FFjJf5pkbiXXabNe2P2MMZ5UkwLc5KS2Q5M4dAfPO1FNVxVBOFQCNVAr7DeU1f1QMOFdj+1Er2hu0Dr38Z7EBp1m10uC339pSQzjcE7jPV/3MQY8wrAWDobSW7S+76TCv4dINdgT4eMP3PxTW8WUJFwG9ObHuXGxcgEUlCw8/VTsUVSaG3BnvokBkXANyuKQgvrec1jOB2In3O2QrSfoFeFlxmwA663FBb+QPWQvozqZ+ozfTiuDgOg2qd0HIVgWhzrdJ1tbUnuNw=\n-----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
@@ -297,14 +318,14 @@
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "*.gouv.nc"
+              "finding"      : "gouv.nc"
           }
 ,         {
               "id"           : "cert_subjectAltName",
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "guichet-entreprises.nc www.guichet-entreprises.nc"
+              "finding"      : "guichet-entreprises.nc"
           }
 ,         {
               "id"           : "cert_trust",
@@ -332,21 +353,21 @@
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "82 >= 60 days"
+              "finding"      : "82 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2020-11-16 00:00"
+              "finding"      : "2023-07-26 18:00"
           }
 ,         {
               "id"           : "cert_notAfter",
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "2021-11-16 23:59"
+              "finding"      : "2023-10-24 18:00"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
@@ -367,14 +388,14 @@
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "http://crl.usertrust.com/TBSX509CAbusiness2.crl"
+              "finding"      : "--"
           }
 ,         {
               "id"           : "cert_ocspURL",
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "http://ocsp.usertrust.com"
+              "finding"      : "http://r3.o.lencr.org"
           }
 ,         {
               "id"           : "OCSP_stapling",
@@ -423,35 +444,35 @@
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TBS X509 CA business 2 (TBS INTERNET from FR)"
+              "finding"      : "R3 (Let's Encrypt from US)"
           }
 ,         {
               "id"           : "intermediate_cert <#1>",
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE----- MIIGCzCCA/OgAwIBAgIQNAQ5ZD0uy7305qlXXebHpjANBgkqhkiG9w0BAQwFADCB iDELMAkGA1UEBhMCVVMxEzARBgNVBAgTCk5ldyBKZXJzZXkxFDASBgNVBAcTC0pl cnNleSBDaXR5MR4wHAYDVQQKExVUaGUgVVNFUlRSVVNUIE5ldHdvcmsxLjAsBgNV BAMTJVVTRVJUcnVzdCBSU0EgQ2VydGlmaWNhdGlvbiBBdXRob3JpdHkwHhcNMTQw OTIzMDAwMDAwWhcNMjQwOTIyMjM1OTU5WjCBgTELMAkGA1UEBhMCRlIxETAPBgNV BAgTCENhbHZhZG9zMQ0wCwYDVQQHEwRDYWVuMRUwEwYDVQQKEwxUQlMgSU5URVJO RVQxGDAWBgNVBAsTD1RCUyBJTlRFUk5FVCBDQTEfMB0GA1UEAxMWVEJTIFg1MDkg Q0EgYnVzaW5lc3MgMjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANh9 P++rsG4jHQsHeVvdavLrTcppoh2YUKP7aZX0yW97qmN2At3FvWopmNgAMJ3e/c6q SsE21M5FemzCMVm94/pT6hzy37ZLhTOGuw0CMfxXdnjk1clNuuu3GBFknPt8BwfC ptaQvTx5h9wFISqhgb8dvroToRaNSXtXTGK1shedyU33GjuFYYkxapzRxxSCSgck c4X+RQHPwZio7HrDfGg/txhDUZO+36OvIZy3NlLmWF6l1orrLt5v7lo+rUGm4sO4 0GUCRUjzFjno7SQTD9sT78JPvZK5bGtTEwcmKiLgyhF7PGwU/Dco1v1yTmdLHpXG eT7Ek3hkbTqil4DXP98CAwEAAaOCAXQwggFwMB8GA1UdIwQYMBaAFFN5v1qqK0rP VIDh2JvAnfKyA2bLMB0GA1UdDgQWBBRx8gupo+3LA0oMPAE7vkxEbesq+DAOBgNV HQ8BAf8EBAMCAYYwEgYDVR0TAQH/BAgwBgEB/wIBADAdBgNVHSUEFjAUBggrBgEF BQcDAQYIKwYBBQUHAwIwIQYDVR0gBBowGDAMBgorBgEEAeU3AgEBMAgGBmeBDAEC AjBQBgNVHR8ESTBHMEWgQ6BBhj9odHRwOi8vY3JsLnVzZXJ0cnVzdC5jb20vVVNF UlRydXN0UlNBQ2VydGlmaWNhdGlvbkF1dGhvcml0eS5jcmwwdgYIKwYBBQUHAQEE ajBoMD8GCCsGAQUFBzAChjNodHRwOi8vY3J0LnVzZXJ0cnVzdC5jb20vVVNFUlRy dXN0UlNBQWRkVHJ1c3RDQS5jcnQwJQYIKwYBBQUHMAGGGWh0dHA6Ly9vY3NwLnVz ZXJ0cnVzdC5jb20wDQYJKoZIhvcNAQEMBQADggIBACtBsWITnH+onImsd6+gaSV1 LMRiMTwBs4mBcI3nhrCRAUqDX1BwxyaUQhaxbCkC3rfk+GnP6LQPprM1FCxXOBFd xeNraQS9DQr1w7A6ypv4smdH+mRTRWh30+OXmhwlK5nM8dntTgjFn5he0/kXi4bW +4IORYgqzuwVcealp504UWegsvF7CNhoQboOs3Har5M1OPuGqPtkHJ40GeWW9Wn4 KYOuJz4s+d1XZaxXOMTP3/6Gw1hSILN5MReWKGhIZVJBIJ6Mhj1Hev/0ofaO6M1X HT/mLaIT3DvjWEPOCLCARaS7oqgZsjvb9f+FYdCEMWxEnpYiDZwIgkwB+w98NGTZ 7WGb5ctFmnUcKpls/orozduVnJM1yFNojZyUCyYdA/8sXYin4umzJMyqhjAPB5ax a0SjWnn1337aWtiofu0anT26LgmjvalDoalN66heEVaaDfWuKBODlzw0LlINceIZ ZEjTCCcwkujFam/e8Lx3cpaw7qLja57VsrONHYwQxVZyUFVycmkoOj4d0SncGXbg 1vv6jbFxDIRMGkr42btUnJOoJBT1jxxUUcl/p1VFP7aYV8Z8XB/SJsZgEH5bI8yL RY8JffFaGQwVNru/XsFI+xJ2hS8FjYajtIjKxGF3XYrVmmNOm7meWZDfyWj/AAGj S7ZS53apMKKU5mJiQZdc -----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIFFjCCAv6gAwIBAgIRAJErCErPDBinU/bWLiWnX1owDQYJKoZIhvcNAQELBQAwTzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2VhcmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMjAwOTA0MDAwMDAwWhcNMjUwOTE1MTYwMDAwWjAyMQswCQYDVQQGEwJVUzEWMBQGA1UEChMNTGV0J3MgRW5jcnlwdDELMAkGA1UEAxMCUjMwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC7AhUozPaglNMPEuyNVZLD+ILxmaZ6QoinXSaqtSu5xUyxr45r+XXIo9cPR5QUVTVXjJ6oojkZ9YI8QqlObvU7wy7bjcCwXPNZOOftz2nwWgsbvsCUJCWH+jdxsxPnHKzhm+/b5DtFUkWWqcFTzjTIUu61ru2P3mBw4qVUq7ZtDpelQDRrK9O8ZutmNHz6a4uPVymZ+DAXXbpyb/uBxa3Shlg9F8fnCbvxK/eG3MHacV3URuPMrSXBiLxgZ3Vms/EY96Jc5lP/Ooi2R6X/ExjqmAl3P51T+c8B5fWmcBcUr2Ok/5mzk53cU6cG/kiFHaFpriV1uxPMUgP17VGhi9sVAgMBAAGjggEIMIIBBDAOBgNVHQ8BAf8EBAMCAYYwHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMBMBIGA1UdEwEB/wQIMAYBAf8CAQAwHQYDVR0OBBYEFBQusxe3WFbLrlAJQOYfr52LFMLGMB8GA1UdIwQYMBaAFHm0WeZ7tuXkAXOACIjIGlj26ZtuMDIGCCsGAQUFBwEBBCYwJDAiBggrBgEFBQcwAoYWaHR0cDovL3gxLmkubGVuY3Iub3JnLzAnBgNVHR8EIDAeMBygGqAYhhZodHRwOi8veDEuYy5sZW5jci5vcmcvMCIGA1UdIAQbMBkwCAYGZ4EMAQIBMA0GCysGAQQBgt8TAQEBMA0GCSqGSIb3DQEBCwUAA4ICAQCFyk5HPqP3hUSFvNVneLKYY611TR6WPTNlclQtgaDqw+34IL9fzLdwALduO/ZelN7kIJ+m74uyA+eitRY8kc607TkC53wlikfmZW4/RvTZ8M6UK+5UzhK8jCdLuMGYL6KvzXGRSgi3yLgjewQtCPkIVz6D2QQzCkcheAmCJ8MqyJu5zlzyZMjAvnnAT45tRAxekrsu94sQ4egdRCnbWSDtY7kh+BImlJNXoB1lBMEKIq4QDUOXoRgffuDghje1WrG9ML+Hbisq/yFOGwXD9RiX8F6sw6W4avAuvDszue5L3sz85K+EC4Y/wFVDNvZo4TYXao6Z0f+lQKc0t8DQYzk1OXVu8rp2yJMC6alLbBfODALZvYH7n7do1AZls4I9d1P4jnkDrQoxB3UqQ9hVl3LEKQ73xF1OyK5GhDDX8oVfGKF5u+decIsH4YaTw7mP3GFxJSqv3+0lUFJoi5Lc5da149p90IdshCExroL1+7mryIkXPeFM5TgO9r0rvZaBFOvV2z0gp35Z0+L4WPlbuEjN/lxPFin+HlUjr8gRsI3qfJOQFy/9rKIJR0Y/8Omwt/8oTWgy1mdeHmmjk7j1nYsvC9JSQ6ZvMldlTTKB3zhThV1+XWYp6rjd5JW1zbVWEkLNxE7GJThEUG3szgBVGP7pSWTUTsqXnLRbwHOoq7hHwg==\n-----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "intermediate_cert_fingerprintSHA256 <#1>",
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "436FED30895D6C7F0D6DC09DB621AB3B88EC6321C56CA6FD49D79811E2A598CA"
+              "finding"      : "67ADD1166B020AE61B8F5FC96813C04C2AA589960796865572A3C7E737613DFD"
           }
 ,         {
               "id"           : "intermediate_cert_notBefore <#1>",
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2014-09-23 00:00"
+              "finding"      : "2020-09-04 00:00"
           }
 ,         {
               "id"           : "intermediate_cert_notAfter <#1>",
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "2024-09-22 23:59"
+              "finding"      : "2025-09-15 16:00"
           }
 ,         {
               "id"           : "intermediate_cert_expiration <#1>",
@@ -465,35 +486,35 @@
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TBS X509 CA business 2 <-- USERTrust RSA Certification Authority"
+              "finding"      : "R3 <-- ISRG Root X1"
           }
 ,         {
               "id"           : "intermediate_cert <#2>",
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE----- MIIFgTCCBGmgAwIBAgIQOXJEOvkit1HX02wQ3TE1lTANBgkqhkiG9w0BAQwFADB7 MQswCQYDVQQGEwJHQjEbMBkGA1UECAwSR3JlYXRlciBNYW5jaGVzdGVyMRAwDgYD VQQHDAdTYWxmb3JkMRowGAYDVQQKDBFDb21vZG8gQ0EgTGltaXRlZDEhMB8GA1UE AwwYQUFBIENlcnRpZmljYXRlIFNlcnZpY2VzMB4XDTE5MDMxMjAwMDAwMFoXDTI4 MTIzMTIzNTk1OVowgYgxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpOZXcgSmVyc2V5 MRQwEgYDVQQHEwtKZXJzZXkgQ2l0eTEeMBwGA1UEChMVVGhlIFVTRVJUUlVTVCBO ZXR3b3JrMS4wLAYDVQQDEyVVU0VSVHJ1c3QgUlNBIENlcnRpZmljYXRpb24gQXV0 aG9yaXR5MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAgBJlFzYOw9sI s9CsVw127c0n00ytUINh4qogTQktZAnczomfzD2p7PbPwdzx07HWezcoEStH2jnG vDoZtF+mvX2do2NCtnbyqTsrkfjib9DsFiCQCT7i6HTJGLSR1GJk23+jBvGIGGqQ Ijy8/hPwhxR79uQfjtTkUcYRZ0YIUcuGFFQ/vDP+fmyc/xadGL1RjjWmp2bIcmfb IWax1Jt4A8BQOujM8Ny8nkz+rwWWNR9XWrf/zvk9tyy29lTdyOcSOk2uTIq3XJq0 tyA9yn8iNK5+O2hmAUTnAU5GU5szYPeUvlM3kHND8zLDU+/bqv50TmnHa4xgk97E xwzf4TKuzJM7UXiVZ4vuPVb+DNBpDxsP8yUmazNt925H+nND5X4OpWaxKXwyhGNV icQNwZNUMBkTrNN9N6frXTpsNVzbQdcS2qlJC9/YgIoJk2KOtWbPJYjNhLixP6Q5 D9kCnusSTJV882sFqV4Wg8y4Z+LoE53MW4LTTLPtW//e5XOsIzstAL81VXQJSdhJ WBp/kjbmUZIO8yZ9HE0XvMnsQybQv0FfQKlERPSZ51eHnlAfV1SoPv10Yy+xUGUJ 5lhCLkMaTLTwJUdZ+gQek9QmRkpQgbLevni3/GcV4clXhB4PY9bpYrrWX1Uu6lzG KAgEJTm4Diup8kyXHAc/DVL17e8vgg8CAwEAAaOB8jCB7zAfBgNVHSMEGDAWgBSg EQojPpbxB+zirynvgqV/0DCktDAdBgNVHQ4EFgQUU3m/WqorSs9UgOHYm8Cd8rID ZsswDgYDVR0PAQH/BAQDAgGGMA8GA1UdEwEB/wQFMAMBAf8wEQYDVR0gBAowCDAG BgRVHSAAMEMGA1UdHwQ8MDowOKA2oDSGMmh0dHA6Ly9jcmwuY29tb2RvY2EuY29t L0FBQUNlcnRpZmljYXRlU2VydmljZXMuY3JsMDQGCCsGAQUFBwEBBCgwJjAkBggr BgEFBQcwAYYYaHR0cDovL29jc3AuY29tb2RvY2EuY29tMA0GCSqGSIb3DQEBDAUA A4IBAQAYh1HcdCE9nIrgJ7cz0C7M7PDmy14R3iJvm3WOnnL+5Nb+qh+cli3vA0p+ rvSNb3I8QzvAP+u431yqqcau8vzY7qN7Q/aGNnwU4M309z/+3ri0ivCRlv79Q2R+ /czSAaF9ffgZGclCKxO/WIu6pKJmBHaIkU4MiRTOok3JMrO66BQavHHxW/BBC5gA CiIDEOUMsfnNkjcZ7Tvx5Dq2+UUTJnWvu6rvP3t3O9LEApE9GQDTF1w52z97GA1F zZOFli9d31kWTz9RvdVFGD/tSo7oBmF0Ixa1DVBzJ0RHfxBdiSprhTEUxOipakyA vGp4z7h/jnZymQyd/teRCBaho1+V -----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIFYDCCBEigAwIBAgIQQAF3ITfU6UK47naqPGQKtzANBgkqhkiG9w0BAQsFADA/MSQwIgYDVQQKExtEaWdpdGFsIFNpZ25hdHVyZSBUcnVzdCBDby4xFzAVBgNVBAMTDkRTVCBSb290IENBIFgzMB4XDTIxMDEyMDE5MTQwM1oXDTI0MDkzMDE4MTQwM1owTzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2VhcmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQCt6CRz9BQ385ueK1coHIe+3LffOJCMbjzmV6B493XCov71am72AE8o295ohmxEk7axY/0UEmu/H9LqMZshftEzPLpI9d1537O4/xLxIZpLwYqGcWlKZmZsj348cL+tKSIG8+TA5oCu4kuPt5l+lAOf00eXfJlII1PoOK5PCm+DLtFJV4yAdLbaL9A4jXsDcCEbdfIwPPqPrt3aY6vrFk/CjhFLfs8L6P+1dy70sntK4EwSJQxwjQMpoOFTJOwT2e4ZvxCzSow/iaNhUd6shweU9GNx7C7ib1uYgeGJXDR5bHbvO5BieebbpJovJsXQEOEO3tkQjhb7t/eo98flAgeYjzYIlefiN5YNNnWe+w5ysR2bvAP5SQXYgd0FtCrWQemsAXaVCg/Y39W9Eh81LygXbNKYwagJZHduRze6zqxZXmidf3LWicUGQSk+WT7dJvUkyRGnWqNMQB9GoZm1pzpRboY7nn1ypxIFeFntPlF4FQsDj43QLwWyPntKHEtzBRL8xurgUBN8Q5N0s8p0544fAQjQMNRbcTa0B7rBMDBcSLeCO5imfWCKoqMpgsy6vYMEG6KDA0Gh1gXxG8K28Kh8hjtGqEgqiNx2mna/H2qlPRmP6zjzZN7IKw0KKP/32+IVQtQi0Cdd4Xn+GOdwiK1O5tmLOsbdJ1Fu/7xk9TNDTwIDAQABo4IBRjCCAUIwDwYDVR0TAQH/BAUwAwEB/zAOBgNVHQ8BAf8EBAMCAQYwSwYIKwYBBQUHAQEEPzA9MDsGCCsGAQUFBzAChi9odHRwOi8vYXBwcy5pZGVudHJ1c3QuY29tL3Jvb3RzL2RzdHJvb3RjYXgzLnA3YzAfBgNVHSMEGDAWgBTEp7Gkeyxx+tvhS5B1/8QVYIWJEDBUBgNVHSAETTBLMAgGBmeBDAECATA/BgsrBgEEAYLfEwEBATAwMC4GCCsGAQUFBwIBFiJodHRwOi8vY3BzLnJvb3QteDEubGV0c2VuY3J5cHQub3JnMDwGA1UdHwQ1MDMwMaAvoC2GK2h0dHA6Ly9jcmwuaWRlbnRydXN0LmNvbS9EU1RST09UQ0FYM0NSTC5jcmwwHQYDVR0OBBYEFHm0WeZ7tuXkAXOACIjIGlj26ZtuMA0GCSqGSIb3DQEBCwUAA4IBAQAKcwBslm7/DlLQrt2M51oGrS+o44+/yQoDFVDC5WxCu2+b9LRPwkSICHXM6webFGJueN7sJ7o5XPWioW5WlHAQU7G75K/QosMrAdSW9MUgNTP52GE24HGNtLi1qoJFlcDyqSMo59ahy2cI2qBDLKobkx/J3vWraV0T9VuGWCLKTVXkcGdtwlfFRjlBz4pYg1htmf5X6DYO8A4jqv2Il9DjXA6USbW1FzXSLr9Ohe8Y4IWS6wY7bCkjCWDcRQJMEhg76fsO3txE+FiYruq9RUWhiF1myv4Q6W+CyBFCDfvp7OOGAN6dEOM4+qR9sdjoSYKEBpsr6GtPAQw4dy753ec5\n-----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "intermediate_cert_fingerprintSHA256 <#2>",
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "68B9C761219A5B1F0131784474665DB61BBDB109E00F05CA9F74244EE5F5F52B"
+              "finding"      : "6D99FB265EB1C5B3744765FCBC648F3CD8E1BFFAFDC4C2F99B9D47CF7FF1C24F"
           }
 ,         {
               "id"           : "intermediate_cert_notBefore <#2>",
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2019-03-12 00:00"
+              "finding"      : "2021-01-20 19:14"
           }
 ,         {
               "id"           : "intermediate_cert_notAfter <#2>",
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "2028-12-31 23:59"
+              "finding"      : "2024-09-30 18:14"
           }
 ,         {
               "id"           : "intermediate_cert_expiration <#2>",
@@ -507,7 +528,7 @@
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "USERTrust RSA Certification Authority <-- AAA Certificate Services"
+              "finding"      : "ISRG Root X1 <-- DST Root CA X3"
           }
 ,         {
               "id"           : "intermediate_cert_badOCSP",
@@ -529,6 +550,13 @@
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "0 seconds from localtime"
+          }
+,         {
+              "id"           : "HTTP_headerTime",
+              "ip"           : "guichet-entreprises.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "1691037299"
           }
 ,         {
               "id"           : "HSTS",
@@ -614,7 +642,7 @@
               "severity"     : "OK",
               "cve"          : "CVE-2017-17382 CVE-2017-17427 CVE-2017-17428 CVE-2017-13098 CVE-2017-1000385 CVE-2017-13099 CVE-2016-6883 CVE-2012-5081 CVE-2017-6168",
               "cwe"          : "CWE-203",
-              "finding"      : "not vulnerable"
+              "finding"      : "not vulnerable, no RSA key transport cipher"
           }
 ,         {
               "id"           : "secure_renego",
@@ -671,10 +699,10 @@
               "id"           : "SWEET32",
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
-              "severity"     : "LOW",
+              "severity"     : "OK",
               "cve"          : "CVE-2016-2183 CVE-2016-6329",
               "cwe"          : "CWE-327",
-              "finding"      : "uses 64 bit block ciphers"
+              "finding"      : "not vulnerable"
           }
 ,         {
               "id"           : "FREAK",
@@ -701,7 +729,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://censys.io/ipv4?q=77189E8591E550405E1DEDA466E3A7CD81EAC38AFCCB83B52069A0C4FFB8501F"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=AEEACF60DE71E8FFA99A6DD2E910C7B81D74A454B269808C7B37C7EFA89515D1"
           }
 ,         {
               "id"           : "LOGJAM",
@@ -734,10 +762,10 @@
               "id"           : "LUCKY13",
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
-              "severity"     : "LOW",
+              "severity"     : "OK",
               "cve"          : "CVE-2013-0169",
               "cwe"          : "CWE-310",
-              "finding"      : "potentially vulnerable, uses TLS CBC ciphers"
+              "finding"      : "not vulnerable"
           }
 ,         {
               "id"           : "winshock",
@@ -756,20 +784,6 @@
               "cve"          : "CVE-2013-2566 CVE-2015-2808",
               "cwe"          : "CWE-310",
               "finding"      : "not vulnerable"
-          }
-,         {
-              "id"           : "clientsimulation-android_442",
-              "ip"           : "guichet-entreprises.nc/61.5.212.17",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
-          }
-,         {
-              "id"           : "clientsimulation-android_500",
-              "ip"           : "guichet-entreprises.nc/61.5.212.17",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
           }
 ,         {
               "id"           : "clientsimulation-android_60",
@@ -797,42 +811,56 @@
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
+              "finding"      : "TLSv1.3 TLS_AES_128_GCM_SHA256"
           }
 ,         {
               "id"           : "clientsimulation-android_X",
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
+              "finding"      : "TLSv1.3 TLS_AES_128_GCM_SHA256"
           }
 ,         {
-              "id"           : "clientsimulation-chrome_74_win10",
+              "id"           : "clientsimulation-android_11",
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
+              "finding"      : "TLSv1.3 TLS_AES_128_GCM_SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-android_12",
+              "ip"           : "guichet-entreprises.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.3 TLS_AES_128_GCM_SHA256"
           }
 ,         {
               "id"           : "clientsimulation-chrome_79_win10",
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
+              "finding"      : "TLSv1.3 TLS_AES_128_GCM_SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-chrome_101_win10",
+              "ip"           : "guichet-entreprises.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.3 TLS_AES_128_GCM_SHA256"
           }
 ,         {
               "id"           : "clientsimulation-firefox_66_win81",
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
+              "finding"      : "TLSv1.3 TLS_AES_128_GCM_SHA256"
           }
 ,         {
-              "id"           : "clientsimulation-firefox_71_win10",
+              "id"           : "clientsimulation-firefox_100_win10",
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
+              "finding"      : "TLSv1.3 TLS_AES_128_GCM_SHA256"
           }
 ,         {
               "id"           : "clientsimulation-ie_6_xp",
@@ -860,98 +888,63 @@
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-SHA256"
+              "finding"      : "No connection"
           }
 ,         {
               "id"           : "clientsimulation-ie_11_win81",
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-SHA256"
+              "finding"      : "No connection"
           }
 ,         {
               "id"           : "clientsimulation-ie_11_winphone81",
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-SHA256"
+              "finding"      : "No connection"
           }
 ,         {
               "id"           : "clientsimulation-ie_11_win10",
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
           }
 ,         {
               "id"           : "clientsimulation-edge_15_win10",
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
           }
 ,         {
-              "id"           : "clientsimulation-edge_17_win10",
+              "id"           : "clientsimulation-edge_101_win10_21h2",
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
-          }
-,         {
-              "id"           : "clientsimulation-opera_66_win10",
-              "ip"           : "guichet-entreprises.nc/61.5.212.17",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
-          }
-,         {
-              "id"           : "clientsimulation-safari_9_ios9",
-              "ip"           : "guichet-entreprises.nc/61.5.212.17",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
-          }
-,         {
-              "id"           : "clientsimulation-safari_9_osx1011",
-              "ip"           : "guichet-entreprises.nc/61.5.212.17",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
-          }
-,         {
-              "id"           : "clientsimulation-safari_10_osx1012",
-              "ip"           : "guichet-entreprises.nc/61.5.212.17",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+              "finding"      : "TLSv1.3 TLS_AES_128_GCM_SHA256"
           }
 ,         {
               "id"           : "clientsimulation-safari_121_ios_122",
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
+              "finding"      : "TLSv1.3 TLS_CHACHA20_POLY1305_SHA256"
           }
 ,         {
               "id"           : "clientsimulation-safari_130_osx_10146",
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
+              "finding"      : "TLSv1.3 TLS_CHACHA20_POLY1305_SHA256"
           }
 ,         {
-              "id"           : "clientsimulation-apple_ats_9_ios9",
+              "id"           : "clientsimulation-safari_154_osx_1231",
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
-          }
-,         {
-              "id"           : "clientsimulation-java_6u45",
-              "ip"           : "guichet-entreprises.nc/61.5.212.17",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "No connection"
+              "finding"      : "TLSv1.3 TLS_AES_128_GCM_SHA256"
           }
 ,         {
               "id"           : "clientsimulation-java_7u25",
@@ -965,35 +958,49 @@
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
           }
 ,         {
               "id"           : "clientsimulation-java1102",
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
+              "finding"      : "TLSv1.3 TLS_AES_128_GCM_SHA256"
           }
 ,         {
-              "id"           : "clientsimulation-java1201",
+              "id"           : "clientsimulation-java1703",
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
+          }
+,         {
+              "id"           : "clientsimulation-go_1178",
+              "ip"           : "guichet-entreprises.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.3 TLS_AES_128_GCM_SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-libressl_283",
+              "ip"           : "guichet-entreprises.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-CHACHA20-POLY1305"
           }
 ,         {
               "id"           : "clientsimulation-openssl_102e",
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
           }
 ,         {
               "id"           : "clientsimulation-openssl_110l",
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
           }
 ,         {
               "id"           : "clientsimulation-openssl_111d",
@@ -1003,11 +1010,25 @@
               "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
-              "id"           : "clientsimulation-thunderbird_68_3_1",
+              "id"           : "clientsimulation-openssl_303",
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
+          }
+,         {
+              "id"           : "clientsimulation-apple_mail_16_0",
+              "ip"           : "guichet-entreprises.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+          }
+,         {
+              "id"           : "clientsimulation-thunderbird_91_9",
+              "ip"           : "guichet-entreprises.nc/61.5.212.17",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.3 TLS_AES_128_GCM_SHA256"
           }
 ,         {
               "id"           : "rating_spec",
@@ -1056,21 +1077,21 @@
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "60"
+              "finding"      : "90"
           }
 ,         {
               "id"           : "cipher_strength_score_weighted",
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "24"
+              "finding"      : "36"
           }
 ,         {
               "id"           : "final_score",
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "81"
+              "finding"      : "93"
           }
 ,         {
               "id"           : "overall_grade",
@@ -1091,6 +1112,6 @@
               "ip"           : "guichet-entreprises.nc/61.5.212.17",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "214"
+              "finding"      : "164"
           }
 ]

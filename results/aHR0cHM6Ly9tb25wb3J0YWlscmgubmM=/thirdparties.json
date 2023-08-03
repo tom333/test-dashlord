@@ -10,15 +10,15 @@
     },
     {
       "type": "unknown",
-      "url": "https://www.monportailrh.nc/faces/security/pages/Login.jspx;jsessionid=oi-ASTSXs3_WN4awD5hBSrsPnwET25xvSPL_gT8avbyvsnyTq2nT!-1991599769"
+      "url": "https://www.monportailrh.nc/faces/security/pages/Login.jspx;jsessionid=MTu5pQFfleUBgnz8qOj76NanCO-mLxorxLX6YdG1JnVfm3ZUlBWi!1371341284"
     },
     {
       "type": "unknown",
-      "url": "https://www.monportailrh.nc/faces/security/pages/Login.jspx?_afrLoop=67722224191215210&_afrWindowMode=0&_afrWindowId=null"
+      "url": "https://www.monportailrh.nc/faces/security/pages/Login.jspx?_afrLoop=42252074933649597&_afrWindowMode=0&_afrWindowId=null"
     },
     {
       "type": "unknown",
-      "url": "https://www.monportailrh.nc/faces/security/pages/Login.jspx?_afrLoop=67722224445559418&_afrWindowMode=0&_adf.ctrl-state=osvq34w4r_4"
+      "url": "https://www.monportailrh.nc/faces/security/pages/Login.jspx?_afrLoop=42252075159192104&_afrWindowMode=0&_adf.ctrl-state=74ol731tf_4"
     },
     {
       "type": "unknown",
@@ -54,14 +54,6 @@
     },
     {
       "type": "unknown",
-      "url": "https://www.monportailrh.nc/common/images/MonPortailRHLogo_2.png"
-    },
-    {
-      "type": "unknown",
-      "url": "https://www.monportailrh.nc/common/images/logo_MonPortailRH.png"
-    },
-    {
-      "type": "unknown",
       "url": "https://www.monportailrh.nc/adf/jsLibs/resources/LocaleElements_fr1_2_12_3_3.js?loc=fr"
     },
     {
@@ -70,15 +62,11 @@
     },
     {
       "type": "unknown",
-      "url": "https://www.monportailrh.nc/afr/partition/webkit/n/default/opt/input-11.1.1.6.0-1318.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://www.monportailrh.nc/afr/partition/webkit/n/default/opt/message-11.1.1.6.0-1318.js"
-    },
-    {
-      "type": "unknown",
       "url": "https://www.monportailrh.nc/afr/partition/webkit/n/default/opt/detail-11.1.1.6.0-1318.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/afr/partition/webkit/n/default/opt/box-11.1.1.6.0-1318.js"
     },
     {
       "type": "unknown",
@@ -86,7 +74,11 @@
     },
     {
       "type": "unknown",
-      "url": "https://www.monportailrh.nc/afr/partition/webkit/n/default/opt/box-11.1.1.6.0-1318.js"
+      "url": "https://www.monportailrh.nc/afr/partition/webkit/n/default/opt/message-11.1.1.6.0-1318.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/afr/partition/webkit/n/default/opt/input-11.1.1.6.0-1318.js"
     },
     {
       "type": "unknown",
@@ -99,6 +91,14 @@
     {
       "type": "unknown",
       "url": "https://www.monportailrh.nc/afr/partition/webkit/n/default/opt/status-11.1.1.6.0-1318.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/common/images/MonPortailRHLogo_2.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/common/images/logo_MonPortailRH.png"
     },
     {
       "type": "unknown",
@@ -119,6 +119,10 @@
     {
       "type": "unknown",
       "url": "https://www.monportailrh.nc/common/images/logo_MonPortailRH_documents.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.monportailrh.nc/common/images/logo_MonPortailRH_consultation.png"
     },
     {
       "type": "unknown",
@@ -304,11 +308,11 @@
   "cookies": [
     {
       "name": "JSESSIONID",
-      "value": "oi-ASTSXs3_WN4awD5hBSrsPnwET25xvSPL_gT8avbyvsnyTq2nT!-1991599769",
+      "value": "MTu5pQFfleUBgnz8qOj76NanCO-mLxorxLX6YdG1JnVfm3ZUlBWi!1371341284",
       "domain": "www.monportailrh.nc",
       "path": "/",
       "expires": -1,
-      "size": 74,
+      "size": 73,
       "httpOnly": true,
       "secure": false,
       "session": true,
@@ -318,7 +322,7 @@
     },
     {
       "name": "SERVERID",
-      "value": "monportailrh_t1",
+      "value": "monportailrh_t2",
       "domain": "www.monportailrh.nc",
       "path": "/",
       "expires": -1,
@@ -332,11 +336,11 @@
     }
   ],
   "headers": {
-    "server": "nginx",
-    "date": "Thu, 26 Aug 2021 02:28:07 GMT",
-    "content-type": "text/html;charset=UTF-8",
-    "transfer-encoding": "chunked",
     "connection": "keep-alive",
+    "content-type": "text/html;charset=UTF-8",
+    "date": "Thu, 03 Aug 2023 04:25:46 GMT",
+    "server": "nginx",
+    "transfer-encoding": "chunked",
     "x-frame-options": "sameorigin"
   },
   "endpoints": [
@@ -344,19 +348,6 @@
       "hostname": "monportailrh.nc",
       "ip": "61.5.212.17",
       "geoip": {
-        "city": {
-          "geoname_id": 2139521,
-          "names": {
-            "de": "Noumea",
-            "en": "Noumea",
-            "es": "Numea",
-            "fr": "Nouméa",
-            "ja": "ヌメア",
-            "pt-BR": "Nouméa",
-            "ru": "Нумеа",
-            "zh-CN": "努美阿"
-          }
-        },
         "continent": {
           "code": "OC",
           "geoname_id": 6255151,
@@ -386,13 +377,10 @@
           }
         },
         "location": {
-          "accuracy_radius": 1000,
-          "latitude": -22.2743,
-          "longitude": 166.4468,
+          "accuracy_radius": 50,
+          "latitude": -21.5,
+          "longitude": 165.5,
           "time_zone": "Pacific/Noumea"
-        },
-        "postal": {
-          "code": "98800"
         },
         "registered_country": {
           "geoname_id": 2139685,
@@ -407,36 +395,13 @@
             "ru": "Новая Каледония",
             "zh-CN": "新喀里多尼亚"
           }
-        },
-        "subdivisions": [
-          {
-            "geoname_id": 2140464,
-            "iso_code": "S",
-            "names": {
-              "en": "South Province",
-              "fr": "Province Sud"
-            }
-          }
-        ]
+        }
       }
     },
     {
       "hostname": "www.monportailrh.nc",
       "ip": "61.5.212.17",
       "geoip": {
-        "city": {
-          "geoname_id": 2139521,
-          "names": {
-            "de": "Noumea",
-            "en": "Noumea",
-            "es": "Numea",
-            "fr": "Nouméa",
-            "ja": "ヌメア",
-            "pt-BR": "Nouméa",
-            "ru": "Нумеа",
-            "zh-CN": "努美阿"
-          }
-        },
         "continent": {
           "code": "OC",
           "geoname_id": 6255151,
@@ -466,13 +431,10 @@
           }
         },
         "location": {
-          "accuracy_radius": 1000,
-          "latitude": -22.2743,
-          "longitude": 166.4468,
+          "accuracy_radius": 50,
+          "latitude": -21.5,
+          "longitude": 165.5,
           "time_zone": "Pacific/Noumea"
-        },
-        "postal": {
-          "code": "98800"
         },
         "registered_country": {
           "geoname_id": 2139685,
@@ -487,17 +449,7 @@
             "ru": "Новая Каледония",
             "zh-CN": "新喀里多尼亚"
           }
-        },
-        "subdivisions": [
-          {
-            "geoname_id": 2140464,
-            "iso_code": "S",
-            "names": {
-              "en": "South Province",
-              "fr": "Province Sud"
-            }
-          }
-        ]
+        }
       }
     }
   ]

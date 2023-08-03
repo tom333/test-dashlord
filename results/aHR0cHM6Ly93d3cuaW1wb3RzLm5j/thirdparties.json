@@ -3,46 +3,40 @@
   "cookies": [
     {
       "name": "JSESSIONID",
-      "value": "20A1D064851D249D84A24899F76F02FE.tomcat2",
+      "value": "D86D3FEFE730F52EE6455E853F437DBC",
       "domain": "www.impots.nc",
       "path": "/sel",
       "expires": -1,
-      "size": 50,
+      "size": 42,
       "httpOnly": true,
       "secure": false,
       "session": true,
+      "sameSite": "Lax",
       "sameParty": false,
       "sourceScheme": "Secure",
       "sourcePort": 443
     }
   ],
   "headers": {
-    "server": "nginx",
-    "date": "Thu, 26 Aug 2021 02:58:45 GMT",
-    "content-type": "text/html;charset=UTF-8",
-    "content-length": "7190",
+    "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
     "connection": "keep-alive",
-    "set-cookie": "JSESSIONID=20A1D064851D249D84A24899F76F02FE.tomcat2; Path=/sel; HttpOnly",
-    "content-language": "en-US"
+    "content-language": "fr",
+    "content-length": "7397",
+    "content-type": "text/html;charset=UTF-8",
+    "date": "Thu, 03 Aug 2023 04:40:55 GMT",
+    "expires": "0",
+    "pragma": "no-cache",
+    "server": "nginx",
+    "x-application-context": "selfisc:production:7683",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "DENY",
+    "x-xss-protection": "1; mode=block"
   },
   "endpoints": [
     {
       "hostname": "www.impots.nc",
       "ip": "61.5.212.17",
       "geoip": {
-        "city": {
-          "geoname_id": 2139521,
-          "names": {
-            "de": "Noumea",
-            "en": "Noumea",
-            "es": "Numea",
-            "fr": "Nouméa",
-            "ja": "ヌメア",
-            "pt-BR": "Nouméa",
-            "ru": "Нумеа",
-            "zh-CN": "努美阿"
-          }
-        },
         "continent": {
           "code": "OC",
           "geoname_id": 6255151,
@@ -72,13 +66,10 @@
           }
         },
         "location": {
-          "accuracy_radius": 1000,
-          "latitude": -22.2743,
-          "longitude": 166.4468,
+          "accuracy_radius": 50,
+          "latitude": -21.5,
+          "longitude": 165.5,
           "time_zone": "Pacific/Noumea"
-        },
-        "postal": {
-          "code": "98800"
         },
         "registered_country": {
           "geoname_id": 2139685,
@@ -93,17 +84,7 @@
             "ru": "Новая Каледония",
             "zh-CN": "新喀里多尼亚"
           }
-        },
-        "subdivisions": [
-          {
-            "geoname_id": 2140464,
-            "iso_code": "S",
-            "names": {
-              "en": "South Province",
-              "fr": "Province Sud"
-            }
-          }
-        ]
+        }
       }
     }
   ]

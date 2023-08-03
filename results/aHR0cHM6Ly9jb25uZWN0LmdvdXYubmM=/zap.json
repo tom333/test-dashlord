@@ -1,0 +1,1667 @@
+{
+	"@programName": "OWASP ZAP",
+	"@version": "2.13.0",
+	"@generated": "Thu, 3 Aug 2023 04:32:31",
+	"site":[ 
+		{
+			"@name": "https://connect.gouv.nc",
+			"@host": "connect.gouv.nc",
+			"@port": "443",
+			"@ssl": "true",
+			"alerts": [ 
+				{
+					"pluginid": "10038",
+					"alertRef": "10038-1",
+					"alert": "Content Security Policy (CSP) Header Not Set",
+					"name": "Content Security Policy (CSP) Header Not Set",
+					"riskcode": "2",
+					"confidence": "3",
+					"riskdesc": "Medium (High)",
+					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
+					"instances":[ 
+						{
+							"uri": "https://connect.gouv.nc",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://connect.gouv.nc/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://connect.gouv.nc/cgus",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://connect.gouv.nc/contact",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://connect.gouv.nc/inscription",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://connect.gouv.nc/mentions-legales",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "6",
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>http://www.w3.org/TR/CSP/</p><p>http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</p><p>http://www.html5rocks.com/en/tutorials/security/content-security-policy/</p><p>http://caniuse.com/#feat=contentsecuritypolicy</p><p>http://content-security-policy.com/</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10020",
+					"alertRef": "10020-1",
+					"alert": "Missing Anti-clickjacking Header",
+					"name": "Missing Anti-clickjacking Header",
+					"riskcode": "2",
+					"confidence": "2",
+					"riskdesc": "Medium (Medium)",
+					"desc": "<p>The response does not include either Content-Security-Policy with 'frame-ancestors' directive or X-Frame-Options to protect against 'ClickJacking' attacks.</p>",
+					"instances":[ 
+						{
+							"uri": "https://connect.gouv.nc",
+							"method": "GET",
+							"param": "x-frame-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://connect.gouv.nc/",
+							"method": "GET",
+							"param": "x-frame-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://connect.gouv.nc/cgus",
+							"method": "GET",
+							"param": "x-frame-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://connect.gouv.nc/contact",
+							"method": "GET",
+							"param": "x-frame-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://connect.gouv.nc/inscription",
+							"method": "GET",
+							"param": "x-frame-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://connect.gouv.nc/mentions-legales",
+							"method": "GET",
+							"param": "x-frame-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "6",
+					"solution": "<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p><p>If you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy's \"frame-ancestors\" directive.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
+					"cweid": "1021",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10010",
+					"alertRef": "10010",
+					"alert": "Cookie No HttpOnly Flag",
+					"name": "Cookie No HttpOnly Flag",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>A cookie has been set without the HttpOnly flag, which means that the cookie can be accessed by JavaScript. If a malicious script can be run on this page then the cookie will be accessible and can be transmitted to another site. If this is a session cookie then session hijacking may be possible.</p>",
+					"instances":[ 
+						{
+							"uri": "https://connect.gouv.nc/api",
+							"method": "GET",
+							"param": "SERVERID",
+							"attack": "",
+							"evidence": "Set-Cookie: SERVERID",
+							"otherinfo": ""
+						}
+					],
+					"count": "1",
+					"solution": "<p>Ensure that the HttpOnly flag is set for all cookies.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://owasp.org/www-community/HttpOnly</p>",
+					"cweid": "1004",
+					"wascid": "13",
+					"sourceid": "39"
+				},
+				{
+					"pluginid": "10011",
+					"alertRef": "10011",
+					"alert": "Cookie Without Secure Flag",
+					"name": "Cookie Without Secure Flag",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>A cookie has been set without the secure flag, which means that the cookie can be accessed via unencrypted connections.</p>",
+					"instances":[ 
+						{
+							"uri": "https://connect.gouv.nc/api",
+							"method": "GET",
+							"param": "SERVERID",
+							"attack": "",
+							"evidence": "Set-Cookie: SERVERID",
+							"otherinfo": ""
+						}
+					],
+					"count": "1",
+					"solution": "<p>Whenever a cookie contains sensitive information or is a session token, then it should always be passed using an encrypted channel. Ensure that the secure flag is set for cookies containing such sensitive information.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html</p>",
+					"cweid": "614",
+					"wascid": "13",
+					"sourceid": "39"
+				},
+				{
+					"pluginid": "10054",
+					"alertRef": "10054",
+					"alert": "Cookie without SameSite Attribute",
+					"name": "Cookie without SameSite Attribute",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>A cookie has been set without the SameSite attribute, which means that the cookie can be sent as a result of a 'cross-site' request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</p>",
+					"instances":[ 
+						{
+							"uri": "https://connect.gouv.nc/api",
+							"method": "GET",
+							"param": "SERVERID",
+							"attack": "",
+							"evidence": "Set-Cookie: SERVERID",
+							"otherinfo": ""
+						}
+					],
+					"count": "1",
+					"solution": "<p>Ensure that the SameSite attribute is set to either 'lax' or ideally 'strict' for all cookies.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</p>",
+					"cweid": "1275",
+					"wascid": "13",
+					"sourceid": "39"
+				},
+				{
+					"pluginid": "10110",
+					"alertRef": "10110",
+					"alert": "Dangerous JS Functions",
+					"name": "Dangerous JS Functions",
+					"riskcode": "1",
+					"confidence": "1",
+					"riskdesc": "Low (Low)",
+					"desc": "<p>A dangerous JS function seems to be in use that would leave the site vulnerable.</p>",
+					"instances":[ 
+						{
+							"uri": "https://connect.gouv.nc/assets/js/tarteaucitronjs/tarteaucitron.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "eval",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "bypassSecurityTrustHtml",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://connect.gouv.nc/scripts.4e0454f4e15fd2d4e00a.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Eval",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"solution": "<p>See the references for security advice on the use of these functions.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://angular.io/guide/security</p>",
+					"cweid": "749",
+					"wascid": "-1",
+					"sourceid": "31"
+				},
+				{
+					"pluginid": "10063",
+					"alertRef": "10063-1",
+					"alert": "Permissions Policy Header Not Set",
+					"name": "Permissions Policy Header Not Set",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>Permissions Policy Header is an added layer of security that helps to restrict from unauthorized access or usage of browser/client features by web resources. This policy ensures the user privacy by limiting or specifying the features of the browsers can be used by the web resources. Permissions Policy provides a set of standard HTTP headers that allow website owners to limit which features of browsers can be used by the page such as camera, microphone, location, full screen etc.</p>",
+					"instances":[ 
+						{
+							"uri": "https://connect.gouv.nc",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://connect.gouv.nc/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://connect.gouv.nc/assets/js/tarteaucitronjs/tarteaucitron.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://connect.gouv.nc/cgus",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://connect.gouv.nc/contact",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://connect.gouv.nc/inscription",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://connect.gouv.nc/mentions-legales",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://connect.gouv.nc/polyfills-es5.52c5927b1a646911df05.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://connect.gouv.nc/polyfills.80a2900e3f2da08264a0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://connect.gouv.nc/runtime.2d50fda83fe31aa9142b.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://connect.gouv.nc/scripts.4e0454f4e15fd2d4e00a.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "11",
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Permissions-Policy header.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy</p><p>https://developers.google.com/web/updates/2018/06/feature-policy</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "6"
+				},
+				{
+					"pluginid": "10035",
+					"alertRef": "10035",
+					"alert": "Strict-Transport-Security Header Not Set",
+					"name": "Strict-Transport-Security Header Not Set",
+					"riskcode": "1",
+					"confidence": "3",
+					"riskdesc": "Low (High)",
+					"desc": "<p>HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.</p>",
+					"instances":[ 
+						{
+							"uri": "https://connect.gouv.nc",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://connect.gouv.nc/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://connect.gouv.nc/assets/icons/favicon/favicon-16x16.png",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://connect.gouv.nc/assets/icons/favicon/favicon-32x32.png",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://connect.gouv.nc/assets/js/tarteaucitronjs/tarteaucitron.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://connect.gouv.nc/polyfills-es5.52c5927b1a646911df05.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://connect.gouv.nc/polyfills.80a2900e3f2da08264a0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://connect.gouv.nc/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://connect.gouv.nc/runtime.2d50fda83fe31aa9142b.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://connect.gouv.nc/scripts.4e0454f4e15fd2d4e00a.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://connect.gouv.nc/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "11",
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>http://caniuse.com/stricttransportsecurity</p><p>http://tools.ietf.org/html/rfc6797</p>",
+					"cweid": "319",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10096",
+					"alertRef": "10096",
+					"alert": "Timestamp Disclosure - Unix",
+					"name": "Timestamp Disclosure - Unix",
+					"riskcode": "1",
+					"confidence": "1",
+					"riskdesc": "Low (Low)",
+					"desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>",
+					"instances":[ 
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1396182291",
+							"otherinfo": "1396182291, which evaluates to: 2014-03-30 12:24:51"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1409305260",
+							"otherinfo": "1409305260, which evaluates to: 2014-08-29 09:41:00"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1426881987",
+							"otherinfo": "1426881987, which evaluates to: 2015-03-20 20:06:27"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1432725776",
+							"otherinfo": "1432725776, which evaluates to: 2015-05-27 11:22:56"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1467031594",
+							"otherinfo": "1467031594, which evaluates to: 2016-06-27 12:46:34"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1481256789",
+							"otherinfo": "1481256789, which evaluates to: 2016-12-09 04:13:09"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1495990901",
+							"otherinfo": "1495990901, which evaluates to: 2017-05-28 17:01:41"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1501505948",
+							"otherinfo": "1501505948, which evaluates to: 2017-07-31 12:59:08"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1508970993",
+							"otherinfo": "1508970993, which evaluates to: 2017-10-25 22:36:33"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1518500249",
+							"otherinfo": "1518500249, which evaluates to: 2018-02-13 05:37:29"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1520123456",
+							"otherinfo": "1520123456, which evaluates to: 2018-03-04 00:30:56"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1522805485",
+							"otherinfo": "1522805485, which evaluates to: 2018-04-04 01:31:25"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1523456789",
+							"otherinfo": "1523456789, which evaluates to: 2018-04-11 14:26:29"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1534456789",
+							"otherinfo": "1534456789, which evaluates to: 2018-08-16 21:59:49"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1537002063",
+							"otherinfo": "1537002063, which evaluates to: 2018-09-15 09:01:03"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1541459225",
+							"otherinfo": "1541459225, which evaluates to: 2018-11-05 23:07:05"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1546012345",
+							"otherinfo": "1546012345, which evaluates to: 2018-12-28 15:52:25"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1546045734",
+							"otherinfo": "1546045734, which evaluates to: 2018-12-29 01:08:54"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1555081692",
+							"otherinfo": "1555081692, which evaluates to: 2019-04-12 15:08:12"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1575990012",
+							"otherinfo": "1575990012, which evaluates to: 2019-12-10 15:00:12"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1595750129",
+							"otherinfo": "1595750129, which evaluates to: 2020-07-26 07:55:29"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1599123456",
+							"otherinfo": "1599123456, which evaluates to: 2020-09-03 08:57:36"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1600123456",
+							"otherinfo": "1600123456, which evaluates to: 2020-09-14 22:44:16"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1607167915",
+							"otherinfo": "1607167915, which evaluates to: 2020-12-05 11:31:55"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1624756789",
+							"otherinfo": "1624756789, which evaluates to: 2021-06-27 01:19:49"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1654270250",
+							"otherinfo": "1654270250, which evaluates to: 2022-06-03 15:30:50"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1694076839",
+							"otherinfo": "1694076839, which evaluates to: 2023-09-07 08:53:59"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1695183700",
+							"otherinfo": "1695183700, which evaluates to: 2023-09-20 04:21:40"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1700123456",
+							"otherinfo": "1700123456, which evaluates to: 2023-11-16 08:30:56"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1731405415",
+							"otherinfo": "1731405415, which evaluates to: 2024-11-12 09:56:55"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1732584193",
+							"otherinfo": "1732584193, which evaluates to: 2024-11-26 01:23:13"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1747873779",
+							"otherinfo": "1747873779, which evaluates to: 2025-05-22 00:29:39"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1750603025",
+							"otherinfo": "1750603025, which evaluates to: 2025-06-22 14:37:05"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1779033703",
+							"otherinfo": "1779033703, which evaluates to: 2026-05-17 16:01:43"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1781234567",
+							"otherinfo": "1781234567, which evaluates to: 2026-06-12 03:22:47"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1800123456",
+							"otherinfo": "1800123456, which evaluates to: 2027-01-16 18:17:36"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1801410264",
+							"otherinfo": "1801410264, which evaluates to: 2027-01-31 15:44:24"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1812345678",
+							"otherinfo": "1812345678, which evaluates to: 2027-06-07 05:21:18"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1816402316",
+							"otherinfo": "1816402316, which evaluates to: 2027-07-24 04:11:56"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1850123456",
+							"otherinfo": "1850123456, which evaluates to: 2028-08-17 11:10:56"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1856431235",
+							"otherinfo": "1856431235, which evaluates to: 2028-10-29 11:20:35"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1859775393",
+							"otherinfo": "1859775393, which evaluates to: 2028-12-07 04:16:33"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1899447441",
+							"otherinfo": "1899447441, which evaluates to: 2030-03-11 08:17:21"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1900123456",
+							"otherinfo": "1900123456, which evaluates to: 2030-03-19 04:04:16"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1914138554",
+							"otherinfo": "1914138554, which evaluates to: 2030-08-28 09:09:14"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1919123456",
+							"otherinfo": "1919123456, which evaluates to: 2030-10-25 01:50:56"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1921234567",
+							"otherinfo": "1921234567, which evaluates to: 2030-11-18 12:16:07"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1925078388",
+							"otherinfo": "1925078388, which evaluates to: 2031-01-01 23:59:48"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1955562222",
+							"otherinfo": "1955562222, which evaluates to: 2031-12-20 19:43:42"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1986661051",
+							"otherinfo": "1986661051, which evaluates to: 2032-12-14 18:17:31"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1996064986",
+							"otherinfo": "1996064986, which evaluates to: 2033-04-02 14:29:46"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "2001234567",
+							"otherinfo": "2001234567, which evaluates to: 2033-06-01 10:29:27"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "2003034995",
+							"otherinfo": "2003034995, which evaluates to: 2033-06-22 06:36:35"
+						}
+					],
+					"count": "53",
+					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
+					"otherinfo": "<p>1396182291, which evaluates to: 2014-03-30 12:24:51</p>",
+					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
+					"cweid": "200",
+					"wascid": "13",
+					"sourceid": "43"
+				},
+				{
+					"pluginid": "10021",
+					"alertRef": "10021",
+					"alert": "X-Content-Type-Options Header Missing",
+					"name": "X-Content-Type-Options Header Missing",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>",
+					"instances":[ 
+						{
+							"uri": "https://connect.gouv.nc",
+							"method": "GET",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
+							"uri": "https://connect.gouv.nc/",
+							"method": "GET",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
+							"uri": "https://connect.gouv.nc/assets/icons/favicon/favicon-16x16.png",
+							"method": "GET",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
+							"uri": "https://connect.gouv.nc/assets/icons/favicon/favicon-32x32.png",
+							"method": "GET",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
+							"uri": "https://connect.gouv.nc/assets/js/tarteaucitronjs/tarteaucitron.js",
+							"method": "GET",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
+							"uri": "https://connect.gouv.nc/polyfills-es5.52c5927b1a646911df05.js",
+							"method": "GET",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
+							"uri": "https://connect.gouv.nc/polyfills.80a2900e3f2da08264a0.js",
+							"method": "GET",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
+							"uri": "https://connect.gouv.nc/robots.txt",
+							"method": "GET",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
+							"uri": "https://connect.gouv.nc/runtime.2d50fda83fe31aa9142b.js",
+							"method": "GET",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
+							"uri": "https://connect.gouv.nc/scripts.4e0454f4e15fd2d4e00a.js",
+							"method": "GET",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
+							"uri": "https://connect.gouv.nc/sitemap.xml",
+							"method": "GET",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						}
+					],
+					"count": "11",
+					"solution": "<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to 'nosniff' for all web pages.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>",
+					"otherinfo": "<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p><p>At \"High\" threshold this scan rule will not alert on client or server error responses.</p>",
+					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p><p>https://owasp.org/www-community/Security_Headers</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "6"
+				},
+				{
+					"pluginid": "10094",
+					"alertRef": "10094-3",
+					"alert": "Base64 Disclosure",
+					"name": "Base64 Disclosure",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
+					"instances":[ 
+						{
+							"uri": "https://connect.gouv.nc",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "HRAT5tu7i3NMiTdepU_-eyvh7XaoVAq_tPnAZHYm2cU",
+							"otherinfo": "\\x001d\\x0010\\x0013\uFFFD\u06FB\uFFFDsL\uFFFD7^\uFFFDO\uFFFD{+\uFFFD\uFFFDv\uFFFDT\n\uFFFD\uFFFD\uFFFD\uFFFDdv&\uFFFD\uFFFD"
+						},
+						{
+							"uri": "https://connect.gouv.nc/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "HRAT5tu7i3NMiTdepU_-eyvh7XaoVAq_tPnAZHYm2cU",
+							"otherinfo": "\\x001d\\x0010\\x0013\uFFFD\u06FB\uFFFDsL\uFFFD7^\uFFFDO\uFFFD{+\uFFFD\uFFFDv\uFFFDT\n\uFFFD\uFFFD\uFFFD\uFFFDdv&\uFFFD\uFFFD"
+						},
+						{
+							"uri": "https://connect.gouv.nc/assets/js/tarteaucitronjs/tarteaucitron.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "iVBORw0KGgoAAAANSUhEUgAAAHcAAAAeCAYAAAAWwoEYAAADl0lEQVRoge1Y0W3bQAx9CjKARlC+9GVUmqDJBHEmiDyB6wkcTxBngtgTxJ0gzgQW4C/9aYOmE6g4lTQo+k6y3Rb94QOERNQd+cjj8XiGwWAwGAwGg8FgMBgMBoPB8F8RNRXe+whEKe7c36ZCAeCRxC9Rig2PUd8kPgAsoxSfQ3YAzAA8D/HwYYCb05kBKKO0teFkmbC1jlKsAnq/Abjn+QBqAIsoRS30ttwG/HNz1wH/XIxWTicLdvtW7xTAGEAMtP685CNsBTe2d/BLydfXAG57SEnMAST0zgYZSUCPk02bCvkJduIzuJzDLfPolbY+tLKmar+/8+IRePy4qdpE03qHuH8fipFb4N2+XdA3AJ/0vaQxt7s9FvkIS2XvtqnwM0rxpOQfbnE5G2LhTCmUO2fHIngOmcv+KG3HafDchB6ntwjYqenR2PqC7sOZ3E7FXHB0vqxoFyUyLh7OEH7LOGouvhhN3eIBeKXv0n5MsufdHqXcwYR5U2EbpV35lSspVPJmQj4TcgRK7jTg5IzmPUhhwM5a2WHUFCx+NgiDucmgh7idikLovHFlL0pxQ9xzX+IIP9Y6FrJsqhjlQpZRAkFVDCjZfcCHt6bqJDmuh5ylCWx0RVnk3oumaknqTH5sqrY0fBWyULaHUIgAgxb46MxV3DbieAhxOxUxjSuljig9lMQ/Bcfoi9BTEv9aLORSndVxYOH525sUDC6u2gWxcNzBNRxPanyh3ktKinOgy3WoxPbtUM0t6RkbQnzBnFPgi9GCOEubY9UffIryz9iKRe8s/FUfEWosJJGxagp85bpUO3VywQ46lOtAWfNxKwa4JXQ+628+bpxYGXXMzp5rXH401VEyXwIdowXFaKWSMFHvMTVmGnc+P3oXV2QOiBCfgex8QtcQCbcQE/H+eoHzrkFo1KM7zVO4jVVj5s6lRiWF7zyXyfRMc97J3tzj87mYqZ7E2YjzUct9GUi4tjHLR8dVkBLjQcuHFleWvQfRNEhFR7uX7pkctOwvZXsft7sAtyldEUIN2UTeLxnEfxKYswzdi88BdbZ8hifUoSMftQvP+muRwN6+Q3DeqqRExP9QmTtcheiHh0Ot1x2i2km1bP9pbufw5zZdyWsOrh7vQae5OZWbsMv30pi7cd/CKj3coPEVaCP4Zhx4eQWhOZ1Y9MTXGyP8/iGjEyfa1T4fO/4Lea9vBoPBYDAYDAaDwWAwGAwGwz8GgF8siXCCbrSRhgAAAABJRU5ErkJggg==",
+							"otherinfo": "\uFFFDPNG\r\n\\x001a\n\\x0000\\x0000\\x0000\rIHDR\\x0000\\x0000\\x0000w\\x0000\\x0000\\x0000\\x001e\\x0008\\x0006\\x0000\\x0000\\x0000\\x0016\u0081\\x0018\\x0000\\x0000\\x0003\uFFFDIDATh\uFFFD\uFFFDX\uFFFDm\uFFFD@\\x000c}\n2\uFFFDFP\uFFFD\uFFFDeT\uFFFD\uFFFD\uFFFD\\x0004q&\uFFFD<\uFFFD\uFFFD\t\\x001cO\\x0010g\uFFFD\uFFFD\\x0013\u011D \uFFFD\\x0004\\x0016\uFFFD/\uFFFDi\uFFFD\uFFFD\\x0013\uFFFD8\uFFFD4(\uFFFDN\uFFFD\uFFFD\\x0016\uFFFD\uFFFD\\x0003\uFFFDD\uFFFD\\x001d\uFFFD\uFFFD\uFFFD\uFFFDx\uFFFD\uFFFD`0\\x0018\\x000c\\x0006\uFFFD\uFFFD`0\\x0018\\x000c\\x0006\uFFFD\uFFFD\uFFFD_\\x00115\\x0015\uFFFD\uFFFD\\x0008D)\uFFFD\uFFFD\u07E6B\\x0001\uFFFD\uFFFD\uFFFD/Q\uFFFD\r\uFFFDQ\uFFFD$>\\x0000,\uFFFD\\x0014\uFFFDCv\\x0000\uFFFD\\x0000<\\x000f\uFFFD\uFFFDa\uFFFD\uFFFD\u04D9\\x0001(\uFFFD\uFFFD\uFFFD\uFFFDd\uFFFD\uFFFD\uFFFD\uFFFDR\uFFFD\\x0002z\uFFFD\\x0001\uFFFD\uFFFD\uFFFD\\x0000j\\x0000\uFFFD(E-\uFFFD\uFFFD\uFFFD\\x0006\uFFFDss\uFFFD\\x0001\uFFFD\\\uFFFDVN'\\x000bv\uFFFDV\uFFFD\\x0014\uFFFD\\x0018@\\x000c\uFFFD\uFFFD\uFFFD\uFFFD#l\\x00057\uFFFDw\uFFFDK\uFFFD\uFFFD\uFFFD\\x0000n{HI\uFFFD\\x0001$\uFFFD\uFFFD\\x0006\\x0019I@\uFFFD\uFFFDM\uFFFD\n\uFFFD\tv\uFFFD3\uFFFD\uFFFD\uFFFD-\uFFFD\u8576>\uFFFD\uFFFD\uFFFDj\uFFFD\uFFFD\uFFFD\uFFFD\\x0011x\uFFFD\uFFFD\uFFFD\uFFFDD\uFFFDz\uFFFD\uFFFD\\x001f\uFFFD\uFFFD[\uFFFD\u077E]\uFFFD7\\x0000\uFFFD\uFFFD\uFFFD\uFFFD1\uFFFD\uFFFD=\\x0016\uFFFD\\x0008Ke\uFDA9\uFFFD3J\uFFFD\uFFFD\\x001fnq9\\x001bb\uFFFDL)\uFFFD;g\uFFFD\"x\\x000e\uFFFD\uFFFD\uFFFD(m\uFFFDi\uFFFD\u0704\\x001e\uFFFD\uFFFD\\x0008\u0629\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u00D9\uFFFDN\uFFFD\\pt\uFFFD\uFFFDh\\x0017%2.\\x001e\uFFFD\\x0010~\uFFFD8j.\uFFFD\\x0018M\uFFFD\uFFFD\\x0001x\uFFFD\uFFFD\uFFFD~L\uFFFD\uFFFD\uFFFD\\x001e\uFFFD\uFFFD\uFFFD\uFFFDySa\\x001b\uFFFD]\uFFFD\uFFFD+)T\uFFFDfB>\\x0013r\\x0004J\uFFFD4\uFFFD\uFFFD\uFFFD=Ha\uFFFD\uFFFDZ\uFFFDa\uFFFD\\x0014,~6\\x0008\uFFFD\uFFFD\u0260\uFFFD\uFFFD\uFFFD\uFFFDB\uFFFDqe/JqC\uFFFDs_\uFFFD\\x0008?\uFFFD:\\x0016\uFFFDl\uFFFD\\x0018\uFFFDB\uFFFDQ\\x0002AU\\x000c(\uFFFD}\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD$9\uFFFD\uFFFD\uFFFD\uFFFD\tltEY\uFFFD\u078B\uFFFDjI\uFFFDL~l\uFFFD\uFFFD4|\\x0015\uFFFDP\uFFFD\uFFFDP\uFFFD\\x0000\uFFFD\\x0016\uFFFD\uFFFD\uFFFDU\uFFFD6\uFFFDx\\x0008q;\\x00151\uFFFD+\uFFFD\uFFFD(=\uFFFD\uFFFD?\\x0005\uFFFD\uFFFD\uFFFDS\\x0012\uFFFDZ,\uFFFDR\uFFFD\uFFFDq`\uFFFD\uFFFD\u06DB\\x0014\\x000c.\uFFFD\uFFFD\\x0005\uFFFDp\uFFFD\uFFFD5\\x001cOj|\uFFFD\uFFFDKJ\uFFFDs\uFFFD\uFFFDu\uFFFD\uFFFD\uFFFD\uFFFDP\uFFFD-\uFFFD\\x0019\\x001bB|\uFFFD\uFFFDS\uFFFD\uFFFD\u04428K\uFFFDc\uFFFD\\x001f|\uFFFD\uFFFD\uFFFD\u060AE\uFFFD,\uFFFDU\\x001f\\x0011j,$\uFFFD\uFFFDj\n|\uFFFDT;ur\uFFFD\\x000e:\uFFFD\uFFFD@Y\uFFFDq+\\x0006\uFFFD%t>\uFFFDo>n\uFFFDX\\x0019u\uFFFD\u039Ek\\~4\uFFFDQ2_\\x0002\\x001d\uFFFD\\x0005\uFFFDh\uFFFD\uFFFD0Q\uFFFD15f\\x001aw>?z\\x0017Wd\\x000e\uFFFD\\x0010\uFFFD\uFFFD\uFFFD|B\uFFFD\\x0010\t\uFFFD\\x0010\\x0013\uFFFD\uFFFDz\uFFFD\uFFFDAh\u0523;\uFFFDS\uFFFD\uFFFDUc\uFFFD\u03A5F%\uFFFD\uFFFD<\uFFFD\uFFFD\uFFFDLs\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uDBA5\uDE29\uFFFD\uFFFD\u0648\uFFFDQ\uFFFD}\\x0019H\uFFFD\uFFFD1\uFFFDG\uFFFDU\uFFFD\\x0012\uFFFDA\u02C7\\x0016W\uFFFD\uFFFD\\x0007\uFFFD4HEG\uFFFD\uFFFD\uFFFD\\x001c\uFFFD\uFFFD/e{\\x001f\uFFFD\uFFFD\\x0000\uFFFD)]\\x0011B\r\uFFFDD\uFFFD/\\x0019\uFFFD\\x0012\uFFFD\uFFFD\\x000c\u074B\uFFFD\\x0001u\uFFFD|\uFFFD'\u0521#\\x001f\uFFFD\\x000b\uFFFD\uFFFDk\uFFFD\uFFFD\u07BECp\u07AA\uFFFDD\uFFFD\uFFFDP\uFFFD;\\\uFFFD\u81C7C\uFFFD\uFFFD\\x001d\uFFFD\uFFFDI\uFFFDl\uFFFDin\uFFFD\uFFFD\uFFFD6]\uFFFDk\\x000e\uFFFD\\x001e\uFFFDA\uFFFD\uFFFD9\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u0498\uFFFDq\uFFFD\uFFFD*=\u0720\uFFFD\\x0015h#\uFFFDf\\x001cxy\\x0005\uFFFD9\uFFFDX\uFFFD\uFFFD\uFFFD\\x001b#\uFFFD\uFFFD!\uFFFD\\x0013'\uFFFD\uFFFD>\\x001f;\uFFFD\\x000by\uFFFDo\\x0006\uFFFD\uFFFD`0\\x0018\\x000c\\x0006\uFFFD\uFFFD`0\\x0018\\x000c\\x0006\uFFFD?\\x0006\uFFFD_,\uFFFDp\uFFFDn\uFFFD\uFFFD\uFFFD\\x0000\\x0000\\x0000\\x0000IEND\uFFFDB`\uFFFD"
+						},
+						{
+							"uri": "https://connect.gouv.nc/cgus",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "HRAT5tu7i3NMiTdepU_-eyvh7XaoVAq_tPnAZHYm2cU",
+							"otherinfo": "\\x001d\\x0010\\x0013\uFFFD\u06FB\uFFFDsL\uFFFD7^\uFFFDO\uFFFD{+\uFFFD\uFFFDv\uFFFDT\n\uFFFD\uFFFD\uFFFD\uFFFDdv&\uFFFD\uFFFD"
+						},
+						{
+							"uri": "https://connect.gouv.nc/contact",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "HRAT5tu7i3NMiTdepU_-eyvh7XaoVAq_tPnAZHYm2cU",
+							"otherinfo": "\\x001d\\x0010\\x0013\uFFFD\u06FB\uFFFDsL\uFFFD7^\uFFFDO\uFFFD{+\uFFFD\uFFFDv\uFFFDT\n\uFFFD\uFFFD\uFFFD\uFFFDdv&\uFFFD\uFFFD"
+						},
+						{
+							"uri": "https://connect.gouv.nc/inscription",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "HRAT5tu7i3NMiTdepU_-eyvh7XaoVAq_tPnAZHYm2cU",
+							"otherinfo": "\\x001d\\x0010\\x0013\uFFFD\u06FB\uFFFDsL\uFFFD7^\uFFFDO\uFFFD{+\uFFFD\uFFFDv\uFFFDT\n\uFFFD\uFFFD\uFFFD\uFFFDdv&\uFFFD\uFFFD"
+						},
+						{
+							"uri": "https://connect.gouv.nc/main.fbc188523a55751913d0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789",
+							"otherinfo": "\\x0000\\x0010\uFFFD\\x0010Q\uFFFD \uFFFD\uFFFD0\u04CFA\\x0014\uFFFDQU\uFFFDa\uFFFD\uFFFDq\u05DF\uFFFD\\x0018\uFFFD\uFFFDY\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u06EF\uFFFD\\x001c\uFFFD\uFFFD]\uFFFD\u37BB\uFFFD"
+						},
+						{
+							"uri": "https://connect.gouv.nc/mentions-legales",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "HRAT5tu7i3NMiTdepU_-eyvh7XaoVAq_tPnAZHYm2cU",
+							"otherinfo": "\\x001d\\x0010\\x0013\uFFFD\u06FB\uFFFDsL\uFFFD7^\uFFFDO\uFFFD{+\uFFFD\uFFFDv\uFFFDT\n\uFFFD\uFFFD\uFFFD\uFFFDdv&\uFFFD\uFFFD"
+						},
+						{
+							"uri": "https://connect.gouv.nc/styles.9a702eeefc269713280b.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCA1MTIgNTEyJyB3aWR0aD0nNTEyJyBoZWlnaHQ9JzUxMic+PHBhdGggZmlsbD0ncmdiKDI1NSwyNTUsMjU1KScgZD0nTTI1NiA4QzExOS4wNDMgOCA4IDExOS4wODMgOCAyNTZjMCAxMzYuOTk3IDExMS4wNDMgMjQ4IDI0OCAyNDhzMjQ4LTExMS4wMDMgMjQ4LTI0OEM1MDQgMTE5LjA4MyAzOTIuOTU3IDggMjU2IDh6bTAgMTEwYzIzLjE5NiAwIDQyIDE4LjgwNCA0MiA0MnMtMTguODA0IDQyLTQyIDQyLTQyLTE4LjgwNC00Mi00MiAxOC44MDQtNDIgNDItNDJ6bTU2IDI1NGMwIDYuNjI3LTUuMzczIDEyLTEyIDEyaC04OGMtNi42MjcgMC0xMi01LjM3My0xMi0xMnYtMjRjMC02LjYyNyA1LjM3My0xMiAxMi0xMmgxMnYtNjRoLTEyYy02LjYyNyAwLTEyLTUuMzczLTEyLTEydi0yNGMwLTYuNjI3IDUuMzczLTEyIDEyLTEyaDY0YzYuNjI3IDAgMTIgNS4zNzMgMTIgMTJ2MTAwaDEyYzYuNjI3IDAgMTIgNS4zNzMgMTIgMTJ2MjR6Jy8+PC9zdmc+",
+							"otherinfo": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' width='512' height='512'><path fill='rgb(255,255,255)' d='M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z'/></svg>"
+						}
+					],
+					"count": "9",
+					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
+					"otherinfo": "<p>\\x001d\\x0010\\x0013\uFFFD\u06FB\uFFFDsL\uFFFD7^\uFFFDO\uFFFD{+\uFFFD\uFFFDv\uFFFDT</p><p>\uFFFD\uFFFD\uFFFD\uFFFDdv&\uFFFD\uFFFD</p>",
+					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
+					"cweid": "200",
+					"wascid": "13",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10027",
+					"alertRef": "10027",
+					"alert": "Information Disclosure - Suspicious Comments",
+					"name": "Information Disclosure - Suspicious Comments",
+					"riskcode": "0",
+					"confidence": "1",
+					"riskdesc": "Informational (Low)",
+					"desc": "<p>The response appears to contain suspicious comments which may help an attacker. Note: Matches made within script blocks or files are against the entire content not only comments.</p>",
+					"instances":[ 
+						{
+							"uri": "https://connect.gouv.nc",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "user",
+							"otherinfo": "The following pattern was used: \\bUSER\\b and was detected in the element starting with: \"<script type=\"text/javascript\">\n      tarteaucitron.user.gtagUa = 'UA-127581475-1';\n      //tarteaucitron.user.analyticsUa = 'GT\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"uri": "https://connect.gouv.nc/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "user",
+							"otherinfo": "The following pattern was used: \\bUSER\\b and was detected in the element starting with: \"<script type=\"text/javascript\">\n      tarteaucitron.user.gtagUa = 'UA-127581475-1';\n      //tarteaucitron.user.analyticsUa = 'GT\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"uri": "https://connect.gouv.nc/assets/js/tarteaucitronjs/tarteaucitron.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "from",
+							"otherinfo": "The following pattern was used: \\bFROM\\b and was detected in the element starting with: \"                //var mainChildren = Array.from(main.children);\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"uri": "https://connect.gouv.nc/assets/js/tarteaucitronjs/tarteaucitron.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "query",
+							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected 3 times, the first in the element starting with: \"                // get the real window width for media query\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"uri": "https://connect.gouv.nc/assets/js/tarteaucitronjs/tarteaucitron.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "TODO",
+							"otherinfo": "The following pattern was used: \\bTODO\\b and was detected 2 times, the first in the element starting with: \"                // css for the middle bar TODO: add it on the css file\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"uri": "https://connect.gouv.nc/assets/js/tarteaucitronjs/tarteaucitron.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "user",
+							"otherinfo": "The following pattern was used: \\bUSER\\b and was detected 2 times, the first in the element starting with: \"    \"user\": {},\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"uri": "https://connect.gouv.nc/inscription",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "user",
+							"otherinfo": "The following pattern was used: \\bUSER\\b and was detected in the element starting with: \"<script type=\"text/javascript\">\n      tarteaucitron.user.gtagUa = 'UA-127581475-1';\n      //tarteaucitron.user.analyticsUa = 'GT\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"uri": "https://connect.gouv.nc/polyfills-es5.52c5927b1a646911df05.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Select",
+							"otherinfo": "The following pattern was used: \\bSELECT\\b and was detected in the element starting with: \"(self.webpackChunkconnect_frontend_frontend=self.webpackChunkconnect_frontend_frontend||[]).push([[698],{15638:function(i,h,t){\"\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"uri": "https://connect.gouv.nc/polyfills.80a2900e3f2da08264a0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "select",
+							"otherinfo": "The following pattern was used: \\bSELECT\\b and was detected in the element starting with: \"(self.webpackChunkconnect_frontend_frontend=self.webpackChunkconnect_frontend_frontend||[]).push([[429],{12626:function(c,y,t){\"\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"uri": "https://connect.gouv.nc/scripts.4e0454f4e15fd2d4e00a.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "FROM",
+							"otherinfo": "The following pattern was used: \\bFROM\\b and was detected in the element starting with: \" * IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"uri": "https://connect.gouv.nc/scripts.4e0454f4e15fd2d4e00a.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "username",
+							"otherinfo": "The following pattern was used: \\bUSERNAME\\b and was detected in the element starting with: \"!function(e,t){\"use strict\";\"object\"==typeof module&&\"object\"==typeof module.exports?module.exports=e.document?t(e,!0):function(\", see evidence field for the suspicious comment/snippet."
+						}
+					],
+					"count": "11",
+					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
+					"otherinfo": "<p>The following pattern was used: \\bUSER\\b and was detected in the element starting with: \"<script type=\"text/javascript\"></p><p>      tarteaucitron.user.gtagUa = 'UA-127581475-1';</p><p>      //tarteaucitron.user.analyticsUa = 'GT\", see evidence field for the suspicious comment/snippet.</p>",
+					"reference": "",
+					"cweid": "200",
+					"wascid": "13",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10109",
+					"alertRef": "10109",
+					"alert": "Modern Web Application",
+					"name": "Modern Web Application",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The application appears to be a modern web application. If you need to explore it automatically then the Ajax Spider may well be more effective than the standard one.</p>",
+					"instances":[ 
+						{
+							"uri": "https://connect.gouv.nc",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script type=\"text/javascript\" src=\"./assets/js/tarteaucitronjs/tarteaucitron.js\"></script>",
+							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
+						},
+						{
+							"uri": "https://connect.gouv.nc/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script type=\"text/javascript\" src=\"./assets/js/tarteaucitronjs/tarteaucitron.js\"></script>",
+							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
+						},
+						{
+							"uri": "https://connect.gouv.nc/cgus",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script type=\"text/javascript\" src=\"./assets/js/tarteaucitronjs/tarteaucitron.js\"></script>",
+							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
+						},
+						{
+							"uri": "https://connect.gouv.nc/contact",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script type=\"text/javascript\" src=\"./assets/js/tarteaucitronjs/tarteaucitron.js\"></script>",
+							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
+						},
+						{
+							"uri": "https://connect.gouv.nc/inscription",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script type=\"text/javascript\" src=\"./assets/js/tarteaucitronjs/tarteaucitron.js\"></script>",
+							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
+						},
+						{
+							"uri": "https://connect.gouv.nc/mentions-legales",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script type=\"text/javascript\" src=\"./assets/js/tarteaucitronjs/tarteaucitron.js\"></script>",
+							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
+						}
+					],
+					"count": "6",
+					"solution": "<p>This is an informational alert and so no changes are required.</p>",
+					"otherinfo": "<p>No links have been found while there are scripts, which is an indication that this is a modern web application.</p>",
+					"reference": "",
+					"cweid": "-1",
+					"wascid": "-1",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10015",
+					"alertRef": "10015",
+					"alert": "Re-examine Cache-control Directives",
+					"name": "Re-examine Cache-control Directives",
+					"riskcode": "0",
+					"confidence": "1",
+					"riskdesc": "Informational (Low)",
+					"desc": "<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>",
+					"instances":[ 
+						{
+							"uri": "https://connect.gouv.nc",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://connect.gouv.nc/",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://connect.gouv.nc/cgus",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://connect.gouv.nc/contact",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://connect.gouv.nc/inscription",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://connect.gouv.nc/mentions-legales",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://connect.gouv.nc/robots.txt",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://connect.gouv.nc/sitemap.xml",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "8",
+					"solution": "<p>For secure content, ensure the cache-control HTTP header is set with \"no-cache, no-store, must-revalidate\". If an asset should be cached consider setting the directives \"public, max-age, immutable\".</p>",
+					"otherinfo": "",
+					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
+					"cweid": "525",
+					"wascid": "13",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "90005",
+					"alertRef": "90005-3",
+					"alert": "Sec-Fetch-Dest Header is Missing",
+					"name": "Sec-Fetch-Dest Header is Missing",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.</p>",
+					"instances":[ 
+						{
+							"uri": "https://connect.gouv.nc",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://connect.gouv.nc/assets/icons/favicon/favicon-32x32.png",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "2",
+					"solution": "<p>Ensure that Sec-Fetch-Dest header is included in request headers.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
+					"cweid": "352",
+					"wascid": "9",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "90005",
+					"alertRef": "90005-2",
+					"alert": "Sec-Fetch-Mode Header is Missing",
+					"name": "Sec-Fetch-Mode Header is Missing",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.</p>",
+					"instances":[ 
+						{
+							"uri": "https://connect.gouv.nc",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://connect.gouv.nc/assets/icons/favicon/favicon-32x32.png",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "2",
+					"solution": "<p>Ensure that Sec-Fetch-Mode header is included in request headers.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
+					"cweid": "352",
+					"wascid": "9",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "90005",
+					"alertRef": "90005-1",
+					"alert": "Sec-Fetch-Site Header is Missing",
+					"name": "Sec-Fetch-Site Header is Missing",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>Specifies the relationship between request initiator's origin and target's origin.</p>",
+					"instances":[ 
+						{
+							"uri": "https://connect.gouv.nc",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://connect.gouv.nc/assets/icons/favicon/favicon-32x32.png",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "2",
+					"solution": "<p>Ensure that Sec-Fetch-Site header is included in request headers.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
+					"cweid": "352",
+					"wascid": "9",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "90005",
+					"alertRef": "90005-4",
+					"alert": "Sec-Fetch-User Header is Missing",
+					"name": "Sec-Fetch-User Header is Missing",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>Specifies if a navigation request was initiated by a user.</p>",
+					"instances":[ 
+						{
+							"uri": "https://connect.gouv.nc",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://connect.gouv.nc/assets/icons/favicon/favicon-32x32.png",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "2",
+					"solution": "<p>Ensure that Sec-Fetch-User header is included in user initiated requests.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",
+					"cweid": "352",
+					"wascid": "9",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10112",
+					"alertRef": "10112",
+					"alert": "Session Management Response Identified",
+					"name": "Session Management Response Identified",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The given response has been identified as containing a session management token. The 'Other Info' field contains a set of header tokens that can be used in the Header Based Session Management Method. If the request is in a context which has a Session Management Method set to \"Auto-Detect\" then this rule will change the session management to use the tokens identified.</p>",
+					"instances":[ 
+						{
+							"uri": "https://connect.gouv.nc/api",
+							"method": "GET",
+							"param": "SERVERID",
+							"attack": "",
+							"evidence": "connect-resources_2",
+							"otherinfo": "\ncookie:SERVERID"
+						},
+						{
+							"uri": "https://connect.gouv.nc/api",
+							"method": "GET",
+							"param": "SERVERID",
+							"attack": "",
+							"evidence": "connect-resources_2",
+							"otherinfo": "\ncookie:SERVERID"
+						}
+					],
+					"count": "2",
+					"solution": "<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>",
+					"otherinfo": "<p></p><p>cookie:SERVERID</p>",
+					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id</p>",
+					"cweid": "-1",
+					"wascid": "-1",
+					"sourceid": "39"
+				},
+				{
+					"pluginid": "10049",
+					"alertRef": "10049",
+					"alert": "Storable and Cacheable Content",
+					"name": "Storable and Cacheable Content",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The response contents are storable by caching components such as proxy servers, and may be retrieved directly from the cache, rather than from the origin server by the caching servers, in response to similar requests from other users.  If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where \"shared\" caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>",
+					"instances":[ 
+						{
+							"uri": "https://connect.gouv.nc",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+						},
+						{
+							"uri": "https://connect.gouv.nc/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+						},
+						{
+							"uri": "https://connect.gouv.nc/assets/icons/favicon/favicon-16x16.png",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+						},
+						{
+							"uri": "https://connect.gouv.nc/assets/icons/favicon/favicon-32x32.png",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+						},
+						{
+							"uri": "https://connect.gouv.nc/assets/js/tarteaucitronjs/tarteaucitron.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+						},
+						{
+							"uri": "https://connect.gouv.nc/polyfills-es5.52c5927b1a646911df05.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+						},
+						{
+							"uri": "https://connect.gouv.nc/polyfills.80a2900e3f2da08264a0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+						},
+						{
+							"uri": "https://connect.gouv.nc/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+						},
+						{
+							"uri": "https://connect.gouv.nc/runtime.2d50fda83fe31aa9142b.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+						},
+						{
+							"uri": "https://connect.gouv.nc/scripts.4e0454f4e15fd2d4e00a.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+						},
+						{
+							"uri": "https://connect.gouv.nc/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+						}
+					],
+					"count": "11",
+					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request. </p>",
+					"otherinfo": "<p>In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</p>",
+					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
+					"cweid": "524",
+					"wascid": "13",
+					"sourceid": "6"
+				}
+			]
+		}
+	]
+}
